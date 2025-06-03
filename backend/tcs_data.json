@@ -1,0 +1,243 @@
+{
+  "company": "Tata Consultancy Services",
+  "employees_key_people": [
+    {
+      "name": "Natarajan Chandrasekaran",
+      "role": "Chairman"
+    },
+    {
+      "name": "K. Krithivasan",
+      "role": "MD & CEO"
+    }
+  ],
+  "subsidiaries": [
+    "TRDDC"
+  ],
+  "board_members_wikipedia": [],
+  "board_members_tcs_official": [
+    {
+      "name": "N. Chandrasekaran",
+      "role": "CHAIRMAN"
+    },
+    {
+      "name": "K. Krithivasan",
+      "role": "CHIEF EXECUTIVE OFFICER & MANAGING DIRECTOR"
+    },
+    {
+      "name": "Aarthi Subramanian",
+      "role": "EXECUTIVE DIRECTOR \u2013 PRESIDENT AND CHIEF OPERATING OFFICER"
+    },
+    {
+      "name": "Dr. Pradeep Kumar Khosla",
+      "role": "DIRECTOR"
+    },
+    {
+      "name": "Hanne Birgitte Breinbjerg Sorensen",
+      "role": "DIRECTOR"
+    },
+    {
+      "name": "Keki M. Mistry",
+      "role": "DIRECTOR"
+    },
+    {
+      "name": "Al-Noor Ramji",
+      "role": "DIRECTOR"
+    },
+    {
+      "name": "Sanjay V. Bhandarkar",
+      "role": "DIRECTOR"
+    },
+    {
+      "name": "K. Krithivasan",
+      "role": "CHIEF EXECUTIVE OFFICER & MANAGING DIRECTOR"
+    },
+    {
+      "name": "Samir Seksaria",
+      "role": "CHIEF FINANCIAL OFFICER"
+    },
+    {
+      "name": "Milind Lakkad",
+      "role": "EVP AND CHRO, HUMAN RESOURCES"
+    }
+  ],
+  "acquisitions": [
+    {
+      "Name": "CMC Limited",
+      "Acquisition date": "October 2001",
+      "Activities": "Embedded software",
+      "Country": "India",
+      "Price": "$33.9m",
+      "Employees (at acquisition)": "3,102",
+      "Sources": "[49][50][51]"
+    },
+    {
+      "Name": "Airline Financial Support Services India (AFSI)",
+      "Acquisition date": "January 2004",
+      "Activities": "Airline and hospitality BPO",
+      "Country": "India",
+      "Price": "$5.1m",
+      "Employees (at acquisition)": "400",
+      "Sources": "[52][53]"
+    },
+    {
+      "Name": "Aviation Software Development Consultancy India (ASDC)",
+      "Acquisition date": "March 2004",
+      "Activities": "IT services",
+      "Country": "India",
+      "Price": "$3.1m",
+      "Employees (at acquisition)": "180",
+      "Sources": ""
+    },
+    {
+      "Name": "Phoenix Global Solutions",
+      "Acquisition date": "May 2004",
+      "Activities": "Insurance consulting and BPO",
+      "Country": "India",
+      "Price": "$130m",
+      "Employees (at acquisition)": "400",
+      "Sources": "[54][55]"
+    },
+    {
+      "Name": "Swedish Indian IT Resources AB (SITAR)",
+      "Acquisition date": "May 2005",
+      "Activities": "IT services",
+      "Country": "Sweden",
+      "Price": "$4.8m",
+      "Employees (at acquisition)": "n/a",
+      "Sources": "[56][57]"
+    },
+    {
+      "Name": "Pearl Group",
+      "Acquisition date": "October 2005",
+      "Activities": "Insurance",
+      "Country": "United Kingdom",
+      "Price": "$94.7m",
+      "Employees (at acquisition)": "950",
+      "Sources": "[58][59]"
+    },
+    {
+      "Name": "Financial Network Services (FNS)",
+      "Acquisition date": "October 2005",
+      "Activities": "Core banking software",
+      "Country": "Australia",
+      "Price": "$26m",
+      "Employees (at acquisition)": "190",
+      "Sources": "[60][61]"
+    },
+    {
+      "Name": "Comicrom",
+      "Acquisition date": "November 2005",
+      "Activities": "Banking BPO",
+      "Country": "Chile",
+      "Price": "$23m",
+      "Employees (at acquisition)": "1,257",
+      "Sources": "[62][63]"
+    },
+    {
+      "Name": "Tata Infotech",
+      "Acquisition date": "February 2006",
+      "Activities": "IT services",
+      "Country": "India",
+      "Price": "$259.2m",
+      "Employees (at acquisition)": "3,600",
+      "Sources": "[64][65]"
+    },
+    {
+      "Name": "TCS Management",
+      "Acquisition date": "November 2006",
+      "Activities": "IT services",
+      "Country": "Australia",
+      "Price": "$13m",
+      "Employees (at acquisition)": "35",
+      "Sources": "[66][67]"
+    },
+    {
+      "Name": "TKS-Teknosoft",
+      "Acquisition date": "November 2006",
+      "Activities": "Banking software",
+      "Country": "Chile",
+      "Price": "$80.4m",
+      "Employees (at acquisition)": "115",
+      "Sources": "[68]"
+    },
+    {
+      "Name": "Citigroup Global Services Limited",
+      "Acquisition date": "December 2008",
+      "Activities": "Banking and financial services BPO",
+      "Country": "India",
+      "Price": "$512m",
+      "Employees (at acquisition)": "12,472",
+      "Sources": "[69][70]"
+    },
+    {
+      "Name": "SuperValu Services India",
+      "Acquisition date": "September 2010",
+      "Activities": "IT services and BPO",
+      "Country": "India",
+      "Price": "$100m",
+      "Employees (at acquisition)": "600",
+      "Sources": "[71]"
+    },
+    {
+      "Name": "Computational Research Laboratories",
+      "Acquisition date": "August 2012",
+      "Activities": "High performance computing",
+      "Country": "India",
+      "Price": "$34m",
+      "Employees (at acquisition)": "80",
+      "Sources": "[72][73]"
+    },
+    {
+      "Name": "Alti SA",
+      "Acquisition date": "April 2013",
+      "Activities": "IT services",
+      "Country": "France",
+      "Price": "$97.5m",
+      "Employees (at acquisition)": "1200",
+      "Sources": "[74]"
+    },
+    {
+      "Name": "BridgePoint Group",
+      "Acquisition date": "November 2018",
+      "Activities": "Management consulting",
+      "Country": "United States",
+      "Price": "",
+      "Employees (at acquisition)": "",
+      "Sources": "[75][76][77]"
+    },
+    {
+      "Name": "Postbank Systems",
+      "Acquisition date": "November 2020",
+      "Activities": "IT services",
+      "Country": "Germany",
+      "Price": "",
+      "Employees (at acquisition)": "",
+      "Sources": "[78]"
+    },
+    {
+      "Name": "Pramerica Systems Ireland",
+      "Acquisition date": "December 2020",
+      "Activities": "IT services",
+      "Country": "Ireland",
+      "Price": "",
+      "Employees (at acquisition)": "1,500",
+      "Sources": "[79]"
+    },
+    {
+      "Name": "Darshita Southern India Happy Homes",
+      "Acquisition date": "March 2025",
+      "Activities": "Real Estate",
+      "Country": "India",
+      "Price": "$260m",
+      "Employees (at acquisition)": "",
+      "Sources": "[80][81]"
+    }
+  ],
+  "summary": {
+    "key_people_count": 2,
+    "subsidiaries_count": 1,
+    "board_members_wiki_count": 0,
+    "board_members_tcs_count": 11,
+    "acquisitions_count": 19
+  }
+}
