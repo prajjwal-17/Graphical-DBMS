@@ -1,0 +1,117 @@
+2025-06-05 02:01:45,223 - INFO - Chrome driver initialized successfully
+2025-06-05 02:01:45,223 - INFO - Processing state: andaman and nicobar islands
+2025-06-05 02:01:45,223 - INFO - Starting to fetch companies for state: andaman and nicobar islands
+2025-06-05 02:01:45,223 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-05 02:01:46,581 - INFO - Page loaded successfully
+2025-06-05 02:01:46,674 - INFO - Selected state: andaman and nicobar islands
+2025-06-05 02:02:08,951 - WARNING - Timeout waiting for data to load
+2025-06-05 02:02:08,951 - WARNING - No data loaded for state: andaman and nicobar islands
+2025-06-05 02:02:08,952 - WARNING - No companies found for andaman and nicobar islands
+2025-06-05 02:02:11,952 - INFO - Processing state: goa
+2025-06-05 02:02:11,952 - INFO - Starting to fetch companies for state: goa
+2025-06-05 02:02:11,952 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-05 02:02:12,469 - INFO - Page loaded successfully
+2025-06-05 02:02:12,573 - INFO - Selected state: goa
+2025-06-05 02:02:34,837 - WARNING - Timeout waiting for data to load
+2025-06-05 02:02:34,837 - WARNING - No data loaded for state: goa
+2025-06-05 02:02:34,838 - WARNING - No companies found for goa
+2025-06-05 02:02:40,188 - INFO - Chrome driver closed
+2025-06-05 02:02:40,189 - INFO - Saved data to all_companies_data_20250605_020240.json
+2025-06-05 02:10:06,630 - INFO - Chrome driver initialized successfully
+2025-06-05 02:10:06,631 - INFO - Processing state: andaman and nicobar islands
+2025-06-05 02:10:06,631 - INFO - Starting to fetch companies for state: andaman and nicobar islands
+2025-06-05 02:10:06,632 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-05 02:10:08,605 - INFO - Page loaded successfully
+2025-06-05 02:10:08,692 - INFO - Selected state: andaman and nicobar islands
+2025-06-05 02:10:11,998 - INFO - Clicked Preview & Download button
+2025-06-05 02:10:17,008 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-05 02:10:20,009 - INFO - Extracting data from page 1
+2025-06-05 02:10:20,022 - INFO - Found 10 company rows
+2025-06-05 02:10:20,997 - INFO - Extracted 10 companies from page 1
+2025-06-05 02:10:21,056 - INFO - No more pages available
+2025-06-05 02:10:21,056 - INFO - Total companies fetched for andaman and nicobar islands: 10
+2025-06-05 02:10:21,068 - INFO - Saved 10 companies to companies_andaman_and_nicobar_islands.csv
+2025-06-05 02:10:21,068 - INFO - Saved 10 companies for andaman and nicobar islands
+2025-06-05 02:10:24,069 - INFO - Processing state: goa
+2025-06-05 02:10:24,069 - INFO - Starting to fetch companies for state: goa
+2025-06-05 02:10:24,069 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-05 02:10:24,613 - INFO - Page loaded successfully
+2025-06-05 02:10:25,205 - INFO - Selected state: goa
+2025-06-05 02:10:28,270 - INFO - Clicked Preview & Download button
+2025-06-05 02:10:33,310 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-05 02:10:36,311 - INFO - Extracting data from page 1
+2025-06-05 02:10:36,322 - INFO - Found 10 company rows
+2025-06-05 02:10:37,267 - INFO - Extracted 10 companies from page 1
+2025-06-05 02:10:37,295 - INFO - No more pages available
+2025-06-05 02:10:37,295 - INFO - Total companies fetched for goa: 10
+2025-06-05 02:10:37,297 - INFO - Saved 10 companies to companies_goa.csv
+2025-06-05 02:10:37,298 - INFO - Saved 10 companies for goa
+2025-06-05 02:10:42,705 - INFO - Chrome driver closed
+2025-06-05 02:10:42,706 - INFO - Saved data to all_companies_data_20250605_021042.json
+2025-06-05 02:14:59,800 - INFO - Chrome driver initialized successfully
+2025-06-05 02:14:59,801 - INFO - Processing state: andaman and nicobar islands
+2025-06-05 02:14:59,801 - INFO - Starting to fetch companies for state: andaman and nicobar islands
+2025-06-05 02:14:59,801 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-05 02:15:12,678 - INFO - Page loaded successfully
+2025-06-05 02:15:12,783 - INFO - Closed popup using selector: button.close
+2025-06-05 02:15:13,884 - INFO - Selected state: andaman and nicobar islands
+2025-06-05 02:15:16,983 - INFO - Clicked Preview & Download button
+2025-06-05 02:15:21,992 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-05 02:15:24,994 - INFO - Extracting data from page 1
+2025-06-05 02:15:25,012 - INFO - Found 10 company rows
+2025-06-05 02:15:26,219 - INFO - Extracted 10 companies from page 1
+2025-06-05 02:15:28,293 - INFO - No enabled next page button found
+2025-06-05 02:15:28,293 - INFO - No more pages available
+2025-06-05 02:15:28,293 - INFO - Total companies fetched for andaman and nicobar islands: 10
+2025-06-05 02:15:28,303 - INFO - Saved 10 companies to companies_andaman_and_nicobar_islands.csv
+2025-06-05 02:15:28,304 - INFO - Saved 10 companies for andaman and nicobar islands
+2025-06-05 02:15:31,305 - INFO - Processing state: goa
+2025-06-05 02:15:31,305 - INFO - Starting to fetch companies for state: goa
+2025-06-05 02:15:31,305 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-05 02:15:31,920 - INFO - Page loaded successfully
+2025-06-05 02:15:33,180 - INFO - Closed popup using selector: .modal .close
+2025-06-05 02:15:34,250 - INFO - Selected state: goa
+2025-06-05 02:15:37,609 - INFO - Clicked Preview & Download button
+2025-06-05 02:15:42,616 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-05 02:15:45,617 - INFO - Extracting data from page 1
+2025-06-05 02:15:45,628 - INFO - Found 10 company rows
+2025-06-05 02:15:46,609 - INFO - Extracted 10 companies from page 1
+2025-06-05 02:15:48,667 - INFO - No enabled next page button found
+2025-06-05 02:15:48,667 - INFO - No more pages available
+2025-06-05 02:15:48,667 - INFO - Total companies fetched for goa: 10
+2025-06-05 02:15:48,669 - INFO - Saved 10 companies to companies_goa.csv
+2025-06-05 02:15:48,669 - INFO - Saved 10 companies for goa
+2025-06-05 02:15:51,670 - INFO - Processing state: delhi
+2025-06-05 02:15:51,670 - INFO - Starting to fetch companies for state: delhi
+2025-06-05 02:15:51,670 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-05 02:15:52,191 - INFO - Page loaded successfully
+2025-06-05 02:15:53,412 - INFO - Closed popup using selector: .modal .close
+2025-06-05 02:15:54,476 - INFO - Selected state: delhi
+2025-06-05 02:15:57,537 - INFO - Clicked Preview & Download button
+2025-06-05 02:16:02,543 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-05 02:16:05,543 - INFO - Extracting data from page 1
+2025-06-05 02:16:05,554 - INFO - Found 10 company rows
+2025-06-05 02:16:06,608 - INFO - Extracted 10 companies from page 1
+2025-06-05 02:16:08,655 - INFO - No enabled next page button found
+2025-06-05 02:16:08,655 - INFO - No more pages available
+2025-06-05 02:16:08,655 - INFO - Total companies fetched for delhi: 10
+2025-06-05 02:16:08,657 - INFO - Saved 10 companies to companies_delhi.csv
+2025-06-05 02:16:08,657 - INFO - Saved 10 companies for delhi
+2025-06-05 02:16:11,658 - INFO - Processing state: maharashtra
+2025-06-05 02:16:11,658 - INFO - Starting to fetch companies for state: maharashtra
+2025-06-05 02:16:11,658 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-05 02:16:12,164 - INFO - Page loaded successfully
+2025-06-05 02:16:13,422 - INFO - Closed popup using selector: .modal .close
+2025-06-05 02:16:14,493 - INFO - Selected state: maharashtra
+2025-06-05 02:16:17,560 - INFO - Clicked Preview & Download button
+2025-06-05 02:16:22,566 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-05 02:16:25,568 - INFO - Extracting data from page 1
+2025-06-05 02:16:25,578 - INFO - Found 10 company rows
+2025-06-05 02:16:26,491 - INFO - Extracted 10 companies from page 1
+2025-06-05 02:16:28,542 - INFO - No enabled next page button found
+2025-06-05 02:16:28,542 - INFO - No more pages available
+2025-06-05 02:16:28,542 - INFO - Total companies fetched for maharashtra: 10
+2025-06-05 02:16:28,544 - INFO - Saved 10 companies to companies_maharashtra.csv
+2025-06-05 02:16:28,545 - INFO - Saved 10 companies for maharashtra
+2025-06-05 02:16:33,895 - INFO - Chrome driver closed
+2025-06-05 02:16:33,897 - INFO - Saved data to all_companies_data_20250605_021633.json
