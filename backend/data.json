@@ -1,0 +1,213 @@
+[
+  
+  {
+    "cin": "U61100MH1975NPL018244",
+    "company_name": "INDIAN REGISTER OF SHIPPING",
+    "date_of_incorporation": "1975-03-25",
+    "paid_up_capital": "N/A",
+    "state": "Maharashtra",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "HEMANT KHATRI",
+      "din": "07768750",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T03:41:35.400540"
+  },
+  {
+    "cin": "U99999TG1995PLC019129",
+    "company_name": "ECIL-RAPISCAN LIMITED",
+    "date_of_incorporation": "1995-03-01",
+    "paid_up_capital": "30000000",
+    "state": "Telengana",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "ANESH KUMAR SHARMA",
+      "din": "09606063",
+      "designation": "Nominee Director"
+    },
+    "created_date": "2025-06-12T03:41:35.400540"
+  },
+  {
+    "cin": "U14299TG2019PLC134932",
+    "company_name": "UTKARSHA ALUMINIUM DHATU NIGAM LIMITED",
+    "date_of_incorporation": "2019-08-21",
+    "paid_up_capital": "400000000",
+    "state": "Telengana",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "THULASIRAMAN MUTHUKUMAR",
+      "din": "09561611",
+      "designation": "Nominee Director"
+    },
+    "created_date": "2025-06-12T03:41:35.400540"
+  },
+  {
+    "cin": "U71200UP2024NPL203979",
+    "company_name": "ADVANCED MATERIALS (DEFENCE) TESTING FOUNDATION",
+    "date_of_incorporation": "2024-06-04",
+    "paid_up_capital": "136600000",
+    "state": "Uttar Pradesh",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "THULASIRAMAN MUTHUKUMAR",
+      "din": "09561611",
+      "designation": "Nominee Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U29100DL2019PTC346537",
+    "company_name": "INDO- RUSSIAN RIFLES PRIVATE LIMITED",
+    "date_of_incorporation": "2019-02-25",
+    "paid_up_capital": "100000000",
+    "state": "Delhi",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "AKHILESH KUMAR MAURYA",
+      "din": "09282230",
+      "designation": "Nominee Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U17299UP1983GOI005974",
+    "company_name": "NATIONAL HANDLOOM DEVELOPMENT CORPORATION LIMITED",
+    "date_of_incorporation": "1983-02-22",
+    "paid_up_capital": "190000000",
+    "state": "Uttar Pradesh",
+    "company_sub_category": "Union government company",
+    "added_from_directors_data": {
+      "director_name": "JAI GOPAL MAHAJAN",
+      "din": "10824241",
+      "designation": "Company Secretary"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "L35100MH1934GOI002079",
+    "company_name": "MAZAGON DOCK SHIPBUILDERS LIMITED",
+    "date_of_incorporation": "1934-02-26",
+    "paid_up_capital": "2016900000",
+    "state": "Maharashtra",
+    "company_sub_category": "Union government company",
+    "added_from_directors_data": {
+      "director_name": "JAGMOHAN",
+      "din": "08630668",
+      "designation": "Managing Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U68200MH2023PTC409296",
+    "company_name": "NAVBHARAT MEGA DEVELOPERS PRIVATE LIMITED",
+    "date_of_incorporation": "2023-08-24",
+    "paid_up_capital": "5000000000",
+    "state": "Maharashtra",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+      "din": "00137888",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U74999GJ2015PLC083877",
+    "company_name": "ORDEFENCE SYSTEMS LIMITED",
+    "date_of_incorporation": "2015-07-17",
+    "paid_up_capital": "547500000",
+    "state": "Gujarat",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+      "din": "00137888",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U74999GJ2000PTC038407",
+    "company_name": "ADANI TRUSTEE COMPANY PRIVATE LIMITED",
+    "date_of_incorporation": "2000-07-21",
+    "paid_up_capital": "100000",
+    "state": "Gujarat",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+      "din": "00137888",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U74900GJ2015PLC082700",
+    "company_name": "ADANI DEFENCE SYSTEMS AND TECHNOLOGIES LIMITED",
+    "date_of_incorporation": "2015-03-25",
+    "paid_up_capital": "5008500000",
+    "state": "ADANI DEFENCE SYSTEMS AND TECHNOLOGIES LIMITED",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+      "din": "00137888",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U74999GJ2013PTC123466",
+    "company_name": "PLR SYSTEMS PRIVATE LIMITED",
+    "date_of_incorporation": "2013-02-05",
+    "paid_up_capital": "134107360",
+    "state": "Gujarat",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+      "din": "00137888",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U63090MH2010PTC207152",
+    "company_name": "ADANI SHIPPING (INDIA) PRIVATE LIMITED",
+    "date_of_incorporation": "2010-08-27",
+    "paid_up_capital": "500000",
+    "state": "Maharashtra",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+      "din": "00137888",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U45204GJ2010PLC059226",
+    "company_name": "ADANI INFRA (INDIA) LIMITED",
+    "date_of_incorporation": "2010-01-13",
+    "paid_up_capital": "500000",
+    "state": "Gujarat",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+      "din": "00137888",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  },
+  {
+    "cin": "U40200GJ2008PTC054045",
+    "company_name": "ADANI BUNKERING PRIVATE LIMITED",
+    "date_of_incorporation": "2008-05-27",
+    "paid_up_capital": "16879640",
+    "state": "Gujarat",
+    "company_sub_category": "Non-government company",
+    "added_from_directors_data": {
+      "director_name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+      "din": "00137888",
+      "designation": "Director"
+    },
+    "created_date": "2025-06-12T04:10:02.581733"
+  }
+]
