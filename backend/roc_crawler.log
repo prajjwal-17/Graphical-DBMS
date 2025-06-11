@@ -115,3 +115,598 @@
 2025-06-05 02:16:28,545 - INFO - Saved 10 companies for maharashtra
 2025-06-05 02:16:33,895 - INFO - Chrome driver closed
 2025-06-05 02:16:33,897 - INFO - Saved data to all_companies_data_20250605_021633.json
+2025-06-07 22:08:20,201 - INFO - Chrome driver initialized successfully
+2025-06-07 22:08:20,202 - INFO - Processing state: andaman and nicobar islands
+2025-06-07 22:08:20,202 - INFO - Starting to fetch companies for state: andaman and nicobar islands
+2025-06-07 22:08:20,202 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:08:21,940 - INFO - Page loaded successfully
+2025-06-07 22:08:22,038 - INFO - Closed popup using selector: button.close
+2025-06-07 22:08:23,111 - INFO - Selected state: andaman and nicobar islands
+2025-06-07 22:08:26,178 - INFO - Clicked Preview & Download button
+2025-06-07 22:08:31,187 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:08:34,188 - INFO - Extracting data from page 1
+2025-06-07 22:08:34,200 - INFO - Found 10 company rows
+2025-06-07 22:08:35,031 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:08:37,097 - INFO - No enabled next page button found
+2025-06-07 22:08:37,097 - INFO - No more pages available
+2025-06-07 22:08:37,097 - INFO - Total companies fetched for andaman and nicobar islands: 10
+2025-06-07 22:08:37,106 - INFO - Saved 10 companies to companies_andaman_and_nicobar_islands.csv
+2025-06-07 22:08:37,106 - INFO - Saved 10 companies for andaman and nicobar islands
+2025-06-07 22:08:40,107 - INFO - Processing state: andhra pradesh
+2025-06-07 22:08:40,107 - INFO - Starting to fetch companies for state: andhra pradesh
+2025-06-07 22:08:40,107 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:08:40,717 - INFO - Page loaded successfully
+2025-06-07 22:08:41,819 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:08:42,880 - INFO - Selected state: andhra pradesh
+2025-06-07 22:08:45,946 - INFO - Clicked Preview & Download button
+2025-06-07 22:08:50,952 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:08:53,953 - INFO - Extracting data from page 1
+2025-06-07 22:08:53,963 - INFO - Found 10 company rows
+2025-06-07 22:08:54,803 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:08:56,845 - INFO - No enabled next page button found
+2025-06-07 22:08:56,846 - INFO - No more pages available
+2025-06-07 22:08:56,846 - INFO - Total companies fetched for andhra pradesh: 10
+2025-06-07 22:08:56,847 - INFO - Saved 10 companies to companies_andhra_pradesh.csv
+2025-06-07 22:08:56,847 - INFO - Saved 10 companies for andhra pradesh
+2025-06-07 22:08:59,848 - INFO - Processing state: arunachal pradesh
+2025-06-07 22:08:59,848 - INFO - Starting to fetch companies for state: arunachal pradesh
+2025-06-07 22:08:59,848 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:09:00,305 - INFO - Page loaded successfully
+2025-06-07 22:09:01,503 - INFO - Closed popup using selector: .modal .close
+2025-06-07 22:09:02,561 - INFO - Selected state: arunachal pradesh
+2025-06-07 22:09:05,622 - INFO - Clicked Preview & Download button
+2025-06-07 22:09:10,627 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:09:13,628 - INFO - Extracting data from page 1
+2025-06-07 22:09:13,637 - INFO - Found 10 company rows
+2025-06-07 22:09:17,209 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:09:19,261 - INFO - No enabled next page button found
+2025-06-07 22:09:19,261 - INFO - No more pages available
+2025-06-07 22:09:19,261 - INFO - Total companies fetched for arunachal pradesh: 10
+2025-06-07 22:09:19,264 - INFO - Saved 10 companies to companies_arunachal_pradesh.csv
+2025-06-07 22:09:19,264 - INFO - Saved 10 companies for arunachal pradesh
+2025-06-07 22:09:22,265 - INFO - Processing state: assam
+2025-06-07 22:09:22,265 - INFO - Starting to fetch companies for state: assam
+2025-06-07 22:09:22,265 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:09:22,897 - INFO - Page loaded successfully
+2025-06-07 22:09:23,997 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:09:25,060 - INFO - Selected state: assam
+2025-06-07 22:09:28,127 - INFO - Clicked Preview & Download button
+2025-06-07 22:09:33,133 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:09:36,134 - INFO - Extracting data from page 1
+2025-06-07 22:09:36,145 - INFO - Found 10 company rows
+2025-06-07 22:09:37,098 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:09:39,143 - INFO - No enabled next page button found
+2025-06-07 22:09:39,143 - INFO - No more pages available
+2025-06-07 22:09:39,144 - INFO - Total companies fetched for assam: 10
+2025-06-07 22:09:39,146 - INFO - Saved 10 companies to companies_assam.csv
+2025-06-07 22:09:39,146 - INFO - Saved 10 companies for assam
+2025-06-07 22:09:42,147 - INFO - Processing state: bihar
+2025-06-07 22:09:42,147 - INFO - Starting to fetch companies for state: bihar
+2025-06-07 22:09:42,147 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:09:42,706 - INFO - Page loaded successfully
+2025-06-07 22:09:43,857 - INFO - Closed popup using selector: //button[contains(text(), '×')]
+2025-06-07 22:09:44,922 - INFO - Selected state: bihar
+2025-06-07 22:09:47,987 - INFO - Clicked Preview & Download button
+2025-06-07 22:09:52,997 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:09:55,998 - INFO - Extracting data from page 1
+2025-06-07 22:09:56,009 - INFO - Found 10 company rows
+2025-06-07 22:09:56,936 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:09:59,008 - INFO - No enabled next page button found
+2025-06-07 22:09:59,008 - INFO - No more pages available
+2025-06-07 22:09:59,008 - INFO - Total companies fetched for bihar: 10
+2025-06-07 22:09:59,012 - INFO - Saved 10 companies to companies_bihar.csv
+2025-06-07 22:09:59,012 - INFO - Saved 10 companies for bihar
+2025-06-07 22:10:02,013 - INFO - Processing state: chandigarh
+2025-06-07 22:10:02,013 - INFO - Starting to fetch companies for state: chandigarh
+2025-06-07 22:10:02,013 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:10:02,562 - INFO - Page loaded successfully
+2025-06-07 22:10:03,729 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:10:04,789 - INFO - Selected state: chandigarh
+2025-06-07 22:10:07,855 - INFO - Clicked Preview & Download button
+2025-06-07 22:10:12,862 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:10:15,864 - INFO - Extracting data from page 1
+2025-06-07 22:10:15,874 - INFO - Found 10 company rows
+2025-06-07 22:10:16,838 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:10:18,883 - INFO - No enabled next page button found
+2025-06-07 22:10:18,883 - INFO - No more pages available
+2025-06-07 22:10:18,883 - INFO - Total companies fetched for chandigarh: 10
+2025-06-07 22:10:18,885 - INFO - Saved 10 companies to companies_chandigarh.csv
+2025-06-07 22:10:18,885 - INFO - Saved 10 companies for chandigarh
+2025-06-07 22:10:21,886 - INFO - Processing state: chattisgarh
+2025-06-07 22:10:21,886 - INFO - Starting to fetch companies for state: chattisgarh
+2025-06-07 22:10:21,886 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:10:22,402 - INFO - Page loaded successfully
+2025-06-07 22:10:23,524 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:10:24,581 - INFO - Selected state: chattisgarh
+2025-06-07 22:10:27,643 - INFO - Clicked Preview & Download button
+2025-06-07 22:10:32,650 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:10:35,650 - INFO - Extracting data from page 1
+2025-06-07 22:10:35,661 - INFO - Found 10 company rows
+2025-06-07 22:10:36,578 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:10:38,632 - INFO - No enabled next page button found
+2025-06-07 22:10:38,633 - INFO - No more pages available
+2025-06-07 22:10:38,633 - INFO - Total companies fetched for chattisgarh: 10
+2025-06-07 22:10:38,634 - INFO - Saved 10 companies to companies_chattisgarh.csv
+2025-06-07 22:10:38,635 - INFO - Saved 10 companies for chattisgarh
+2025-06-07 22:10:41,635 - INFO - Processing state: dadra & nagar haveli
+2025-06-07 22:10:41,635 - INFO - Starting to fetch companies for state: dadra & nagar haveli
+2025-06-07 22:10:41,635 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:10:42,143 - INFO - Page loaded successfully
+2025-06-07 22:10:43,311 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:10:44,373 - INFO - Selected state: dadra & nagar haveli
+2025-06-07 22:10:47,431 - INFO - Clicked Preview & Download button
+2025-06-07 22:10:52,436 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:10:55,437 - INFO - Extracting data from page 1
+2025-06-07 22:10:55,448 - INFO - Found 10 company rows
+2025-06-07 22:10:56,385 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:10:58,433 - INFO - No enabled next page button found
+2025-06-07 22:10:58,433 - INFO - No more pages available
+2025-06-07 22:10:58,433 - INFO - Total companies fetched for dadra & nagar haveli: 10
+2025-06-07 22:10:58,435 - INFO - Saved 10 companies to companies_dadra_and_nagar_haveli.csv
+2025-06-07 22:10:58,435 - INFO - Saved 10 companies for dadra & nagar haveli
+2025-06-07 22:11:01,436 - INFO - Processing state: daman and diu
+2025-06-07 22:11:01,436 - INFO - Starting to fetch companies for state: daman and diu
+2025-06-07 22:11:01,436 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:11:01,975 - INFO - Page loaded successfully
+2025-06-07 22:11:03,086 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:11:04,145 - INFO - Selected state: daman and diu
+2025-06-07 22:11:07,206 - INFO - Clicked Preview & Download button
+2025-06-07 22:11:12,213 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:11:15,214 - INFO - Extracting data from page 1
+2025-06-07 22:11:15,224 - INFO - Found 10 company rows
+2025-06-07 22:11:16,114 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:11:18,170 - INFO - No enabled next page button found
+2025-06-07 22:11:18,171 - INFO - No more pages available
+2025-06-07 22:11:18,171 - INFO - Total companies fetched for daman and diu: 10
+2025-06-07 22:11:18,173 - INFO - Saved 10 companies to companies_daman_and_diu.csv
+2025-06-07 22:11:18,173 - INFO - Saved 10 companies for daman and diu
+2025-06-07 22:11:21,173 - INFO - Processing state: delhi
+2025-06-07 22:11:21,173 - INFO - Starting to fetch companies for state: delhi
+2025-06-07 22:11:21,173 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:11:21,876 - INFO - Page loaded successfully
+2025-06-07 22:11:22,963 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:11:24,024 - INFO - Selected state: delhi
+2025-06-07 22:11:27,087 - INFO - Clicked Preview & Download button
+2025-06-07 22:11:32,095 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:11:35,095 - INFO - Extracting data from page 1
+2025-06-07 22:11:35,105 - INFO - Found 10 company rows
+2025-06-07 22:11:36,002 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:11:38,047 - INFO - No enabled next page button found
+2025-06-07 22:11:38,047 - INFO - No more pages available
+2025-06-07 22:11:38,047 - INFO - Total companies fetched for delhi: 10
+2025-06-07 22:11:38,099 - INFO - Saved 10 companies to companies_delhi.csv
+2025-06-07 22:11:38,100 - INFO - Saved 10 companies for delhi
+2025-06-07 22:11:41,101 - INFO - Processing state: goa
+2025-06-07 22:11:41,101 - INFO - Starting to fetch companies for state: goa
+2025-06-07 22:11:41,101 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:11:41,593 - INFO - Page loaded successfully
+2025-06-07 22:11:42,672 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:11:43,731 - INFO - Selected state: goa
+2025-06-07 22:11:46,798 - INFO - Clicked Preview & Download button
+2025-06-07 22:11:51,805 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:11:54,805 - INFO - Extracting data from page 1
+2025-06-07 22:11:54,815 - INFO - Found 10 company rows
+2025-06-07 22:11:55,695 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:11:57,745 - INFO - No enabled next page button found
+2025-06-07 22:11:57,745 - INFO - No more pages available
+2025-06-07 22:11:57,745 - INFO - Total companies fetched for goa: 10
+2025-06-07 22:11:57,748 - INFO - Saved 10 companies to companies_goa.csv
+2025-06-07 22:11:57,750 - INFO - Saved 10 companies for goa
+2025-06-07 22:12:00,750 - INFO - Processing state: gujarat
+2025-06-07 22:12:00,750 - INFO - Starting to fetch companies for state: gujarat
+2025-06-07 22:12:00,750 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:12:01,292 - INFO - Page loaded successfully
+2025-06-07 22:12:02,380 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:12:03,441 - INFO - Selected state: gujarat
+2025-06-07 22:12:06,507 - INFO - Clicked Preview & Download button
+2025-06-07 22:12:11,514 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:12:14,514 - INFO - Extracting data from page 1
+2025-06-07 22:12:14,525 - INFO - Found 10 company rows
+2025-06-07 22:12:15,456 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:12:17,506 - INFO - No enabled next page button found
+2025-06-07 22:12:17,506 - INFO - No more pages available
+2025-06-07 22:12:17,507 - INFO - Total companies fetched for gujarat: 10
+2025-06-07 22:12:17,508 - INFO - Saved 10 companies to companies_gujarat.csv
+2025-06-07 22:12:17,510 - INFO - Saved 10 companies for gujarat
+2025-06-07 22:12:20,511 - INFO - Processing state: haryana
+2025-06-07 22:12:20,511 - INFO - Starting to fetch companies for state: haryana
+2025-06-07 22:12:20,511 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:12:21,076 - INFO - Page loaded successfully
+2025-06-07 22:12:22,223 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:12:23,281 - INFO - Selected state: haryana
+2025-06-07 22:12:26,371 - INFO - Clicked Preview & Download button
+2025-06-07 22:12:31,376 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:12:34,378 - INFO - Extracting data from page 1
+2025-06-07 22:12:34,390 - INFO - Found 10 company rows
+2025-06-07 22:12:35,353 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:12:37,418 - INFO - No enabled next page button found
+2025-06-07 22:12:37,418 - INFO - No more pages available
+2025-06-07 22:12:37,418 - INFO - Total companies fetched for haryana: 10
+2025-06-07 22:12:37,422 - INFO - Saved 10 companies to companies_haryana.csv
+2025-06-07 22:12:37,422 - INFO - Saved 10 companies for haryana
+2025-06-07 22:12:40,422 - INFO - Processing state: himachal pradesh
+2025-06-07 22:12:40,422 - INFO - Starting to fetch companies for state: himachal pradesh
+2025-06-07 22:12:40,422 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:12:40,957 - INFO - Page loaded successfully
+2025-06-07 22:12:42,098 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:12:43,160 - INFO - Selected state: himachal pradesh
+2025-06-07 22:12:46,315 - INFO - Clicked Preview & Download button
+2025-06-07 22:12:51,323 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:12:54,325 - INFO - Extracting data from page 1
+2025-06-07 22:12:54,336 - INFO - Found 10 company rows
+2025-06-07 22:12:55,360 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:12:57,408 - INFO - No enabled next page button found
+2025-06-07 22:12:57,408 - INFO - No more pages available
+2025-06-07 22:12:57,408 - INFO - Total companies fetched for himachal pradesh: 10
+2025-06-07 22:12:57,411 - INFO - Saved 10 companies to companies_himachal_pradesh.csv
+2025-06-07 22:12:57,411 - INFO - Saved 10 companies for himachal pradesh
+2025-06-07 22:13:00,412 - INFO - Processing state: jammu & kashmir
+2025-06-07 22:13:00,412 - INFO - Starting to fetch companies for state: jammu & kashmir
+2025-06-07 22:13:00,413 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:13:00,942 - INFO - Page loaded successfully
+2025-06-07 22:13:02,119 - INFO - Closed popup using selector: //button[contains(text(), '×')]
+2025-06-07 22:13:03,189 - INFO - Selected state: jammu & kashmir
+2025-06-07 22:13:06,273 - INFO - Clicked Preview & Download button
+2025-06-07 22:13:11,280 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:13:14,281 - INFO - Extracting data from page 1
+2025-06-07 22:13:14,293 - INFO - Found 10 company rows
+2025-06-07 22:13:15,287 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:13:17,335 - INFO - No enabled next page button found
+2025-06-07 22:13:17,336 - INFO - No more pages available
+2025-06-07 22:13:17,336 - INFO - Total companies fetched for jammu & kashmir: 10
+2025-06-07 22:13:17,338 - INFO - Saved 10 companies to companies_jammu_and_kashmir.csv
+2025-06-07 22:13:17,339 - INFO - Saved 10 companies for jammu & kashmir
+2025-06-07 22:13:20,340 - INFO - Processing state: jharkhand
+2025-06-07 22:13:20,340 - INFO - Starting to fetch companies for state: jharkhand
+2025-06-07 22:13:20,340 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:13:20,855 - INFO - Page loaded successfully
+2025-06-07 22:13:21,982 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:13:23,047 - INFO - Selected state: jharkhand
+2025-06-07 22:13:26,116 - INFO - Clicked Preview & Download button
+2025-06-07 22:13:31,124 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:13:34,125 - INFO - Extracting data from page 1
+2025-06-07 22:13:34,148 - INFO - Found 10 company rows
+2025-06-07 22:13:35,265 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:13:37,316 - INFO - No enabled next page button found
+2025-06-07 22:13:37,316 - INFO - No more pages available
+2025-06-07 22:13:37,316 - INFO - Total companies fetched for jharkhand: 10
+2025-06-07 22:13:37,318 - INFO - Saved 10 companies to companies_jharkhand.csv
+2025-06-07 22:13:37,318 - INFO - Saved 10 companies for jharkhand
+2025-06-07 22:13:40,319 - INFO - Processing state: karnataka
+2025-06-07 22:13:40,319 - INFO - Starting to fetch companies for state: karnataka
+2025-06-07 22:13:40,319 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:13:40,969 - INFO - Page loaded successfully
+2025-06-07 22:13:42,100 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:13:43,192 - INFO - Selected state: karnataka
+2025-06-07 22:13:46,278 - INFO - Clicked Preview & Download button
+2025-06-07 22:13:51,287 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:13:54,288 - INFO - Extracting data from page 1
+2025-06-07 22:13:54,300 - INFO - Found 10 company rows
+2025-06-07 22:13:55,296 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:13:57,344 - INFO - No enabled next page button found
+2025-06-07 22:13:57,344 - INFO - No more pages available
+2025-06-07 22:13:57,344 - INFO - Total companies fetched for karnataka: 10
+2025-06-07 22:13:57,346 - INFO - Saved 10 companies to companies_karnataka.csv
+2025-06-07 22:13:57,347 - INFO - Saved 10 companies for karnataka
+2025-06-07 22:14:00,348 - INFO - Processing state: kerala
+2025-06-07 22:14:00,348 - INFO - Starting to fetch companies for state: kerala
+2025-06-07 22:14:00,348 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:14:00,920 - INFO - Page loaded successfully
+2025-06-07 22:14:02,018 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:14:03,091 - INFO - Selected state: kerala
+2025-06-07 22:14:06,172 - INFO - Clicked Preview & Download button
+2025-06-07 22:14:11,179 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:14:14,180 - INFO - Extracting data from page 1
+2025-06-07 22:14:14,190 - INFO - Found 10 company rows
+2025-06-07 22:14:15,180 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:14:17,226 - INFO - No enabled next page button found
+2025-06-07 22:14:17,226 - INFO - No more pages available
+2025-06-07 22:14:17,226 - INFO - Total companies fetched for kerala: 10
+2025-06-07 22:14:17,228 - INFO - Saved 10 companies to companies_kerala.csv
+2025-06-07 22:14:17,228 - INFO - Saved 10 companies for kerala
+2025-06-07 22:14:20,230 - INFO - Processing state: ladakh
+2025-06-07 22:14:20,230 - INFO - Starting to fetch companies for state: ladakh
+2025-06-07 22:14:20,230 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:14:20,776 - INFO - Page loaded successfully
+2025-06-07 22:14:21,919 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:14:22,980 - INFO - Selected state: ladakh
+2025-06-07 22:14:26,051 - INFO - Clicked Preview & Download button
+2025-06-07 22:14:31,057 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:14:34,058 - INFO - Extracting data from page 1
+2025-06-07 22:14:34,074 - INFO - Found 10 company rows
+2025-06-07 22:14:35,045 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:14:37,103 - INFO - No enabled next page button found
+2025-06-07 22:14:37,104 - INFO - No more pages available
+2025-06-07 22:14:37,104 - INFO - Total companies fetched for ladakh: 10
+2025-06-07 22:14:37,106 - INFO - Saved 10 companies to companies_ladakh.csv
+2025-06-07 22:14:37,107 - INFO - Saved 10 companies for ladakh
+2025-06-07 22:14:40,107 - INFO - Processing state: lakshadweep
+2025-06-07 22:14:40,107 - INFO - Starting to fetch companies for state: lakshadweep
+2025-06-07 22:14:40,107 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:14:40,623 - INFO - Page loaded successfully
+2025-06-07 22:14:41,707 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:14:42,771 - INFO - Selected state: lakshadweep
+2025-06-07 22:14:45,838 - INFO - Clicked Preview & Download button
+2025-06-07 22:14:50,843 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:14:53,844 - INFO - Extracting data from page 1
+2025-06-07 22:14:53,855 - INFO - Found 10 company rows
+2025-06-07 22:14:54,778 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:14:56,824 - INFO - No enabled next page button found
+2025-06-07 22:14:56,824 - INFO - No more pages available
+2025-06-07 22:14:56,824 - INFO - Total companies fetched for lakshadweep: 10
+2025-06-07 22:14:56,826 - INFO - Saved 10 companies to companies_lakshadweep.csv
+2025-06-07 22:14:56,827 - INFO - Saved 10 companies for lakshadweep
+2025-06-07 22:14:59,828 - INFO - Processing state: madhya pradesh
+2025-06-07 22:14:59,828 - INFO - Starting to fetch companies for state: madhya pradesh
+2025-06-07 22:14:59,828 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:15:00,398 - INFO - Page loaded successfully
+2025-06-07 22:15:01,533 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:15:02,595 - INFO - Selected state: madhya pradesh
+2025-06-07 22:15:05,661 - INFO - Clicked Preview & Download button
+2025-06-07 22:15:10,665 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:15:13,667 - INFO - Extracting data from page 1
+2025-06-07 22:15:13,680 - INFO - Found 10 company rows
+2025-06-07 22:15:14,650 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:15:16,698 - INFO - No enabled next page button found
+2025-06-07 22:15:16,698 - INFO - No more pages available
+2025-06-07 22:15:16,698 - INFO - Total companies fetched for madhya pradesh: 10
+2025-06-07 22:15:16,700 - INFO - Saved 10 companies to companies_madhya_pradesh.csv
+2025-06-07 22:15:16,700 - INFO - Saved 10 companies for madhya pradesh
+2025-06-07 22:15:19,701 - INFO - Processing state: maharashtra
+2025-06-07 22:15:19,701 - INFO - Starting to fetch companies for state: maharashtra
+2025-06-07 22:15:19,701 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:15:20,222 - INFO - Page loaded successfully
+2025-06-07 22:15:21,353 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:15:22,414 - INFO - Selected state: maharashtra
+2025-06-07 22:15:25,486 - INFO - Clicked Preview & Download button
+2025-06-07 22:15:30,508 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:15:33,511 - INFO - Extracting data from page 1
+2025-06-07 22:15:33,521 - INFO - Found 10 company rows
+2025-06-07 22:15:34,446 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:15:36,503 - INFO - No enabled next page button found
+2025-06-07 22:15:36,503 - INFO - No more pages available
+2025-06-07 22:15:36,503 - INFO - Total companies fetched for maharashtra: 10
+2025-06-07 22:15:36,504 - INFO - Saved 10 companies to companies_maharashtra.csv
+2025-06-07 22:15:36,505 - INFO - Saved 10 companies for maharashtra
+2025-06-07 22:15:39,505 - INFO - Processing state: manipur
+2025-06-07 22:15:39,505 - INFO - Starting to fetch companies for state: manipur
+2025-06-07 22:15:39,506 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:15:40,035 - INFO - Page loaded successfully
+2025-06-07 22:15:41,136 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:15:42,198 - INFO - Selected state: manipur
+2025-06-07 22:15:45,262 - INFO - Clicked Preview & Download button
+2025-06-07 22:15:50,269 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:15:53,270 - INFO - Extracting data from page 1
+2025-06-07 22:15:53,282 - INFO - Found 10 company rows
+2025-06-07 22:15:54,215 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:15:56,262 - INFO - No enabled next page button found
+2025-06-07 22:15:56,262 - INFO - No more pages available
+2025-06-07 22:15:56,262 - INFO - Total companies fetched for manipur: 10
+2025-06-07 22:15:56,263 - INFO - Saved 10 companies to companies_manipur.csv
+2025-06-07 22:15:56,263 - INFO - Saved 10 companies for manipur
+2025-06-07 22:15:59,265 - INFO - Processing state: meghalaya
+2025-06-07 22:15:59,265 - INFO - Starting to fetch companies for state: meghalaya
+2025-06-07 22:15:59,265 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:15:59,833 - INFO - Page loaded successfully
+2025-06-07 22:16:00,969 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:16:02,041 - INFO - Selected state: meghalaya
+2025-06-07 22:16:05,106 - INFO - Clicked Preview & Download button
+2025-06-07 22:16:10,112 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:16:13,114 - INFO - Extracting data from page 1
+2025-06-07 22:16:13,126 - INFO - Found 10 company rows
+2025-06-07 22:16:14,067 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:16:16,116 - INFO - No enabled next page button found
+2025-06-07 22:16:16,116 - INFO - No more pages available
+2025-06-07 22:16:16,116 - INFO - Total companies fetched for meghalaya: 10
+2025-06-07 22:16:16,118 - INFO - Saved 10 companies to companies_meghalaya.csv
+2025-06-07 22:16:16,118 - INFO - Saved 10 companies for meghalaya
+2025-06-07 22:16:19,119 - INFO - Processing state: mizoram
+2025-06-07 22:16:19,119 - INFO - Starting to fetch companies for state: mizoram
+2025-06-07 22:16:19,119 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:16:19,654 - INFO - Page loaded successfully
+2025-06-07 22:16:20,754 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:16:21,821 - INFO - Selected state: mizoram
+2025-06-07 22:16:24,887 - INFO - Clicked Preview & Download button
+2025-06-07 22:16:29,894 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:16:32,896 - INFO - Extracting data from page 1
+2025-06-07 22:16:32,912 - INFO - Found 10 company rows
+2025-06-07 22:16:34,012 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:16:36,082 - INFO - No enabled next page button found
+2025-06-07 22:16:36,083 - INFO - No more pages available
+2025-06-07 22:16:36,083 - INFO - Total companies fetched for mizoram: 10
+2025-06-07 22:16:36,084 - INFO - Saved 10 companies to companies_mizoram.csv
+2025-06-07 22:16:36,084 - INFO - Saved 10 companies for mizoram
+2025-06-07 22:16:39,086 - INFO - Processing state: nagaland
+2025-06-07 22:16:39,086 - INFO - Starting to fetch companies for state: nagaland
+2025-06-07 22:16:39,086 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:16:39,796 - INFO - Page loaded successfully
+2025-06-07 22:16:40,959 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:16:42,038 - INFO - Selected state: nagaland
+2025-06-07 22:16:45,143 - INFO - Clicked Preview & Download button
+2025-06-07 22:16:50,148 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:16:53,150 - INFO - Extracting data from page 1
+2025-06-07 22:16:53,161 - INFO - Found 10 company rows
+2025-06-07 22:16:54,153 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:16:56,217 - INFO - No enabled next page button found
+2025-06-07 22:16:56,217 - INFO - No more pages available
+2025-06-07 22:16:56,217 - INFO - Total companies fetched for nagaland: 10
+2025-06-07 22:16:56,219 - INFO - Saved 10 companies to companies_nagaland.csv
+2025-06-07 22:16:56,219 - INFO - Saved 10 companies for nagaland
+2025-06-07 22:16:59,220 - INFO - Processing state: orissa
+2025-06-07 22:16:59,220 - INFO - Starting to fetch companies for state: orissa
+2025-06-07 22:16:59,220 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:16:59,784 - INFO - Page loaded successfully
+2025-06-07 22:17:00,966 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:17:02,054 - INFO - Selected state: orissa
+2025-06-07 22:17:05,123 - INFO - Clicked Preview & Download button
+2025-06-07 22:17:10,128 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:17:13,130 - INFO - Extracting data from page 1
+2025-06-07 22:17:13,140 - INFO - Found 10 company rows
+2025-06-07 22:17:14,171 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:17:16,224 - INFO - No enabled next page button found
+2025-06-07 22:17:16,224 - INFO - No more pages available
+2025-06-07 22:17:16,225 - INFO - Total companies fetched for orissa: 10
+2025-06-07 22:17:16,226 - INFO - Saved 10 companies to companies_orissa.csv
+2025-06-07 22:17:16,227 - INFO - Saved 10 companies for orissa
+2025-06-07 22:17:19,228 - INFO - Processing state: pondicherry
+2025-06-07 22:17:19,228 - INFO - Starting to fetch companies for state: pondicherry
+2025-06-07 22:17:19,228 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:17:19,761 - INFO - Page loaded successfully
+2025-06-07 22:17:21,030 - INFO - Closed popup using selector: .modal .close
+2025-06-07 22:17:22,090 - INFO - Selected state: pondicherry
+2025-06-07 22:17:25,208 - INFO - Clicked Preview & Download button
+2025-06-07 22:17:30,216 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:17:33,217 - INFO - Extracting data from page 1
+2025-06-07 22:17:33,232 - INFO - Found 10 company rows
+2025-06-07 22:17:34,413 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:17:36,477 - INFO - No enabled next page button found
+2025-06-07 22:17:36,477 - INFO - No more pages available
+2025-06-07 22:17:36,478 - INFO - Total companies fetched for pondicherry: 10
+2025-06-07 22:17:36,481 - INFO - Saved 10 companies to companies_pondicherry.csv
+2025-06-07 22:17:36,481 - INFO - Saved 10 companies for pondicherry
+2025-06-07 22:17:39,482 - INFO - Processing state: punjab
+2025-06-07 22:17:39,482 - INFO - Starting to fetch companies for state: punjab
+2025-06-07 22:17:39,482 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:17:40,085 - INFO - Page loaded successfully
+2025-06-07 22:17:41,300 - INFO - Closed popup using selector: //button[contains(text(), '×')]
+2025-06-07 22:17:42,387 - INFO - Selected state: punjab
+2025-06-07 22:17:45,495 - INFO - Clicked Preview & Download button
+2025-06-07 22:17:50,504 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:17:53,505 - INFO - Extracting data from page 1
+2025-06-07 22:17:53,529 - INFO - Found 10 company rows
+2025-06-07 22:17:55,190 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:17:57,257 - INFO - No enabled next page button found
+2025-06-07 22:17:57,257 - INFO - No more pages available
+2025-06-07 22:17:57,257 - INFO - Total companies fetched for punjab: 10
+2025-06-07 22:17:57,260 - INFO - Saved 10 companies to companies_punjab.csv
+2025-06-07 22:17:57,260 - INFO - Saved 10 companies for punjab
+2025-06-07 22:18:00,261 - INFO - Processing state: rajasthan
+2025-06-07 22:18:00,261 - INFO - Starting to fetch companies for state: rajasthan
+2025-06-07 22:18:00,261 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:18:01,427 - INFO - Page loaded successfully
+2025-06-07 22:18:02,622 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:18:03,695 - INFO - Selected state: rajasthan
+2025-06-07 22:18:06,802 - INFO - Clicked Preview & Download button
+2025-06-07 22:18:11,810 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:18:14,811 - INFO - Extracting data from page 1
+2025-06-07 22:18:14,823 - INFO - Found 10 company rows
+2025-06-07 22:18:16,371 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:18:18,470 - INFO - No enabled next page button found
+2025-06-07 22:18:18,470 - INFO - No more pages available
+2025-06-07 22:18:18,470 - INFO - Total companies fetched for rajasthan: 10
+2025-06-07 22:18:18,485 - INFO - Saved 10 companies to companies_rajasthan.csv
+2025-06-07 22:18:18,485 - INFO - Saved 10 companies for rajasthan
+2025-06-07 22:18:21,486 - INFO - Processing state: sikkim
+2025-06-07 22:18:21,486 - INFO - Starting to fetch companies for state: sikkim
+2025-06-07 22:18:21,486 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:18:22,489 - INFO - Page loaded successfully
+2025-06-07 22:18:23,678 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:18:24,843 - INFO - Selected state: sikkim
+2025-06-07 22:18:28,096 - INFO - Clicked Preview & Download button
+2025-06-07 22:18:33,112 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:18:36,115 - INFO - Extracting data from page 1
+2025-06-07 22:18:36,141 - INFO - Found 2 company rows
+2025-06-07 22:18:36,544 - INFO - Extracted 2 companies from page 1
+2025-06-07 22:18:38,674 - INFO - No enabled next page button found
+2025-06-07 22:18:38,675 - INFO - No more pages available
+2025-06-07 22:18:38,675 - INFO - Total companies fetched for sikkim: 2
+2025-06-07 22:18:38,689 - INFO - Saved 2 companies to companies_sikkim.csv
+2025-06-07 22:18:38,690 - INFO - Saved 2 companies for sikkim
+2025-06-07 22:18:41,691 - INFO - Processing state: tamil nadu
+2025-06-07 22:18:41,691 - INFO - Starting to fetch companies for state: tamil nadu
+2025-06-07 22:18:41,691 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:18:43,206 - INFO - Page loaded successfully
+2025-06-07 22:18:43,268 - INFO - Closed popup using selector: button.close
+2025-06-07 22:18:44,380 - INFO - Selected state: tamil nadu
+2025-06-07 22:18:47,488 - INFO - Clicked Preview & Download button
+2025-06-07 22:18:52,497 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:18:55,497 - INFO - Extracting data from page 1
+2025-06-07 22:18:55,510 - INFO - Found 10 company rows
+2025-06-07 22:18:56,775 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:18:58,900 - INFO - No enabled next page button found
+2025-06-07 22:18:58,900 - INFO - No more pages available
+2025-06-07 22:18:58,901 - INFO - Total companies fetched for tamil nadu: 10
+2025-06-07 22:18:58,907 - INFO - Saved 10 companies to companies_tamil_nadu.csv
+2025-06-07 22:18:58,908 - INFO - Saved 10 companies for tamil nadu
+2025-06-07 22:19:01,909 - INFO - Processing state: telangana
+2025-06-07 22:19:01,910 - INFO - Starting to fetch companies for state: telangana
+2025-06-07 22:19:01,910 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:19:03,382 - INFO - Page loaded successfully
+2025-06-07 22:19:03,505 - INFO - Closed popup using selector: button.close
+2025-06-07 22:19:04,829 - INFO - Selected state: telangana
+2025-06-07 22:19:08,122 - INFO - Clicked Preview & Download button
+2025-06-07 22:19:13,132 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:19:16,134 - INFO - Extracting data from page 1
+2025-06-07 22:19:16,147 - INFO - Found 10 company rows
+2025-06-07 22:19:17,400 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:19:19,477 - INFO - No enabled next page button found
+2025-06-07 22:19:19,477 - INFO - No more pages available
+2025-06-07 22:19:19,478 - INFO - Total companies fetched for telangana: 10
+2025-06-07 22:19:19,481 - INFO - Saved 10 companies to companies_telangana.csv
+2025-06-07 22:19:19,481 - INFO - Saved 10 companies for telangana
+2025-06-07 22:19:22,482 - INFO - Processing state: tripura
+2025-06-07 22:19:22,482 - INFO - Starting to fetch companies for state: tripura
+2025-06-07 22:19:22,482 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:19:23,195 - INFO - Page loaded successfully
+2025-06-07 22:19:24,377 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:19:25,486 - INFO - Selected state: tripura
+2025-06-07 22:19:28,580 - INFO - Clicked Preview & Download button
+2025-06-07 22:19:33,602 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:19:36,606 - INFO - Extracting data from page 1
+2025-06-07 22:19:36,631 - INFO - Found 10 company rows
+2025-06-07 22:19:38,095 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:19:40,158 - INFO - No enabled next page button found
+2025-06-07 22:19:40,158 - INFO - No more pages available
+2025-06-07 22:19:40,158 - INFO - Total companies fetched for tripura: 10
+2025-06-07 22:19:40,163 - INFO - Saved 10 companies to companies_tripura.csv
+2025-06-07 22:19:40,163 - INFO - Saved 10 companies for tripura
+2025-06-07 22:19:43,164 - INFO - Processing state: uttar pradesh
+2025-06-07 22:19:43,164 - INFO - Starting to fetch companies for state: uttar pradesh
+2025-06-07 22:19:43,164 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:19:43,968 - INFO - Page loaded successfully
+2025-06-07 22:19:45,121 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:19:46,222 - INFO - Selected state: uttar pradesh
+2025-06-07 22:19:49,316 - INFO - Clicked Preview & Download button
+2025-06-07 22:19:54,324 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:19:57,325 - INFO - Extracting data from page 1
+2025-06-07 22:19:57,342 - INFO - Found 10 company rows
+2025-06-07 22:19:59,185 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:20:01,254 - INFO - No enabled next page button found
+2025-06-07 22:20:01,254 - INFO - No more pages available
+2025-06-07 22:20:01,254 - INFO - Total companies fetched for uttar pradesh: 10
+2025-06-07 22:20:01,259 - INFO - Saved 10 companies to companies_uttar_pradesh.csv
+2025-06-07 22:20:01,259 - INFO - Saved 10 companies for uttar pradesh
+2025-06-07 22:20:04,260 - INFO - Processing state: uttarakhand
+2025-06-07 22:20:04,261 - INFO - Starting to fetch companies for state: uttarakhand
+2025-06-07 22:20:04,261 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:20:05,050 - INFO - Page loaded successfully
+2025-06-07 22:20:06,579 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:20:07,671 - INFO - Selected state: uttarakhand
+2025-06-07 22:20:10,763 - INFO - Clicked Preview & Download button
+2025-06-07 22:20:15,776 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:20:18,777 - INFO - Extracting data from page 1
+2025-06-07 22:20:18,792 - INFO - Found 10 company rows
+2025-06-07 22:20:20,080 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:20:22,156 - INFO - No enabled next page button found
+2025-06-07 22:20:22,156 - INFO - No more pages available
+2025-06-07 22:20:22,156 - INFO - Total companies fetched for uttarakhand: 10
+2025-06-07 22:20:22,162 - INFO - Saved 10 companies to companies_uttarakhand.csv
+2025-06-07 22:20:22,162 - INFO - Saved 10 companies for uttarakhand
+2025-06-07 22:20:25,163 - INFO - Processing state: west bengal
+2025-06-07 22:20:25,163 - INFO - Starting to fetch companies for state: west bengal
+2025-06-07 22:20:25,163 - INFO - Navigating to: https://www.data.gov.in/resource/registrars-companies-roc-wise-company-master-data
+2025-06-07 22:20:25,973 - INFO - Page loaded successfully
+2025-06-07 22:20:27,197 - INFO - Closed popup using selector: .modal-header .close
+2025-06-07 22:20:28,295 - INFO - Selected state: west bengal
+2025-06-07 22:20:31,382 - INFO - Clicked Preview & Download button
+2025-06-07 22:20:36,392 - INFO - Data loaded with selector: tbody[role='rowgroup']
+2025-06-07 22:20:39,393 - INFO - Extracting data from page 1
+2025-06-07 22:20:39,410 - INFO - Found 10 company rows
+2025-06-07 22:20:40,748 - INFO - Extracted 10 companies from page 1
+2025-06-07 22:20:42,813 - INFO - No enabled next page button found
+2025-06-07 22:20:42,813 - INFO - No more pages available
+2025-06-07 22:20:42,814 - INFO - Total companies fetched for west bengal: 10
+2025-06-07 22:20:42,818 - INFO - Saved 10 companies to companies_west_bengal.csv
+2025-06-07 22:20:42,818 - INFO - Saved 10 companies for west bengal
+2025-06-07 22:20:48,522 - INFO - Chrome driver closed
+2025-06-07 22:20:48,542 - INFO - Saved data to all_companies_data_20250607_222048.json

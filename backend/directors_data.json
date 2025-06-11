@@ -1,0 +1,944 @@
+[
+  {
+    "name": "HEMANT KHATRI",
+    "din": "07768750",
+    "positions": [
+      {
+        "cin": "U74899AP1952GOI076711",
+        "company_name": "HINDUSTAN SHIPYARD LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U61100MH1975NPL018244",
+        "company_name": "INDIAN REGISTER OF SHIPPING",
+        "designation": "Director"
+      },
+      {
+        "cin": "U61100MH1975NPL018244",
+        "company_name": "INDIAN REGISTER OF SHIPPING",
+        "designation": "Additional Director"
+      },
+      {
+        "cin": "U74899AP1952GOI076711",
+        "company_name": "HINDUSTAN SHIPYARD LIMITED",
+        "designation": "Whole-time director"
+      }
+    ],
+    "created_date": "2025-06-08T14:19:24.728998"
+  },
+  {
+    "name": "ANESH KUMAR SHARMA",
+    "din": "09606063",
+    "positions": [
+      {
+        "cin": "U32100TG1967GOI001149",
+        "company_name": "ELECTRONICS CORPORATION OF INDIA LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U99999TG1995PLC019129",
+        "company_name": "ECIL-RAPISCAN LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U32100TG1967GOI001149",
+        "company_name": "ELECTRONICS CORPORATION OF INDIA LIMITED",
+        "designation": "Whole-time director"
+      }
+    ],
+    "created_date": "2025-06-11T01:53:43.998512"
+  },
+  {
+    "name": "ANURAG KUMAR",
+    "din": "09751218",
+    "positions": [
+      {
+        "cin": "U32100TG1967GOI001149",
+        "company_name": "ELECTRONICS CORPORATION OF INDIA LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U99999TG1995PLC019129",
+        "company_name": "ECIL-RAPISCAN LIMITED",
+        "designation": "Nominee Director"
+      }
+    ],
+    "created_date": "2025-06-11T01:55:37.704384"
+  },
+  {
+    "name": "THULASIRAMAN MUTHUKUMAR",
+    "din": "09561611",
+    "positions": [
+      {
+        "cin": "U14299TG2019PLC134932",
+        "company_name": "UTKARSHA ALUMINIUM DHATU NIGAM LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U71200UP2024NPL203979",
+        "company_name": "ADVANCED MATERIALS (DEFENCE) TESTING FOUNDATION",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "L14292TG1973GOI001660",
+        "company_name": "MISHRA DHATU NIGAM LIMITED",
+        "designation": "Whole-time director"
+      },
+      {
+        "cin": "U14299TG2019PLC134932",
+        "company_name": "UTKARSHA ALUMINIUM DHATU NIGAM LIMITED",
+        "designation": "Additional Director"
+      }
+    ],
+    "created_date": "2025-06-11T02:00:15.926979"
+  },
+  {
+    "name": "AKHILESH KUMAR MAURYA",
+    "din": "09282230",
+    "positions": [
+      { 
+        "cin": "U29270UP2021GOI150734",
+        "company_name": "ADVANCED WEAPONS AND EQUIPMENT INDIA LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U29100DL2019PTC346537",
+        "company_name": "INDO- RUSSIAN RIFLES PRIVATE LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U29270UP2021GOI150734",
+        "company_name": "ADVANCED WEAPONS AND EQUIPMENT INDIA LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T02:20:34.213799"
+  },
+  {
+    "name": "JAI GOPAL MAHAJAN",
+    "din": "10824241",
+    "positions": [
+      {
+        "cin": "U29270UP2021GOI150734",
+        "company_name": "ADVANCED WEAPONS AND EQUIPMENT INDIA LIMITED",
+        "designation": "Whole-time director"
+      },
+      {
+        "cin": "U29270UP2021GOI150734",
+        "company_name": "ADVANCED WEAPONS AND EQUIPMENT INDIA LIMITED",
+        "designation": "Additional Director"
+      },
+      {
+        "cin": "U29270UP2021GOI150734",
+        "company_name": "ADVANCED WEAPONS AND EQUIPMENT INDIA LIMITED",
+        "designation": "CFO"
+      },
+      {
+        "cin": "L35202KA1964GOI001530",
+        "company_name": "BEML LIMITED",
+        "designation": "Company Seceretary"
+      },
+      {
+        "cin": "U17299UP1983GOI005974",
+        "company_name": "NATIONAL HANDLOOM DEVELOPMENT CORPORATION LIMITED",
+        "designation": "Company Secretary"
+      }
+    ],
+    "created_date": "2025-06-11T02:23:30.926440"
+  },
+  {
+    "name": "GARIMA BHAGAT",
+    "din": "10881164",
+    "positions": [
+      {
+        "cin": "U31909UR2021GOI012802",
+        "company_name": "INDIA OPTEL LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U35990TN2021GOI145504",
+        "company_name": "ARMOURED VEHICLES NIGAM LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U29270UP2021GOI150734",
+        "company_name": "ADVANCED WEAPONS AND EQUIPMENT INDIA LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "L35111WB1934GOI007891",
+        "company_name": "GARDEN REACH SHIPBUILDERS & ENGINEERS LIMITED",
+        "designation": "Additional Director"
+      }
+    ],
+    "created_date": "2025-06-11T02:28:18.570692"
+  },
+  {
+    "name": "JAGMOHAN",
+    "din": "08630668",
+    "positions": [
+      {
+        "cin": "L35100MH1934GOI002079",
+        "company_name": "MAZAGON DOCK SHIPBUILDERS LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "2\t\nU63032GA1967GOI000077",
+        "company_name": "GOA SHIPYARD LIMITED",
+        "designation": "Whole-time director"
+      }
+    ],
+    "created_date": "2025-06-11T02:33:30.563295"
+  },
+  {
+    "name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+    "din": "00137888",
+    "positions": [
+      {
+        "cin": "U68200MH2023PTC409296",
+        "company_name": "NAVBHARAT MEGA DEVELOPERS PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74999GJ2015PLC083877",
+        "company_name": "ORDEFENCE SYSTEMS LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74999GJ2000PTC038407",
+        "company_name": "ADANI TRUSTEE COMPANY PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74900GJ2015PLC082700",
+        "company_name": "ADANI DEFENCE SYSTEMS AND TECHNOLOGIES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74900GJ2015PLC082700",
+        "company_name": "ADANI DEFENCE SYSTEMS AND TECHNOLOGIES LIMITED",
+        "designation": "Company Seceretary"
+      },
+      {
+        "cin": "U74999GJ2013PTC123466",
+        "company_name": "PLR SYSTEMS PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U63090MH2010PTC207152",
+        "company_name": "ADANI SHIPPING (INDIA) PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U45204GJ2010PLC059226",
+        "company_name": "ADANI INFRA (INDIA) LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U40200GJ2008PTC054045",
+        "company_name": "ADANI BUNKERING PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U40106GJ2015PLC082625",
+        "company_name": "ADANI RENEWABLE ENERGY HOLDING TWO LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U45201GJ2007PTC051837",
+        "company_name": "XCELHEIGHTS DEVELOPERS PRIVATE LIMITED",
+        "designation": "Director appointed in casual vacancy"
+      },
+      {
+        "cin": "U51219MH2006PTC163007",
+        "company_name": "ROHIT AGRI-TRADE PRIVATE LIMITED",
+        "designation": "Director appointed in casual vacancy"
+      },
+      {
+        "cin": "U40100GJ2005PLC046554",
+        "company_name": "ADANI WELSPUN EXPLORATION LIMITED",
+        "designation": "Additional Director"
+      },
+      {
+        "cin": "AAI-8221",
+        "company_name": "ADANI TRADEX LLP",
+        "designation": "Designated Partner"
+      },
+      {
+        "cin": "AAI-9116",
+        "company_name": "ADANI TRADEWING LLP",
+        "designation": "Designated Partner"
+      }
+    ],
+    "created_date": "2025-06-11T02:47:29.523218"
+  },
+  {
+    "name": "AMEETKUMAR HIRANYAKUMAR DESAI",
+    "din": "00007116",
+    "positions": [
+      {
+        "cin": "L45200GJ1991PLC015817",
+        "company_name": "GANESH HOUSING CORPORATION LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U72200GJ1992PTC017819",
+        "company_name": "SOURCEPRO INFOTECH PRIVATE LIMITED",
+        "designation": "Additional Director"
+      },
+      {
+        "cin": "U74900GJ2015PLC082700",
+        "company_name": "ADANI DEFENCE SYSTEMS AND TECHNOLOGIES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U24231GJ2004PLC044656",
+        "company_name": "CORONA REMEDIES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U67190MH2007PLC174287",
+        "company_name": "JM FINANCIAL ASSET RECONSTRUCTION COMPANY LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74990GJ2015PLC083873",
+        "company_name": "ADANI NAVAL DEFENCE SYSTEMS AND TECHNOLOGIES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U92412GJ2019PTC109608",
+        "company_name": "NXGN SPORTS INTERACTIVE PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T02:50:54.737004"
+  },
+  {
+    "name": "NIRANJAN JANI",
+    "din": "02242307",
+    "positions": [
+      {
+        "cin": "U28910GJ1974PLC002505",
+        "company_name": "BHARAT FORGE ANDPRESS INDUSTRIES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74120GJ1992PTC017489",
+        "company_name": "BHARAT TECHNO FORGE INDUSTRIES PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T02:52:45.556608"
+  },
+  {
+    "name": "BHANU PRAKASH SRIVASTAVA",
+    "din": "09578183",
+    "positions": [
+      {
+        "cin": "U32100PN1990GOI058096",
+        "company_name": "BEL OPTRONIC DEVICES LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "L32309KA1954GOI000787",
+        "company_name": "BHARAT ELECTRONICS LIMITED",
+        "designation": "Whole-time director"
+      },
+      {
+        "cin": "U32106KA2014GOI076102",
+        "company_name": "BEL-THALES SYSTEMS LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U73100KA2017NPL102118",
+        "company_name": "DEFENCE INNOVATION ORGANISATION",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T21:57:59.478871"
+  },
+  {
+    "name": "MANOJ JAIN",
+    "din": "09749046",
+    "positions": [
+      {
+        "cin": "U73100KA2017NPL102118",
+        "company_name": "DEFENCE INNOVATION ORGANISATIO",
+        "designation": "Director"
+      },
+      {
+        "cin": "L32309KA1954GOI000787",
+        "company_name": "BHARAT ELECTRONICS LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U32100PN1990GOI058096",
+        "company_name": "BEL OPTRONIC DEVICES LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U31909KA1996PTC020482",
+        "company_name": "GE BE PRIVATE LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U32106KA2014GOI076102",
+        "company_name": "BEL-THALES SYSTEMS LIMITED",
+        "designation": "Nominee Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:00:29.147171"
+  },
+  {
+    "name": "MRUTYUNJAYA SIVA KUMAR LINGAM MAKUTAM",
+    "din": "09450599",
+    "positions": [
+      {
+        "cin": "L35202KA1964GOI001530",
+        "company_name": "BEML LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U46521AP2025PTC117745",
+        "company_name": "ADHVAYA SEMICON DESIGN AND TECHNOLOGIES PRIVATE LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U46521AP2025PTC117736",
+        "company_name": "SMSEMICON DESIGN AND TECHNOLOGIES PRIVATE LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U88900DL2023NPL424208",
+        "company_name": "GLOBAL ECONOMIC TRADE AND BUSINESS COUNCIL",
+        "designation": "Additional Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:03:12.771147"
+  },
+  {
+    "name": "VIKAS RAMKRISHNA KAKATKAR",
+    "din": "02372234",
+    "positions": [
+      {
+        "cin": "L35202KA1964GOI001530",
+        "company_name": "BEML LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U85100MH1989PTC051426",
+        "company_name": "JAI HOSPITALS PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:05:07.223839"
+  },
+  {
+    "name": "SUNIL KRISHNA MURTHY DEVANAHALLI",
+    "din": "09639264",
+    "positions": [
+      {
+        "cin": "U73100KA2017NPL102118",
+        "company_name": "DEFENCE INNOVATION ORGANISATION",
+        "designation": "Director"
+      },
+      {
+        "cin": "U80301KA2014NPL076367",
+        "company_name": "AEROSPACE AND AVIATION SECTOR SKILL COUNCIL",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "L35301KA1963GOI001622",
+        "company_name": "HINDUSTAN AERONAUTICS LIMITED",
+        "designation": "Managing Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:07:31.084653"
+  },
+  {
+    "name": "AMIT SATIJA",
+    "din": "08989543",
+    "positions": [
+      {
+        "cin": "L35301KA1963GOI001622",
+        "company_name": "HINDUSTAN AERONAUTICS LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U73100KA2017NPL102118",
+        "company_name": "DEFENCE INNOVATION ORGANISATION",
+        "designation": "Additional Director"
+      },
+      {
+        "cin": "L14292TG1973GOI001660",
+        "company_name": "MISHRA DHATU NIGAM LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U29190PN2021GOI203505",
+        "company_name": "MUNITIONS INDIA LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U63032GA1967GOI000077",
+        "company_name": "GOA SHIPYARD LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "L24292TG1970GOI001353",
+        "company_name": "BHARAT DYNAMICS LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "L35100MH1934GOI002079",
+        "company_name": "MAZAGON DOCK SHIPBUILDERS LIMITED",
+        "designation": "Nominee Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:12:58.032835"
+  },
+  {
+    "name": "VIPUL AGARWAL",
+    "din": "08763133",
+    "positions": [
+      {
+        "cin": "U75230GJ2023PLC138578",
+        "company_name": "ARMADA DEFENCE SYSTEMS LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U29270KA2005PTC035552",
+        "company_name": "MICROWAVE AND OPTRONICS SYSTEMS PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U35115GJ2015PLC083876",
+        "company_name": "ADANI AEROSPACE AND DEFENCE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74140KA2003PTC032191",
+        "company_name": "ALPHA DESIGN TECHNOLOGIES PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:26:40.705218"
+  },
+  {
+    "name": "THIRUVENGADAM PARTHASARATHI",
+    "din": "00016375",
+    "positions": [
+      {
+        "cin": "L85110KA1993PLC013869",
+        "company_name": "CENTUM ELECTRONICS LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U29308KA2018PTC116823",
+        "company_name": "AMACE SOLUTIONS PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U24119KA1994PTC016163",
+        "company_name": "MARGO BIOCONTROLS PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:31:23.985809"
+  },
+  {
+    "name": "VELAGAPUDI KAVITHA DUTT",
+    "din": "00139274",
+    "positions": [
+      {
+        "cin": "L85110KA1993PLC013869",
+        "company_name": "CENTUM ELECTRONICS LIMITED",
+        "designation": "Additional Director"
+      },
+      {
+        "cin": "U24230TG1996PLC023232",
+        "company_name": "BHARAT BIOTECH INTERNATIONAL LIMITED",
+        "designation": "Additional Director"
+      },
+      {
+        "cin": "L74899DL1989PLC035140",
+        "company_name": "DCM SHRIRAM INDUSTRIES LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:34:12.965914"
+  },
+  {
+    "name": "BEJOY BHASKER",
+    "din": "08103825",
+    "positions": [
+      {
+        "cin": "U27209TN1984GOI010994",
+        "company_name": "UDUPI COCHIN SHIPYARD LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "L63032KL1972GOI002414",
+        "company_name": "COCHIN SHIPYARD LIMITED",
+        "designation": "Whole-time director"
+      },
+      {
+        "cin": "U35900WB2017GOI223197",
+        "company_name": "HOOGHLY COCHIN SHIPYARD LIMITED",
+        "designation": "Nominee Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:38:32.519052"
+  },
+  {
+    "name": "NIKHIL NIRMAL JAIN",
+    "din": "07854798",
+    "positions": [
+      {
+        "cin": "U29253MH2012PTC238456",
+        "company_name": "MAZAGON DOCK PIPAVAV DEFENCE PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U85305MH2023PTC407869",
+        "company_name": "DHIRUBHAI AMBANI LAW INSTITUTE PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U85306MH2023PTC407490",
+        "company_name": "DHIRUBHAI AMBANI ACADEMIES PRIVATE LIMITE",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74999MH2020PTC351168",
+        "company_name": "RISEE CUSTODIAN SERVICES PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:41:59.481855"
+  },
+  {
+    "name": "BASAVRAJ PRABHAKAR KALYANI",
+    "din": "00267202",
+    "positions": [
+      {
+        "cin": "L25209PN1961PLC012046",
+        "company_name": "BHARAT FORGE LTD",
+        "designation": "Whole-time director"
+      },
+      {
+        "cin": "U65993MH1991PTC059776",
+        "company_name": "POINSETTIA INVESTMENT PRIVATE LTD",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:44:48.177730"
+  },
+  {
+    "name": "AMIT BABASAHEB KALYANI",
+    "din": "00089430",
+    "positions": [
+      {
+        "cin": "L25209PN1961PLC012046",
+        "company_name": "BHARAT FORGE LTD",
+        "designation": "Whole-time director"
+      },
+      {
+        "cin": "U29128DL2010PLC197806",
+        "company_name": "KALYANI ALSTOM POWER LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "L24200MH1988PTC048028",
+        "company_name": "HIKAL LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "L27104MH1973PLC016350",
+        "company_name": "KALYANI STEELS LTD",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T22:57:39.175998"
+  },
+  {
+    "name": "BANMALI AGRAWALA",
+    "din": "00120029",
+    "positions": [
+      {
+        "cin": "U74120TG2015PLC101585",
+        "company_name": "TATA BOEING AEROSPACE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U29268TG2010PLC077940",
+        "company_name": "TATA LOCKHEED MARTIN AEROSTRUCTURES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74990TG2008PLC077969",
+        "company_name": "TATA LOCKHEED MARTIN AEROSTRUCTURES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U72900TG2006PLC077939",
+        "company_name": "TATA ADVANCED SYSTEMS LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T23:02:16.817718"
+  },
+  {
+    "name": "SUKARAN SINGH",
+    "din": "01485745",
+    "positions": [
+      {
+        "cin": "U72900TG2006PLC077939",
+        "company_name": "TATA ADVANCED SYSTEMS LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U85110KA1989PLC013224",
+        "company_name": "TATA ADVANCED MATERIALS LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U29268TG2010PLC077940",
+        "company_name": "TATA LOCKHEED MARTIN AEROSTRUCTURES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74120TG2015PLC101585",
+        "company_name": "TATA BOEING AEROSPACE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-11T23:05:37.224346"
+  },
+  {
+    "name": "ABANTI SANKARANARAYANAN",
+    "din": "01788443",
+    "positions": [
+      {
+        "cin": "U63033MH2008PTC179520",
+        "company_name": "MAHINDRA AEROSPACE PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U30400MH2025PLC444920",
+        "company_name": "MAHINDRA ADVANCED TECHNOLOGIES LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U35122MH2011PTC212744",
+        "company_name": "MAHINDRA AEROSTRUCTURES PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U75220MH2012PLC233889",
+        "company_name": "MAHINDRA DEFENCE SYSTEMS LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T01:51:29.357460"
+  },
+  {
+    "name": "ARVIND KUMAR MEHRA",
+    "din": "01039769",
+    "positions": [
+      {
+        "cin": "U35122MH2011PTC212744",
+        "company_name": "MAHINDRA AEROSTRUCTURES PRIVATE LIMITED",
+        "designation": "CEO"
+      },
+      {
+        "cin": "U63033MH2008PTC179520",
+        "company_name": "MAHINDRA AEROSPACE PRIVATE LIMITED",
+        "designation": "CEO"
+      },
+      {
+        "cin": "U68100DL2006PTC151588",
+        "company_name": "LATENT LIGHT ESTATES PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T01:55:26.908822"
+  },
+  {
+    "name": "RUZBEH BAMAN IRANI",
+    "din": "01831944",
+    "positions": [
+      {
+        "cin": "U75220MH2012PLC233889",
+        "company_name": "MAHINDRA DEFENCE SYSTEMS LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U34101MH1996PLC325507",
+        "company_name": "MAHINDRA ELECTRIC MOBILITY LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U30400MH2025PLC444920",
+        "company_name": "MAHINDRA ADVANCED TECHNOLOGIES LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T01:58:54.455890"
+  },
+  {
+    "name": "RAMAKRISHNA CHITTURI",
+    "din": "09712409",
+    "positions": [
+      {
+        "cin": "U40101ML2009SGC008392",
+        "company_name": "MEGHALAYA POWER GENERATION CORPORATION LIMITED",
+        "designation": "CFO"
+      },
+      {
+        "cin": "U85300ML2022SGC013895",
+        "company_name": "MEGHALAYAN MEDICAL DRUGS AND SERVICES LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U40101ML2009SGC008393",
+        "company_name": "MEGHALAYA POWER TRANSMISSION CORPORATION LIMITED",
+        "designation": "CFO"
+      }
+    ],
+    "created_date": "2025-06-12T02:02:00.984849"
+  },
+  {
+    "name": "KAVYA GORLA",
+    "din": "06407238",
+    "positions": [
+      {
+        "cin": "L72200TG1997PLC026556",
+        "company_name": "APOLLO MICRO SYSTEMS LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74999TG2019PTC129496",
+        "company_name": "SPITFIRE FORGINGS PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U28121TN2012PTC088636",
+        "company_name": "ANTARES FORGE PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T02:06:19.993362"
+  },
+  {
+    "name": "KARUNAKAR REDDY BADDAM",
+    "din": "00790139",
+    "positions": [
+      {
+        "cin": "L72200TG1997PLC026556",
+        "company_name": "APOLLO MICRO SYSTEMS LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U26109TS2024PTC191803",
+        "company_name": "APOLLO STRATEGIC TECHNOLOGIES PRIVATE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U26109TS2023PTC177370",
+        "company_name": "APOLLO DEFENCE INDUSTRIES PRIVATE LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T02:08:52.840623"
+  },
+  {
+    "name": "SOWMYAN RAMAKRISHNAN",
+    "din": "00005090",
+    "positions": [
+      {
+        "cin": "L72200TN1998PLC061236",
+        "company_name": "DATA PATTERNS (INDIA) LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U40106MH1989PLC330738",
+        "company_name": "TATA POWER SOLAR SYSTEMS LIMITED",
+        "designation": "Alternate Director"
+      },
+      {
+        "cin": "U65990MH1979PLC021037",
+        "company_name": "AF-TAAB INVESTMENT COMPANY LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T02:12:44.506954"
+  },
+  {
+    "name": "SASTRY VENKATA RAMA VADLAMANI",
+    "din": "00027875",
+    "positions": [
+      {
+        "cin": "L72200TN1998PLC061236",
+        "company_name": "DATA PATTERNS (INDIA) LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U74999KA2017PLC099774",
+        "company_name": "TUMAKURU SMART CITY LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U31402AP1999PLC032257",
+        "company_name": "AMARA RAJA ELECTRONICS LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T02:16:14.387875"
+  },
+  {
+    "name": "HARIKISHORE SUBRAMANIAN",
+    "din": "06622304",
+    "positions": [
+      {
+        "cin": "U29299KL1989PLC005405",
+        "company_name": "BRAHMOS AEROSPACE THIRUVANANTHAPURAM LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U14109KL1972SGC002399",
+        "company_name": "THE KERALA MINERALS AND METALS LIMITED",
+        "designation": "Nominee Director"
+      },
+      {
+        "cin": "U26941KL1978SGC002975",
+        "company_name": "MALABAR CEMENTS LTD",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T02:23:43.924929"
+  },
+  {
+    "name": "UMESH CHOWDHARY",
+    "din": "00313652",
+    "positions": [
+      {
+        "cin": "L27320WB1997PLC084819",
+        "company_name": "TITAGARH RAIL SYSTEMS LIMITED",
+        "designation": "Managing Director"
+      },
+      {
+        "cin": "U30200WB1997PLC082919",
+        "company_name": "SHIVALIKS MERCANTILE LIMITED",
+        "designation": "Director"
+      },
+      {
+        "cin": "U40109WB2007SGC113473",
+        "company_name": "WEST BENGALSTATE ELECTRICITY DISTRIBUTION COMPANY LIMITED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-12T02:32:18.519259"
+  }
+]

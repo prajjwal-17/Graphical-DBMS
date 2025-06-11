@@ -1,0 +1,3371 @@
+[
+  {
+    "company_name": "U AND I RESORTS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02533987",
+        "name": "MARK DOUGLAS HILL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08703371",
+        "name": "CHITRASAN RAI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T01:25:49.439558"
+  },
+  {
+    "company_name": "INFO INDIA TOUR AND HOLIDAYS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08618271",
+        "name": "MANIVANNAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08618272",
+        "name": "RAJ BHUSAN MAHATO",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T01:28:40.009546"
+  },
+  {
+    "company_name": "GRETECH ENGINEERS AND BUILDERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08241582",
+        "name": "GURJIT SINGH GREWAL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08241683",
+        "name": "MANMOHAN SINGH GREWAL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08241581",
+        "name": "GAGANDEEP SINGH GREWAL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08300032",
+        "name": "KHUSHWANT SINGH GREWAL",
+        "designation": "Additional Director"
+      }
+    ],
+    "created_date": "2025-06-08T01:41:45.483913"
+  },
+  {
+    "company_name": "DIGITAL ARTS TECHNOLOGIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07231186",
+        "name": "PRASIDH KUMAR SHAHI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07231189",
+        "name": "RANA PRATAP SHAHI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T01:49:21.787471"
+  },
+  {
+    "company_name": "GET N GO STORES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09745429",
+        "name": "SALMA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09745430",
+        "name": "GAURAV SINGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T13:42:45.545840"
+  },
+  {
+    "company_name": "CORAL ISLAND BEACH RESORT PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08147367",
+        "name": "ATTOORAYIL KUNJU MOHAMMED",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08147368",
+        "name": "ATOORAYIL KUNJU MUBARAK",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T13:45:03.978867"
+  },
+  {
+    "company_name": "ANDAMAN TOURIST COTTAGE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "00000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T13:46:20.168360"
+  },
+  {
+    "company_name": "RAJARAJ PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10249091",
+        "name": "SUBRAMANIAN KADIRVEL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T13:47:11.452362"
+  },
+  {
+    "company_name": "MALIK INFRASTRUCTURE (INDIA) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01921227",
+        "name": "ARUN SINGH MALIK",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "02152909",
+        "name": "REENA MALIK",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T13:48:33.474092"
+  },
+  {
+    "company_name": "MAINLAND HEALTHCARE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07404605",
+        "name": "ABDUL HAKEEM PILASSERY",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09425272",
+        "name": "PRABHU KANCHI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09425293",
+        "name": "THORAKKADAL MOHAMMED SHAHID",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T13:50:08.451298"
+  },
+  {
+    "company_name": "PROGRAA TECHNOLOGIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09207452",
+        "name": "ALURI SWATHI KRISHNA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09007536",
+        "name": "ANILKUMAR KAKANI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T13:51:57.661328"
+  },
+  {
+    "company_name": "KSHETRA INFRACON PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07950047",
+        "name": "SNAJEEVA KUMAR METIKELA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07063276",
+        "name": "METIKELA NIRANJAN KUMAR",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09118792",
+        "name": "TEKULAPALLI ARCHANA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T14:00:50.008542"
+  },
+  {
+    "company_name": "HINDUSTAN SHIPYARD LIMITED",
+    "directors": [
+      {
+        "din_pan": "07768750",
+        "name": "HEMANT KHATRI",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "09466299",
+        "name": "CAPTAIN GIRIDEEP SINGH",
+        "designation": "Whole-time Director"
+      },
+      {
+        "din_pan": "10042888",
+        "name": "SHALABH TYAGI",
+        "designation": "Nominee Director"
+      }
+    ],
+    "created_date": "2025-06-08T14:19:05.755184"
+  },
+  {
+    "company_name": "ELECTRONICS CORPORATION OF INDIA LIMITED",
+    "directors": [
+      {
+        "din_pan": "09606063",
+        "name": "ANESH KUMAR SHARMA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09751218",
+        "name": "ANURAG KUMAR",
+        "designation": "Managing Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:06:59.969094"
+  },
+  {
+    "company_name": "MISHRA DHATU NIGAM LIMITED",
+    "directors": [
+      {
+        "din_pan": "09561611",
+        "name": "VALLIKKAT THANAYANKIZHIL REMA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09636771",
+        "name": "THULASIRAMAN MUTHUKUMAR",
+        "designation": "Whole-time director"
+      },
+      {
+        "din_pan": "11065319",
+        "name": "NARAYANAMURTY SUSARLA VENKATA SURYA",
+        "designation": "Managing Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:13:07.947131"
+  },
+  {
+    "company_name": "SRESHTA CONSTRUCTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02969956",
+        "name": "TULASI RAJESH YARLAGADDA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07593162",
+        "name": "PRABHAKARA RAO KOLAMURI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:14:24.745647"
+  },
+  {
+    "company_name": "VSD INFRA AND LAND DEVELOPERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08022809",
+        "name": "RAMA DUVVADA",
+        "designation": "Additional Director"
+      },
+      {
+        "din_pan": "07938582",
+        "name": "SRINIVAS DUVVADA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:16:54.851250"
+  },
+  {
+    "company_name": "GNL CONSTRUCTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06696536",
+        "name": "GANGA RAJU YELETI",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "08011145",
+        "name": "NAGA LAKSHMI VASAMSETTI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:19:21.821450"
+  },
+  {
+    "company_name": "REDMOON PROJECTS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08435998",
+        "name": "RAMESH CHOWADAVARAPU",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08358745",
+        "name": "DUPAGUNTLASRINIVASARAO",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:23:39.941528"
+  },
+  {
+    "company_name": "PAWANI INFRATECH PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08660018",
+        "name": "LAKSHMAMMA ARIBOINA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08660019",
+        "name": "ARIBOINA PAVANI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:25:54.627272"
+  },
+  {
+    "company_name": "MEESALA SREENIVASA CONSTRUCTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08691590",
+        "name": "CHINNA SAI PRATHAP MEESALA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08691589",
+        "name": "SREENIVASULU MEESALA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:27:05.033036"
+  },
+  {
+    "company_name": "ARUNACHAL CABLES AND CONDUCTORS PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:29:28.767058"
+  },
+  {
+    "company_name": "TRANS STRUCTURES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06736590",
+        "name": "YATING BYALING",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "03107501",
+        "name": "DAYA NAND THAKUR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:30:41.835393"
+  },
+  {
+    "company_name": "DANGLAT ENTERPRISES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09718434",
+        "name": "SOTAI KRI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:31:51.982243"
+  },
+  {
+    "company_name": "GOODWILL LEGACY PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08822311",
+        "name": "JAUGAWNG PISI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08822312",
+        "name": "JANGAI PISI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:33:40.296048"
+  },
+  {
+    "company_name": "DIBANG AGRO FARMERS PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "09113334",
+        "name": "LONGNI SARING",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09113336",
+        "name": "TONI BORANG",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:34:56.989089"
+  },
+  {
+    "company_name": "HIMALAYAN MINERAL INDUSTRIES INTERNATIONAL PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:35:49.152995"
+  },
+  {
+    "company_name": "COLLINSDARAK AGRO FARMERS PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "10213135",
+        "name": "PUPE BOJE",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10213136",
+        "name": "KARBOM POTOM",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:37:40.007686"
+  },
+  {
+    "company_name": "WAKKA AGRO NAVKRISHAK FARMERS PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "10217644",
+        "name": "GANGLANG PANSA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10217645",
+        "name": "KAPHO YANGBA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:52:26.317084"
+  },
+  {
+    "company_name": "NAFRA KIWIAGRO FARMERS PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "10711359",
+        "name": "KARMA T KHUNJUJU",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10711360",
+        "name": "KUMMUNG TAKU",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:53:40.166238"
+  },
+  {
+    "company_name": "KON INTEGRATED FISHERY-LIVESTOCK & AGRO- BASED FARM PVT.LTD.",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:54:40.933334"
+  },
+  {
+    "company_name": "SUN MOON STAR MULTI TRADE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02878733",
+        "name": "DHANJIT KALITA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "02878715",
+        "name": "DHRUBAJYOTI DAS",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:55:53.440672"
+  },
+  {
+    "company_name": "SATYAM SIVAM SUNDARAM MULTILINK MARKETING PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02895748",
+        "name": "HITESWAR RABHA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "02912083",
+        "name": "BIJU RABHA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:57:49.695548"
+  },
+  {
+    "company_name": "FRIENDS ENTRADE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02964092",
+        "name": "SHAILEN GOSWAMI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "02965078",
+        "name": "NAYAN KALITA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T15:58:52.824393"
+  },
+  {
+    "company_name": "DREAM LIFE COMMTRADE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02964667",
+        "name": "SAFIQUL ISLAM",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "02964668",
+        "name": "FAIJUR RAHMAN",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:00:00.974587"
+  },
+  {
+    "company_name": "BIKRAM ADITYA DISTRIBUTORS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01809335",
+        "name": "AMITABH DAS",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "01809371",
+        "name": "SOBHA DAS",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:01:19.188304"
+  },
+  {
+    "company_name": "NUMALI ENTERPRISES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07606870",
+        "name": "MEENA PAREEK",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07585184",
+        "name": "VIJAY KUMAR PAREEK",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:02:29.491162"
+  },
+  {
+    "company_name": "DEBA ENTERPRISE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05319785",
+        "name": "BABUL KUMAR DAS",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "05319821",
+        "name": "DEBI DAS",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:03:34.705104"
+  },
+  {
+    "company_name": "RAGVIK TECHNOLOGIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06503745",
+        "name": "CHIRANJIB CHAKRABORTY",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08219345",
+        "name": "MADHUCHHANDA CHAKRABORTY",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:04:46.849501"
+  },
+  {
+    "company_name": "KRISHIKA RENTAL SERVICES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06513511",
+        "name": "RAJESH KUMAR SINGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:05:49.556177"
+  },
+  {
+    "company_name": "PERKY ENTERPRISES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08585413",
+        "name": "RESHMA HAZARIKA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "02995531",
+        "name": "ABHISHEK HAZARIKA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:06:54.888614"
+  },
+  {
+    "company_name": "RIFAH ASSOCIATES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05102753",
+        "name": "NASIR JAMAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:09:22.518563"
+  },
+  {
+    "company_name": "SHIVANSH DEVELOPERS AND CONSTRUCTION PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05100713",
+        "name": "SHEO KUMAR GUPTA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:11:24.059605"
+  },
+  {
+    "company_name": "RADHE KRISHNA CITY HOMES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05126361",
+        "name": "DEV SHANKAR SINGH",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06890014",
+        "name": "ARNIKA KUMARI",
+        "designation": "Additional Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:12:46.125966"
+  },
+  {
+    "company_name": "SMART CHALLENGE INFRASTRUCTURE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05145867",
+        "name": "ANITA PRAKASH",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "05145888",
+        "name": "INDRADEV SIGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:13:54.206005"
+  },
+  {
+    "company_name": "SKYLARK HOUSING & INFRASTRUCTURE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05147615",
+        "name": "RANJANA MEHTA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "05146423",
+        "name": "RAJNISH SINGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:14:51.340386"
+  },
+  {
+    "company_name": "AMPLE INFRACON PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05215347",
+        "name": "ANIL KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:15:33.790613"
+  },
+  {
+    "company_name": "R N SONS CONSTRUCTION PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05160221",
+        "name": "RAGHUNANDAN SINGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:19:26.208135"
+  },
+  {
+    "company_name": "SHREE KESHAV KRISHNA INFRASTRUCTURES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05236525",
+        "name": "KRISHNA MOHAN PASWAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "05238433",
+        "name": "SANJAY KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:21:13.892155"
+  },
+  {
+    "company_name": "HARI OM CONTRACTORS AND DEVELOPERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05267228",
+        "name": "UMESH RAM",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "05267968",
+        "name": "AMIT KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:22:06.926964"
+  },
+  {
+    "company_name": "OMSAIRAM CONSTRUCTION PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06407846",
+        "name": "RAJ CHHAVIRAJ",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06407852",
+        "name": "AMARJEET KUMAR RAJ",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:23:24.049142"
+  },
+  {
+    "company_name": "BARBACOA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06740202",
+        "name": "AMIT SINGH JASWAL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06740207",
+        "name": "MOHINDER PAL SINGH",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06740208",
+        "name": "NAVEEN BALA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:24:51.654046"
+  },
+  {
+    "company_name": "FATBELLY FOODS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08380805",
+        "name": "AMITA RANI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:26:00.991168"
+  },
+  {
+    "company_name": "RATAN-G FOOD SOLUTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08380805",
+        "name": "AMITA RANI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:26:34.166298"
+  },
+  {
+    "company_name": "ANUPAM RESTAURANT AND SWEETS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "00782108",
+        "name": "DARSHAN KUMAR",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00782131",
+        "name": "RAVINDER KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:27:38.874646"
+  },
+  {
+    "company_name": "OPTIFUSION VENTURES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02499654",
+        "name": "HARPREET CHEEMA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "02483622",
+        "name": "ARJINDER PAL SINGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:29:34.114173"
+  },
+  {
+    "company_name": "BASANT PLANTATIONS LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:30:32.980695"
+  },
+  {
+    "company_name": "BHARAT ARTHIK PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05349396",
+        "name": "AKUL MONGIA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06368617",
+        "name": "RENU MONGIA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:31:51.796589"
+  },
+  {
+    "company_name": "SHIV SHAKTI PLANTATIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:32:57.471637"
+  },
+  {
+    "company_name": "PUNJAB MILKCHEM LIMITED",
+    "directors": [
+      {
+        "din_pan": "05168844",
+        "name": "VIKAS THAPAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:34:16.105983"
+  },
+  {
+    "company_name": "EVERSHINE INFRASTRUCTURE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:35:21.933591"
+  },
+  {
+    "company_name": "ROYAL CEILINGS & PANELS PVT LTD",
+    "directors": [
+      {
+        "din_pan": "00017973",
+        "name": "ARVIND DAMJI SANGOI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00018096",
+        "name": "DILIP SANGOI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:39:48.470369"
+  },
+  {
+    "company_name": "CHHATRAPAL CEMENT LIMITED",
+    "directors": [
+      {
+        "din_pan": "08393394",
+        "name": "MANISH KHARE",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T16:41:31.079734"
+  },
+  {
+    "company_name": "OCAI CONCRETE PVT LTD",
+    "directors": [
+      {
+        "din_pan": "00055585",
+        "name": "SANGITA AGARWAL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00060955",
+        "name": "BHAGWATI PRASAD AGARWAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:24:40.213552"
+  },
+  {
+    "company_name": "DYNAMIX CONCRETE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09826617",
+        "name": "TANMAY VERMA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:26:12.810254"
+  },
+  {
+    "company_name": "COSMOS SPONGE AND POWER LIMITED",
+    "directors": [
+      {
+        "din_pan": "09010760",
+        "name": "ANJNI KUMAR PANDEY",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09465870",
+        "name": "SHASHI PANDEY",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:27:21.295420"
+  },
+  {
+    "company_name": "GOS STEEL (INDIA) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01572092",
+        "name": "SUNIL KUMAR KEDIA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:28:15.822446"
+  },
+  {
+    "company_name": "SHRI KRISHNA LOHA ISPAT PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "03115558",
+        "name": "VIKAS GUPTA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07390004",
+        "name": "ADITYA GUPTA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:33:09.997667"
+  },
+  {
+    "company_name": "GOENKA FERRO CHEM PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01561458",
+        "name": "NIDHI GOENKA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:34:06.308386"
+  },
+  {
+    "company_name": "SANKALP ISPAT (INDIA) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08639096",
+        "name": "RADHA RAMAN PALIWAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:36:07.732202"
+  },
+  {
+    "company_name": "INDUSTRIAL TECHNICAL CONSULTANT PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "00214193",
+        "name": "SUNDARAM NARAYANAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00530657",
+        "name": "KAVITA SHARMA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:42:54.827154"
+  },
+  {
+    "company_name": "RANA TRADERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07152196",
+        "name": "RAFAT ARA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:44:38.158064"
+  },
+  {
+    "company_name": "ADVANCED WEAPONS AND EQUIPMENT INDIA LIMITED",
+    "directors": [
+      {
+        "din_pan": "09282230",
+        "name": "AKHILESH KUMAR MAURYA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10824241",
+        "name": "JAI GOPAL MAHAJAN",
+        "designation": "Whole-time Director"
+      }
+    ],
+    "created_date": "2025-06-08T22:52:31.123022"
+  },
+  {
+    "company_name": "ARMOURED VEHICLES NIGAM LIMITED",
+    "directors": [
+      {
+        "din_pan": "09282313",
+        "name": "BISWARANJAN PATTANAIK",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09282314",
+        "name": "SANJAY DWIVEDI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10881164",
+        "name": "GARIMA BHAGAT",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-08T23:13:32.560872"
+  },
+  {
+    "company_name": "GLIDERS INDIA LIMITED",
+    "directors": [
+      {
+        "din_pan": "10925943",
+        "name": "MARIMUTHU CHANDRAN BALASUBRAMANIAM",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "11033158",
+        "name": "SIBA PRASAD PATNAIK",
+        "designation": "Whole-time Director"
+      }
+    ],
+    "created_date": "2025-06-08T23:21:04.442033"
+  },
+  {
+    "company_name": "RIVIERA CLOTHING PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T12:48:43.237545"
+  },
+  {
+    "company_name": "TARGET CREATIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08539737",
+        "name": "HARDEV SINGH",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08539773",
+        "name": "KANTA SHAHI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T12:50:03.877553"
+  },
+  {
+    "company_name": "SHREE NATH FABCARE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01553521",
+        "name": "KUSUM AGARWAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T12:51:50.208472"
+  },
+  {
+    "company_name": "RAVISH GARMENTS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01293097",
+        "name": "RAKESH TUTEJA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T12:52:35.487381"
+  },
+  {
+    "company_name": "SHRI LUXMI TEXTILE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08683992",
+        "name": "SACHIN CHAUDHARY",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T12:53:38.496826"
+  },
+  {
+    "company_name": "VEDALA FASHIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02223454",
+        "name": "MUNISH OHRI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T12:55:09.980571"
+  },
+  {
+    "company_name": "PRAKASH TEXTILES INDUSTRIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T12:55:58.274425"
+  },
+  {
+    "company_name": "AURIC EXPORTS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T12:56:41.498579"
+  },
+  {
+    "company_name": "GOA SHIPYARD LIMITED",
+    "directors": [
+      {
+        "din_pan": "08630668",
+        "name": "JAGMOHAN",
+        "designation": "Whole-time Director"
+      },
+      {
+        "din_pan": "09750279",
+        "name": "SUNIL SHIVALING BAG",
+        "designation": "Whole-time Director"
+      },
+      {
+        "din_pan": "08852107",
+        "name": "BRAJESH KUMAR UPADHYAY",
+        "designation": "Managing Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:01:47.370285"
+  },
+  {
+    "company_name": "ILHAS INFRASTRUCTURE AND REALTY PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07632191",
+        "name": "KEZYA DE BRAGANCA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:03:12.753559"
+  },
+  {
+    "company_name": "BENAULIM MEDICARE PVT. LTD.",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:04:24.480676"
+  },
+  {
+    "company_name": "PARLE PLASTICS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:05:29.994798"
+  },
+  {
+    "company_name": "ATANU TRADING PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:06:42.181161"
+  },
+  {
+    "company_name": "GOA PLYWOOD AND PAPERS MILLS LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:08:06.090458"
+  },
+  {
+    "company_name": "SHRI MANGUIRISH PAPERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:09:30.929639"
+  },
+  {
+    "company_name": "NASAN MEDICAL SYSTEMS LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:11:12.317337"
+  },
+  {
+    "company_name": "SCORING PLASTICS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:12:08.074433"
+  },
+  {
+    "company_name": "ADANI AEROSPACE AND DEFENCE LIMITED",
+    "directors": [
+      {
+        "din_pan": "00137888",
+        "name": "JATINKUMAR RAMESHCHANDRA JALUNDHWALA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00007116",
+        "name": "AMEETKUMAR HIRANYAKUMAR DESAI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:16:21.157310"
+  },
+  {
+    "company_name": "BHARAT FORGE ANDPRESS INDUSTRIES LIMITED",
+    "directors": [
+      {
+        "din_pan": "02242307",
+        "name": "NIRANJAN JANI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:19:51.758733"
+  },
+  {
+    "company_name": "KINJU SWEET & NAMKEEN PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09615678",
+        "name": "DAXITBHAI NITESHBHAI KATHIRIYA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:48:24.562587"
+  },
+  {
+    "company_name": "J B MASALA PRODUCT PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10381997",
+        "name": "VIKAS BAKSHI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:50:15.521852"
+  },
+  {
+    "company_name": "PATEL ORGANIX PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07066567",
+        "name": "KRUNAL ARVINDBHAI PATEL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:51:55.816272"
+  },
+  {
+    "company_name": "FISHELLY PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10254786",
+        "name": "SHOBHNABEN VALLABHBHAI SHIYANI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:52:58.702936"
+  },
+  {
+    "company_name": "AGRIDATA PROTEIN PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10952672",
+        "name": "MANISH MANSUKHBHAI PADSHALA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:54:25.584648"
+  },
+  {
+    "company_name": "FINEST FOOD ENTERPRISE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07855275",
+        "name": "SETU RUSHI PARIKH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:55:32.371430"
+  },
+  {
+    "company_name": "SURTI GOLI SODA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09627362",
+        "name": "MANOJBHAI CHAUHAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10974061",
+        "name": "SACHIN ASHOK PATIL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:56:27.481775"
+  },
+  {
+    "company_name": "SARKOSI ENERGY PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01974312",
+        "name": "SURYA JYOTHI CHAKKA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:57:12.825654"
+  },
+  {
+    "company_name": "IKUKO CONSULTING PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08336527",
+        "name": "SOURABH RAJPAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:58:45.331948"
+  },
+  {
+    "company_name": "AMERISAFE FINANCIAL SOLUTIONS (OPC) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06664573",
+        "name": "CHANDRAMOHAN DUBE",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T13:59:49.357779"
+  },
+  {
+    "company_name": "NIPONO INTERNATIONAL PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09331636",
+        "name": "DEEPAK KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T14:00:39.058481"
+  },
+  {
+    "company_name": "UNIVERSAL PRIDE INTERIORS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06868542",
+        "name": "NITIN MEHANDIA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T14:01:26.195356"
+  },
+  {
+    "company_name": "ENESTOCK PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09677979",
+        "name": "VIKAS",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T14:02:17.135049"
+  },
+  {
+    "company_name": "ACME INTERIORS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01509509",
+        "name": "ANJALI CHAWLA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "05287918",
+        "name": "RAJ CHAWLA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T14:03:11.178955"
+  },
+  {
+    "company_name": "NU-RIK INTERIORS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06858629",
+        "name": "SHIV RAJ",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T14:03:58.235073"
+  },
+  {
+    "company_name": "INDO BRITISH ENGG.CO PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T14:04:59.613309"
+  },
+  {
+    "company_name": "SEARCH ONLINE COMMUNICATIONS OPC PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05291194",
+        "name": "SNEH LATA JHAMB",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T14:05:51.384717"
+  },
+  {
+    "company_name": "REGAL VERACITY (OPC) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10228029",
+        "name": "AMARNATH SINGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T14:06:48.000672"
+  },
+  {
+    "company_name": "HIMALAYAN HERBS & SPICE (OPC) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06963947",
+        "name": "MAHENDRA PRASAD SAMAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:48:08.458492"
+  },
+  {
+    "company_name": "RIDIMA FARMING FARMER PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "09564035",
+        "name": "MUNISH CHAND",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09564036",
+        "name": "MUNISH KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:49:14.620802"
+  },
+  {
+    "company_name": "IND SPHINX PRECISION LTD",
+    "directors": [
+      {
+        "din_pan": "00231787",
+        "name": "SUNIL TANEJA",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "05311640",
+        "name": "RONUK TANEJA",
+        "designation": "Whole-time Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:50:44.701273"
+  },
+  {
+    "company_name": "TARJUGI NARAYAN PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10423283",
+        "name": "YOG RAJ",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:51:21.679025"
+  },
+  {
+    "company_name": "DHARMA WIRES PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:52:25.858279"
+  },
+  {
+    "company_name": "JSTI TRANSFORMERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09680853",
+        "name": "AMIT SOLANKI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09167318",
+        "name": "STEPHANE GERARD MARIE GIRAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:53:17.031958"
+  },
+  {
+    "company_name": "UJJAWALPROO INDIA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08962075",
+        "name": "SURENDER KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:54:34.442378"
+  },
+  {
+    "company_name": "AEROWIN INDUSTRIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02293454",
+        "name": "RAJESH NAREDI KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:55:21.897868"
+  },
+  {
+    "company_name": "UNITED TOYS PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:56:13.726889"
+  },
+  {
+    "company_name": "BRINGLETECH PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10530077",
+        "name": "OJASWI BAROTIA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T16:57:02.920969"
+  },
+  {
+    "company_name": "SALIM INFRASTRUCTURE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08795831",
+        "name": "ALTAF SALIM KHAN",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T19:53:25.961467"
+  },
+  {
+    "company_name": "EXTRA BOOM PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09589785",
+        "name": "UMMAR SHABAN",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T19:54:10.028360"
+  },
+  {
+    "company_name": "KOMJI ESTATES AND MARKETING PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T19:54:59.132624"
+  },
+  {
+    "company_name": "TRUEVISORY ENTERPRISES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08583090",
+        "name": "JATINDER KOUR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T19:55:59.424484"
+  },
+  {
+    "company_name": "HOME HEIST PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09585311",
+        "name": "ASHISH GUPTA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T19:56:44.766915"
+  },
+  {
+    "company_name": "NEEL GAGAN AUTOMOBILES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06748652",
+        "name": "ADITYA MAGOTRA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10421241",
+        "name": "ZAHID AKRAM CHOUDHARY",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T19:57:48.392866"
+  },
+  {
+    "company_name": "ALBARQ AGRO INDUSTRIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02897908",
+        "name": "RAMEEZ ROUF BEIGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T19:58:35.813636"
+  },
+  {
+    "company_name": "KLOTHNICK PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10967385",
+        "name": "TASAVAR ASLAM",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T19:59:22.066644"
+  },
+  {
+    "company_name": "ARYAN COMPUTERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:00:07.507760"
+  },
+  {
+    "company_name": "WIRELESS SOLUTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "03095871",
+        "name": "RAFIQA ARIF",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:00:56.188200"
+  },
+  {
+    "company_name": "FLEXEN METAL PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10179310",
+        "name": "PRITAM ROY",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:01:45.747048"
+  },
+  {
+    "company_name": "MURTIKAAR CREATIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10574180",
+        "name": "PRASHANT SHEKHAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:02:44.688810"
+  },
+  {
+    "company_name": "TUCSON STEEL PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10904674",
+        "name": "MD IRFAN ANSARI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:05:09.637351"
+  },
+  {
+    "company_name": "ASHRIMA INDUSTRIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10084116",
+        "name": "RITA SHARMA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:06:19.881717"
+  },
+  {
+    "company_name": "BRIYAN MARKETING PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10577012",
+        "name": "SUPRABHA BHASKAR",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10577013",
+        "name": "SHANKAR BHASKAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:07:30.246929"
+  },
+  {
+    "company_name": "BHARAT ELECTRONICS LIMITED",
+    "directors": [
+      {
+        "din_pan": "09578183",
+        "name": "BHANU PRAKASH SRIVASTAVA",
+        "designation": "Whole-time  Director"
+      },
+      {
+        "din_pan": "09749046",
+        "name": "MANOJ JAIN",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:12:30.191236"
+  },
+  {
+    "company_name": "BEML LIMITED",
+    "directors": [
+      {
+        "din_pan": "09450599",
+        "name": "MRUTYUNJAYA SIVA KUMAR LINGAM MAKUTAM",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "02372234",
+        "name": "VIKAS RAMKRISHNA KAKATKAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:17:05.455424"
+  },
+  {
+    "company_name": "HINDUSTAN AERONAUTICS LIMITED",
+    "directors": [
+      {
+        "din_pan": "09639264",
+        "name": "SUNIL KRISHNA MURTHY DEVANAHALL",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "08989543",
+        "name": "AMIT SATIJA",
+        "designation": "Nominee Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:21:17.888446"
+  },
+  {
+    "company_name": "ALPHA DESIGN TECHNOLOGIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08763133",
+        "name": "VIPUL AGARWAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T20:25:43.364955"
+  },
+  {
+    "company_name": "DYNAMATIC TECHNOLOGIES LIMITED",
+    "directors": [
+      {
+        "din_pan": "06414463",
+        "name": "DIETMAR HAHN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07093258",
+        "name": "JAMES DAVID TUCKER",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07178878",
+        "name": "PIERRE ANTOINE JEAN MARIE ANNE DE BAUSSET ROQUEFORT DUCHAINE D",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T21:53:54.212405"
+  },
+  {
+    "company_name": "CENTUM ELECTRONICS LIMITED",
+    "directors": [
+      {
+        "din_pan": "00016375",
+        "name": "THIRUVENGADAM PARTHASARATHI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00139274",
+        "name": "VELAGAPUDI KAVITHA DUTT",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T21:57:32.139391"
+  },
+  {
+    "company_name": "TONBO IMAGING INDIA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02953852",
+        "name": "ANKIT KUMAR",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "02261469",
+        "name": "KONDANGI LAKSHMIKUMAR ARVIND",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T22:00:40.579748"
+  },
+  {
+    "company_name": "SHUHARI TECH VENTURES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07677870",
+        "name": "NUPUR GUPTA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-09T22:02:01.059854"
+  },
+  {
+    "company_name": "COCHIN SHIPYARD LIMITED",
+    "directors": [
+      {
+        "din_pan": "08103825",
+        "name": "BEJOY BHASKER",
+        "designation": "Whole-time Director"
+      },
+      {
+        "din_pan": "08444440",
+        "name": "VALIYAPARAMBIL JACOB JOSE",
+        "designation": "Whole-time Director"
+      }
+    ],
+    "created_date": "2025-06-09T22:05:12.243294"
+  },
+  {
+    "company_name": "PERIYAR REALTY AND HOSPITALITY PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01096163",
+        "name": "JOHN JOHN THEVERTHUNDYIL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T01:58:24.226754"
+  },
+  {
+    "company_name": "ALIS AMEEN PROPERTIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01623544",
+        "name": "FASEENA SALIM",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T01:59:30.999046"
+  },
+  {
+    "company_name": "HILLPARK PLANTATION PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01956267",
+        "name": "KADUKKAPPILLI MUHAMMED ABDULRASHEED",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:00:17.677719"
+  },
+  {
+    "company_name": "RAIN HILLS CASTLE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05194631",
+        "name": "JOSEPH AUGUSTINE",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:01:01.369698"
+  },
+  {
+    "company_name": "SREYAS TRIBAL FARMERS PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "07684664",
+        "name": "CHANDRAN MARAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07684669",
+        "name": "PRASAD",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:02:09.354291"
+  },
+  {
+    "company_name": "TUFFLITE INDUSTRIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02036177",
+        "name": "NISHANT KUMAR MALAIYA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:05:33.624447"
+  },
+  {
+    "company_name": "SATPURA CEMENT PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:06:48.514228"
+  },
+  {
+    "company_name": "SUSHIL CEMENT CONCRETE PRODUCTS PVT LTD",
+    "directors": [
+      {
+        "din_pan": "07047406",
+        "name": "GAURAV SHRIVASTAVA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:07:42.929750"
+  },
+  {
+    "company_name": "CHOUDHARY JABLAPUR MARBLE GRANITE AND PR ODUCTS TRADING P LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:08:25.530070"
+  },
+  {
+    "company_name": "SOLE&VERO 369 ENTERPRISES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:08:49.919184"
+  },
+  {
+    "company_name": "MAZAGON DOCK PIPAVAV DEFENCE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07854798",
+        "name": "NIKHIL NIRMAL JAIN",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:13:56.073945"
+  },
+  {
+    "company_name": "BHARAT FORGE LTD",
+    "directors": [
+      {
+        "din_pan": "00266833",
+        "name": "SUBODH EKNATH TANDALE",
+        "designation": "Whole-time Director"
+      },
+      {
+        "din_pan": "00267202",
+        "name": "BASAVRAJ PRABHAKAR KALYANI",
+        "designation": "Whole-time Director"
+      },
+      {
+        "din_pan": "00089430",
+        "name": "AMIT BABASAHEB KALYANI",
+        "designation": "Whole-time Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:19:06.836015"
+  },
+  {
+    "company_name": "YINGHUALI AUTOMOTIVE INTERIORS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08511879",
+        "name": "BHARATH KUMAR VIJAYAN",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:22:31.034399"
+  },
+  {
+    "company_name": "TATA ADVANCED SYSTEMS LIMITED",
+    "directors": [
+      {
+        "din_pan": "00120029",
+        "name": "BANMALI AGRAWALA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "01485745",
+        "name": "SUKARAN SINGH",
+        "designation": "Managing Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:28:25.144901"
+  },
+  {
+    "company_name": "TATA STEEL ADVANCED MATERIALS LIMITED",
+    "directors": [
+      {
+        "din_pan": "08279634",
+        "name": "SUBODH PANDEY",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07504007",
+        "name": "PARVATHEESAM KANCHINADHAM",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:31:44.470742"
+  },
+  {
+    "company_name": "MUNITIONS INDIA LIMITED",
+    "directors": [
+      {
+        "din_pan": "08989543",
+        "name": "AMIT SATIJA",
+        "designation": "Nominee Director"
+      },
+      {
+        "din_pan": "11089196",
+        "name": "SANJAY HAZARI",
+        "designation": "Managing Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:37:37.938510"
+  },
+  {
+    "company_name": "MAHINDRA AEROSPACE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01788443",
+        "name": "ABANTI SANKARANARAYANAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "01039769",
+        "name": "ARVIND KUMAR MEHRA",
+        "designation": "CEO"
+      }
+    ],
+    "created_date": "2025-06-10T02:40:45.243084"
+  },
+  {
+    "company_name": "MAHINDRA DEFENCE SYSTEMS LIMITED",
+    "directors": [
+      {
+        "din_pan": "01788443",
+        "name": "ABANTI SANKARANARAYANAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "01831944",
+        "name": "RUZBEH BAMAN IRANI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T02:52:27.265011"
+  },
+  {
+    "company_name": "EZANVEL SOLUTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07782019",
+        "name": "EZRA SOROKHAIBA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08693905",
+        "name": "PANAM LEISHANGTHEM",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:33:54.688222"
+  },
+  {
+    "company_name": "NEOPATH TECHNOLOGIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08177027",
+        "name": "CHINGAKHAM PRIYOBRATA SINGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:34:40.735613"
+  },
+  {
+    "company_name": "VWALA SOLUTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08392548",
+        "name": "KANINGLUNG LAMLEE KAMEI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:35:32.369744"
+  },
+  {
+    "company_name": "KABO TECHNOLOGIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08513521",
+        "name": "SOMCHAND MEETEI HEISNAM",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:36:32.801896"
+  },
+  {
+    "company_name": "PEBET EDUTECH SERVICES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09239834",
+        "name": "HIDANGMAYUM RABINDRA SHARMA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:37:16.908237"
+  },
+  {
+    "company_name": "SHREE GAJANAN CHEMICAL INDISTRIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:38:18.100754"
+  },
+  {
+    "company_name": "BLUE BIRD AGRO FOREST PRODUCE PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:39:14.697062"
+  },
+  {
+    "company_name": "MEGHLOOM ERI WOMEN PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "09761532",
+        "name": "MAGRITA MAIONG",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09761684",
+        "name": "SAGITA LAPANG",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:41:04.557755"
+  },
+  {
+    "company_name": "ALKANANDA PLANTATIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:41:50.918437"
+  },
+  {
+    "company_name": "SHAKTI BEVERAGES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:42:39.431288"
+  },
+  {
+    "company_name": "MAXIM INFRASTRUCTURE AND REAL ESTATE (SHILLONG) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "00158268",
+        "name": "ASHISH JASRASARIA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00360325",
+        "name": "PRAKASH CHAND KABRA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:43:51.255378"
+  },
+  {
+    "company_name": "LIN TRAVELS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06552007",
+        "name": "DINO NONGKYNRIH",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06552013",
+        "name": "NEVILLE NONGKYNRIH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:44:53.745341"
+  },
+  {
+    "company_name": "TRANSWORLD STEELS & MINES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "02189639",
+        "name": "RAMESH SHARMA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "03623213",
+        "name": "NANIGOPAL SUTRADHAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:45:41.410011"
+  },
+  {
+    "company_name": "GREYSTONES INDUSTRIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07611610",
+        "name": "PRATEEK AGARWAL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00044343",
+        "name": "MAHENDRA KUMAR AGARWAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:46:38.677194"
+  },
+  {
+    "company_name": "MEGHALAYA POWER GENERATION CORPORATION LIMITED",
+    "directors": [
+      {
+        "din_pan": "09712409",
+        "name": "RAMAKRISHNA CHITTURI",
+        "designation": "CFO"
+      },
+      {
+        "din_pan": "06738413",
+        "name": "SANJAY GOYAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:51:53.583148"
+  },
+  {
+    "company_name": "TAWITLANG ORGANIC FARMER PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "09265651",
+        "name": "CHHAKCHHUAK LALNGAIHSAKI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09265652",
+        "name": "VANLALHMINGA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:52:53.459470"
+  },
+  {
+    "company_name": "CEBES AGROTECH PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10759682",
+        "name": "CHHAKCHHUAK BOCHUNG LALZARMUANA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:53:59.818227"
+  },
+  {
+    "company_name": "JEHOVA JIRE MULTIPURPOSE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09392026",
+        "name": "CLALLUNGHNEWA ZOTHANKIMA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:55:02.768938"
+  },
+  {
+    "company_name": "NEW AGE SUSTAINABLE DEVELOPMENT FOUNDATION",
+    "directors": [
+      {
+        "din_pan": "09067671",
+        "name": "SATHISH KUMAR MAHESHWARAM",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:55:47.454997"
+  },
+  {
+    "company_name": "ZORAM HEALTHLINE (OPC) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "11048262",
+        "name": "SAMUEL LALREMRUATA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:57:42.384065"
+  },
+  {
+    "company_name": "NORTH EAST VOCATIONAL & SKILL ACADEMY PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07487713",
+        "name": "VANLALTHAKIMA CHAWNGTHU",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T16:58:38.715470"
+  },
+  {
+    "company_name": "METHI FARMER PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "09073516",
+        "name": "LOTHA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:02:17.473177"
+  },
+  {
+    "company_name": "MEDZINITO FARMER PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "09693479",
+        "name": "SHIKUTO SUMI",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "09693480",
+        "name": "LASHIKA V YEPTHOMI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:03:40.272175"
+  },
+  {
+    "company_name": "KIPHIRE ORGANIC MAIZE PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:04:31.920847"
+  },
+  {
+    "company_name": "ZATARA TEA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06712139",
+        "name": "LONGKUMER MOA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:05:23.982459"
+  },
+  {
+    "company_name": "JAMER TECHNOLOGIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09135453",
+        "name": "NOKLANG LONGKUMER",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:06:20.934452"
+  },
+  {
+    "company_name": "SHANNAGA FARMER PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "08406647",
+        "name": "SHANBENI YANTHAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "08406648",
+        "name": "SAMUEL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:07:36.547769"
+  },
+  {
+    "company_name": "SENJUMTA FARMERS PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "10198415",
+        "name": "JANBEMO LOTHA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:08:26.924042"
+  },
+  {
+    "company_name": "SHREE BADA THAKURA ENTERPRISES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10516440",
+        "name": "HEMANTA KUMAR SAHOO",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:15:26.091815"
+  },
+  {
+    "company_name": "REVNN RIDES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10764413",
+        "name": "VIVEK PATHAK",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:16:12.149790"
+  },
+  {
+    "company_name": "VIYOM TRANSLOGISTICS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10927917",
+        "name": "SUDHIR NATH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:17:10.069311"
+  },
+  {
+    "company_name": "NAYAK AND NAYAK KOKILA TRANSPORT AND VIP TRAVELS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "11007913",
+        "name": "SASMITA NAYAK",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "11007914",
+        "name": "SUSARYA KUMAR PRATIHARI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:31:25.934906"
+  },
+  {
+    "company_name": "S.N.CONSULTANCY PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:32:43.052995"
+  },
+  {
+    "company_name": "P AND V COMMUNICATION SERVICES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:44:55.378363"
+  },
+  {
+    "company_name": "NIJJAR PROPERTY PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10330325",
+        "name": "HARDEEP SINGH NIJJAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:47:39.377984"
+  },
+  {
+    "company_name": "MILLET KITCHEN PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10184824",
+        "name": "DAMANJIT KAUR WALIA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:48:51.572131"
+  },
+  {
+    "company_name": "BAINS STEELS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01177683",
+        "name": "SATINDER PAUL SINGH BAINS",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:50:08.282501"
+  },
+  {
+    "company_name": "BBL RESOURCES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "01157050",
+        "name": "SANJEEV BANSAL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06594214",
+        "name": "HIMANK BANSAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:51:06.909131"
+  },
+  {
+    "company_name": "CASCADE MINES & MINERALS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06510716",
+        "name": "SESHACHALAPATHI RAO DUSTAKAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:52:02.400380"
+  },
+  {
+    "company_name": "EMM KAY OVERSEAS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08840064",
+        "name": "HARPREET KAUR BOPARAI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:53:00.301034"
+  },
+  {
+    "company_name": "CERTIPIE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:53:19.877036"
+  },
+  {
+    "company_name": "JACKPOT VANIJYA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "03095826",
+        "name": "PRATEEK SINGHEE",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:54:34.014581"
+  },
+  {
+    "company_name": "SEASIDE TIE UP PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:54:48.709802"
+  },
+  {
+    "company_name": "STEEPLE COMMODITIES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:56:07.598501"
+  },
+  {
+    "company_name": "FRANK LINE VET PHARMA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07698159",
+        "name": "RAJEEV KUMAR",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06846201",
+        "name": "VIKRAM KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:56:56.434032"
+  },
+  {
+    "company_name": "VEER MANIBHADRA HEALTHCARE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07564606",
+        "name": "CHAMPALAL CHHAGANLAL JAIN",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:57:48.353930"
+  },
+  {
+    "company_name": "WINNERMART RETAIL WORLD PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07852123",
+        "name": "SILOCHANA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:58:28.910785"
+  },
+  {
+    "company_name": "OMMYESH TRADEMART PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T17:58:59.314670"
+  },
+  {
+    "company_name": "PANDIM ONLINE SOLUTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07632355",
+        "name": "JEEWAN DAHAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:00:22.224759"
+  },
+  {
+    "company_name": "TRIP OF LIFETIME TRAVELTREK PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07542123",
+        "name": "MAMTA CHETTRI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:00:59.541764"
+  },
+  {
+    "company_name": "APOLLO MICRO SYSTEMS LIMITED",
+    "directors": [
+      {
+        "din_pan": "07785738",
+        "name": "RAGHUPATHY GOUD THEEGALA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06407238",
+        "name": "KAVYA GORLA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00790139",
+        "name": "KARUNAKAR REDDY BADDAM",
+        "designation": "Managing Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:04:45.715033"
+  },
+  {
+    "company_name": "DATA PATTERNS (INDIA) LIMITED",
+    "directors": [
+      {
+        "din_pan": "00005090",
+        "name": "SOWMYAN RAMAKRISHNAN",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00027875",
+        "name": "SASTRY VENKATA RAMA VADLAMANI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:07:59.547431"
+  },
+  {
+    "company_name": "GREENTECH SPACE SOLUTIONS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:08:16.091081"
+  },
+  {
+    "company_name": "SRI SAKTHI PLASTICS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "06991310",
+        "name": "SURESH KARTHIKA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:09:35.808661"
+  },
+  {
+    "company_name": "CORI ENGINEERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05191705",
+        "name": "RABINDRAN KRISHNA SWAMY",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00271589",
+        "name": "RAMAN NATRAJ",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00271923",
+        "name": "ACHUTHA KRISHNAMURTHI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:11:03.540563"
+  },
+  {
+    "company_name": "MAXFLEX RUBBER PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:13:18.765454"
+  },
+  {
+    "company_name": "IYER & CO PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:14:15.263842"
+  },
+  {
+    "company_name": "ASTURN GRANITE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:15:11.967031"
+  },
+  {
+    "company_name": "ASTRA MICROWAVE PRODUCTS LIMITED",
+    "directors": [
+      {
+        "din_pan": "00421401",
+        "name": "MARAM VENKATESHWAR REDDY",
+        "designation": "Whole-time Director"
+      },
+      {
+        "din_pan": "00003366",
+        "name": "ATIM KABRA",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "00425602",
+        "name": "KIRAN DHINGRA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:23:00.225217"
+  },
+  {
+    "company_name": "BRAHMOS AEROSPACE THIRUVANANTHAPURAM LIMITED",
+    "directors": [
+      {
+        "din_pan": "09539121",
+        "name": "JOSEPH ANTONY",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "06622304",
+        "name": "HARIKISHORE SUBRAMANIAN",
+        "designation": "Nominee Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:24:52.528962"
+  },
+  {
+    "company_name": "SAMUDRIKA AQUA TECH LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:25:49.717653"
+  },
+  {
+    "company_name": "SUNSHINE SEAFOODS PVT. LTD.",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:26:53.210755"
+  },
+  {
+    "company_name": "UKAN AQUA AGRO PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:27:46.462875"
+  },
+  {
+    "company_name": "WIN AQUA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T18:28:40.301735"
+  },
+  {
+    "company_name": "TRIPURESWARI AGRI PRODUCTION AND MARKETING PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "08950963",
+        "name": "ARUN CHAKRABORTY",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:47:53.736538"
+  },
+  {
+    "company_name": "KAUSHALYA FINTECH PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10171457",
+        "name": "KANIKA DEBNATH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:48:34.295887"
+  },
+  {
+    "company_name": "SUKANTA INDUSTRY PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07957258",
+        "name": "SUKANTA NATH BHOWMIK",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:49:40.555048"
+  },
+  {
+    "company_name": "XENODEB MARKETING (OPC) PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09796006",
+        "name": "SANKHA SUBHRA DEB",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:50:22.523747"
+  },
+  {
+    "company_name": "TRIPURASUNDARI KRISHIKALYAN PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "10701829",
+        "name": "JAYA DEBNATH",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "10701830",
+        "name": "BIDHU BHUSHAN DEBNATH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:51:22.816151"
+  },
+  {
+    "company_name": "KUMARGHAT FARMERS PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:51:38.163731"
+  },
+  {
+    "company_name": "YARWNG ORGANIC FARMER PRODUCER COMPANY LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:51:58.151187"
+  },
+  {
+    "company_name": "TRAVEL ADVISOR PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07018513",
+        "name": "PRATEEK BHARDWAJ",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:54:31.296253"
+  },
+  {
+    "company_name": "CHANDRAVANSHI CHANDEL COLD STORAGE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07193369",
+        "name": "SAURABH SINGH CHANDEL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:55:18.178909"
+  },
+  {
+    "company_name": "ASM LOGISTICS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07477050",
+        "name": "ASHOK KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T20:58:03.169198"
+  },
+  {
+    "company_name": "HRT ASSOCIATES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07523069",
+        "name": "TEJASVITA SINGH",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:00:21.836033"
+  },
+  {
+    "company_name": "MALEE TRAVEL INDIA PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05326949",
+        "name": "SANJAY JUNEJA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:04:41.424428"
+  },
+  {
+    "company_name": "JAI GURU CASTLES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "07437424",
+        "name": "PARTHVI KHANDELWAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:05:20.387281"
+  },
+  {
+    "company_name": "PRASHAD SYNTEX PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:06:14.217486"
+  },
+  {
+    "company_name": "PALM INFRADEVELOPERS PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "05189219",
+        "name": "ANURAG GOEL",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "06503300",
+        "name": "SUBHASH VERMA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:07:53.051409"
+  },
+  {
+    "company_name": "MOUNT ALBERT SECURITY SERVICES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10068161",
+        "name": "DEEPIKA SHARMA",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:08:34.362589"
+  },
+  {
+    "company_name": "COMBINED SECURITY AND MANPOWER SERVICES PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "10908122",
+        "name": "SURINDER KUMAR",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:09:38.883470"
+  },
+  {
+    "company_name": "INDIA OPTEL LIMITED",
+    "directors": [
+      {
+        "din_pan": "09657553",
+        "name": "TUSHAR TRIPATHI",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "10881164",
+        "name": "GARIMA BHAGAT",
+        "designation": "Nominee Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:12:52.844250"
+  },
+  {
+    "company_name": "WONDER BRAINS INITIATIVE PRIVATE LIMITED",
+    "directors": [
+      {
+        "din_pan": "09493977",
+        "name": "AMIT KANDPAL",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:17:08.441454"
+  },
+  {
+    "company_name": "GARDEN REACH SHIPBUILDERS & ENGINEERS LIMITED",
+    "directors": [
+      {
+        "din_pan": "08591411",
+        "name": "SANDEEP MAHAPATRA",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "09631817",
+        "name": "SHANTANU BOSE",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:18:51.221595"
+  },
+  {
+    "company_name": "TITAGARH RAIL SYSTEMS LIMITED",
+    "directors": [
+      {
+        "din_pan": "00313652",
+        "name": "UMESH CHOWDHARY",
+        "designation": "Managing Director"
+      },
+      {
+        "din_pan": "06949401",
+        "name": "RASHMI CHOWDHARY",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "03557435",
+        "name": "ATUL RAVISHANKER JOSHI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:24:33.182382"
+  },
+  {
+    "company_name": "JALAN PIPES LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:24:53.120096"
+  },
+  {
+    "company_name": "BHARAT ROLL INDUSTRY PVT LTD",
+    "directors": [
+      {
+        "din_pan": "00430352",
+        "name": "JITENDER SINGH",
+        "designation": "Director"
+      },
+      {
+        "din_pan": "07268298",
+        "name": "TEVEEN SAINI",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:25:43.533707"
+  },
+  {
+    "company_name": "PROTEIN TECHNOLOGIES INDIA LIMITED",
+    "directors": [
+      {
+        "din_pan": "01727810",
+        "name": "CHANDRA SHEKHAR RAY",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:26:35.100782"
+  },
+  {
+    "company_name": "AGARWAL & SAHA PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:26:56.703285"
+  },
+  {
+    "company_name": "SPEN LIQ PVT LTD",
+    "directors": [
+      {
+        "din_pan": "0000",
+        "name": "N/A",
+        "designation": "Director"
+      }
+    ],
+    "created_date": "2025-06-10T21:27:11.575821"
+  }
+]

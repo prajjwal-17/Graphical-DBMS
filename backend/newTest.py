@@ -533,7 +533,14 @@ def main():
     crawler = ROCCompanyCrawler(headless=False)  # Set to True for headless mode
     
     # Example 1: Fetch data for specific states
-    selected_states = ["andaman and nicobar islands", "goa", "delhi", "maharashtra"]
+    selected_states = ["andaman and nicobar islands", "andhra pradesh", "arunachal pradesh", 
+            "assam", "bihar", "chandigarh", "chattisgarh", "dadra & nagar haveli", 
+            "daman and diu", "delhi", "goa", "gujarat", "haryana", "himachal pradesh", 
+            "jammu & kashmir", "jharkhand", "karnataka", "kerala", "ladakh", 
+            "lakshadweep", "madhya pradesh", "maharashtra", "manipur", "meghalaya", 
+            "mizoram", "nagaland", "orissa", "pondicherry", "punjab", "rajasthan", 
+            "sikkim", "tamil nadu", "telangana", "tripura", "uttar pradesh", 
+            "uttarakhand", "west bengal"]
     
     print("Starting ROC Company Data Crawler with Selenium...")
     
