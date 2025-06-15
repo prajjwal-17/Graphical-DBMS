@@ -14,7 +14,7 @@ const {
 router.get('/health', healthCheck);
 
 // Get full graph data
-router.get('/graph', getFullGraph);
+router.get('/', getFullGraph);
 
 // Get company by CIN
 router.get('/company/:cin', getCompanyByCIN);
