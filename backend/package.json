@@ -3,19 +3,24 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon index.js",
+    "import:all": "node scripts/importAllData.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@neo4j/graphql": "^7.2.0",
+    "apollo-server": "^3.13.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "graphql": "^16.11.0",
     "neo4j-driver": "^5.28.1"
   },
   "devDependencies": {
+    "fs": "^0.0.1-security",
     "nodemon": "^3.1.10"
   }
 }
