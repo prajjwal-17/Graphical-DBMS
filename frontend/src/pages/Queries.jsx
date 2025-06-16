@@ -60,12 +60,38 @@ const Queries = () => {
       const data = await res.json();
       console.log("Received data:", data);
       
-      // Validate graph data
+      // Enhanced validation and debugging for graph data
       if (selectedQuery === "full-graph") {
         if (!data.nodes || !data.links) {
-          throw new Error("Invalid graph data structure");
+          console.error("Invalid graph data structure:", data);
+          throw new Error("Invalid graph data structure - missing nodes or links");
         }
-        console.log(`Graph data: ${data.nodes.length} nodes, ${data.links.length} links`);
+        
+        // Additional validation
+        if (!Array.isArray(data.nodes) || !Array.isArray(data.links)) {
+          console.error("Nodes or links are not arrays:", { nodes: data.nodes, links: data.links });
+          throw new Error("Invalid graph data - nodes and links must be arrays");
+        }
+        
+        console.log(`Graph data validated: ${data.nodes.length} nodes, ${data.links.length} links`);
+        console.log("Sample node:", data.nodes[0]);
+        console.log("Sample link:", data.links[0]);
+        
+        // Validate node structure
+        if (data.nodes.length > 0) {
+          const sampleNode = data.nodes[0];
+          if (!sampleNode.id && sampleNode.id !== 0) {
+            console.warn("Nodes may be missing 'id' property");
+          }
+        }
+        
+        // Validate link structure
+        if (data.links.length > 0) {
+          const sampleLink = data.links[0];
+          if ((!sampleLink.source && sampleLink.source !== 0) || (!sampleLink.target && sampleLink.target !== 0)) {
+            console.warn("Links may be missing 'source' or 'target' properties");
+          }
+        }
       }
       
       setResult(data);
@@ -115,17 +141,30 @@ const Queries = () => {
         <div className="mt-6">
           <h3 className="text-lg font-medium mb-2">Result:</h3>
 
-          {selectedQuery === "full-graph" && result?.nodes && result?.links ? (
+          {selectedQuery === "full-graph" && result?.nodes && result?.links && !result.error ? (
             <div>
               <div className="mb-2 text-sm text-gray-600">
                 Graph: {result.nodes.length} nodes, {result.links.length} links
               </div>
-              <GraphView nodes={result.nodes} links={result.links} />
+              {result.nodes.length > 0 && result.links.length > 0 ? (
+                <GraphView nodes={result.nodes} links={result.links} />
+              ) : (
+                <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded mb-4">
+                  <strong>Warning:</strong> Graph data is empty (no nodes or links to display)
+                </div>
+              )}
             </div>
           ) : (
-            <pre className="bg-gray-100 p-4 rounded overflow-x-auto max-h-[500px] text-sm">
-              {JSON.stringify(result, null, 2)}
-            </pre>
+            <div>
+              <pre className="bg-gray-100 p-4 rounded overflow-x-auto max-h-[500px] text-sm">
+                {JSON.stringify(result, null, 2)}
+              </pre>
+              {result?.nodes && result?.links && (
+                <div className="mt-2 text-sm text-blue-600">
+                  Note: This appears to be graph data. Try selecting "Full Graph" query to visualize it.
+                </div>
+              )}
+            </div>
           )}
         </div>
       )}
