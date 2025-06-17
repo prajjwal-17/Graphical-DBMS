@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Queries from './pages/Queries';
 import GetStarted from './pages/GetStarted';
 import AddData from './pages/AddData';
+import CustomQueries from './pages/CustomQueries';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/queries" element={<Queries />} />
           <Route path="/get-started" element={<GetStarted />} />
           <Route path="/add-data" element={<AddData />} />
+          <Route path="/custom-queries" element={<CustomQueries />} />
         </Routes>
       </div>
     </Router>

@@ -18,6 +18,9 @@ const Navbar = () => {
         <NavLink to="/add-data" className={({ isActive }) => isActive ? 'text-blue-400 border-b-2 border-blue-400 pb-1' : 'hover:text-blue-300'}>
           Add Data
         </NavLink>
+        <NavLink to="/custom-queries" className={({ isActive }) => isActive ? 'text-blue-400 border-b-2 border-blue-400 pb-1' : 'hover:text-blue-300'}>
+          Custom Queries
+        </NavLink>
       </div>
     </nav>
   );

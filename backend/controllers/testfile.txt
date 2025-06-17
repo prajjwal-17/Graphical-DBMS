@@ -1,0 +1,159 @@
+exports.runCustomQueryV2 = async (req, res) => {
+  const session = driver.session();
+  const { type } = req.query;
+
+  try {
+    let queryDescription = '';
+    let companiesResult, relationshipsResult;
+
+    switch (type) {
+      case 'top-paid-defence':
+        queryDescription = 'Top 10 defence companies by paid capital';
+        
+        // Step 1: Get top 10 unique companies by name
+        companiesResult = await session.run(`
+          MATCH (c:Company)
+          WHERE toLower(c.activity) CONTAINS 'defence'
+            AND c.paid_capital IS NOT NULL
+            AND toFloat(c.paid_capital) > 0
+          WITH c.name as company_name, 
+               max(toFloat(c.paid_capital)) as max_capital,
+               collect(c)[0] as representative
+          ORDER BY max_capital DESC
+          LIMIT 10
+          RETURN representative as company, company_name, max_capital
+        `);
+
+        if (companiesResult.records.length === 0) {
+          return res.json({
+            query_type: type,
+            description: queryDescription,
+            nodes: [],
+            links: [],
+            message: 'No defence companies found'
+          });
+        }
+
+        // Step 2: Get all relationships for these companies
+        const companyNames = companiesResult.records.map(record => 
+          record.get('company_name')
+        );
+
+        relationshipsResult = await session.run(`
+          MATCH (c:Company)
+          WHERE c.name IN $companyNames
+          OPTIONAL MATCH (c)<-[r:DIRECTED]-(d:Director)
+          RETURN c, d, r
+        `, { companyNames });
+        break;
+
+      default:
+        return res.status(400).json({
+          error: 'Invalid query type',
+          provided: type,
+          available_types: ['top-paid-defence', 'oldest-trading', 'most-connected-directors']
+        });
+    }
+
+    // Process the results to build the graph
+    const nodes = new Map();
+    const links = [];
+    const processedLinks = new Set();
+    const seenCompanies = new Set();
+
+    // First add all unique companies from the top 10 list
+    companiesResult.records.forEach(record => {
+      const company = record.get('company');
+      const companyName = company.properties.name;
+      
+      if (!seenCompanies.has(companyName)) {
+        seenCompanies.add(companyName);
+        const companyId = company.identity.toInt();
+        nodes.set(companyId, {
+          id: companyId,
+          label: companyName,
+          nodeType: 'Company',
+          properties: company.properties
+        });
+      }
+    });
+
+    // Then add relationships only for these companies
+    relationshipsResult.records.forEach(record => {
+      const c = record.get('c');
+      const d = record.get('d');
+      const r = record.get('r');
+
+      const companyName = c.properties.name;
+      
+      // Only process if this company is in our top 10 list
+      if (seenCompanies.has(companyName)) {
+        const companyId = c.identity.toInt();
+        
+        // Ensure this specific company node is in our nodes map
+        if (!nodes.has(companyId)) {
+          nodes.set(companyId, {
+            id: companyId,
+            label: companyName,
+            nodeType: 'Company',
+            properties: c.properties
+          });
+        }
+
+        // Add director and relationship if they exist
+        if (d && r) {
+          const directorId = d.identity.toInt();
+          if (!nodes.has(directorId)) {
+            nodes.set(directorId, {
+              id: directorId,
+              label: d.properties.name || 'Unknown Director',
+              nodeType: 'Director',
+              properties: d.properties
+            });
+          }
+
+          const linkKey = `${directorId}-${companyId}-${r.type}-${r.properties.designation || ''}`;
+          if (!processedLinks.has(linkKey)) {
+            processedLinks.add(linkKey);
+            links.push({
+              source: directorId,
+              target: companyId,
+              type: r.type,
+              properties: r.properties
+            });
+          }
+        }
+      }
+    });
+
+    const companyNodes = Array.from(nodes.values()).filter(n => n.nodeType === 'Company');
+    
+    res.json({
+      query_type: type,
+      description: queryDescription,
+      nodes: Array.from(nodes.values()),
+      links,
+      total_records: relationshipsResult.records.length,
+      unique_nodes: nodes.size,
+      total_links: links.length,
+      summary: {
+        unique_companies: companyNodes.length,
+        total_directors: Array.from(nodes.values()).filter(n => n.nodeType === 'Director').length,
+        company_list: companyNodes.map(c => ({
+          name: c.properties.name,
+          paid_capital_crores: (parseFloat(c.properties.paid_capital || 0) / 10000000).toFixed(2)
+        })).sort((a, b) => parseFloat(b.paid_capital_crores) - parseFloat(a.paid_capital_crores))
+      }
+    });
+
+  } catch (err) {
+    console.error("❌ Error in runCustomQueryV2:", err);
+    res.status(500).json({
+      error: 'Failed to run query',
+      query_type: type,
+      details: err.message
+    });
+  } finally {
+    await session.close();
+  }
+};
