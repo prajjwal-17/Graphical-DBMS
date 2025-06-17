@@ -10,8 +10,6 @@ const {
   healthCheck
 } = require('../controllers/graph.controller');
 
-// Health check endpoint
-router.get('/health', healthCheck);
 
 // Get full graph data
 router.get('/', getFullGraph);
