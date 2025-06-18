@@ -341,90 +341,122 @@ exports.runCustomQuery = async (req, res) => {
       });
     }
 
+    // Process the results to include ALL relationships
     const nodes = new Map();
     const links = [];
-    const processedLinks = new Set();
-    const uniqueCompanies = new Set(); // Track unique company names
+    const companyDirectors = new Map(); // Track directors per company
 
     result.records.forEach(record => {
-      const c = record.get('c');
-      const d = record.get('d');
-      const r = record.get('r');
+      const company = record.get('c');
+      const director = record.get('d');
+      const relationship = record.get('r');
 
-      // Only add company if we haven't seen this company name before
-      const companyName = c.properties.name;
-      if (!uniqueCompanies.has(companyName)) {
-        uniqueCompanies.add(companyName);
-        
-        const companyId = c.identity.toInt();
-        if (!nodes.has(companyId)) {
-          nodes.set(companyId, {
-            id: companyId,
-            label: companyName || 'Unknown Company',
-            nodeType: 'Company',
-            properties: c.properties
+      // Add company node
+      if (company && !nodes.has(company.identity.toString())) {
+        nodes.set(company.identity.toString(), {
+          id: company.identity.toString(),
+          label: company.properties.name || 'Unknown Company',
+          nodeType: 'Company',
+          properties: {
+            ...company.properties,
+            ...(type === 'top-paid-defence' && { paid_capital: record.get('max_paid_capital') }),
+            ...(type === 'oldest-trading' && { inc_date: record.get('earliest_date') })
+          }
+        });
+
+        // Initialize directors set for this company
+        companyDirectors.set(company.identity.toString(), new Set());
+      }
+
+      // Add director node and relationship if exists
+      if (director && relationship) {
+        const companyId = company.identity.toString();
+        const directorId = director.identity.toString();
+
+        // Add director node if not already present
+        if (!nodes.has(directorId)) {
+          nodes.set(directorId, {
+            id: directorId,
+            label: director.properties.name || 'Unknown Director',
+            nodeType: 'Director',
+            properties: {
+              ...director.properties,
+              ...(type === 'most-connected-directors' && { 
+                connection_count: record.get('unique_company_count') 
+              })
+            }
           });
         }
 
-        // Add director node and relationship (if exists)
-        if (d && r) {
-          const directorId = d.identity.toInt();
-          if (!nodes.has(directorId)) {
-            nodes.set(directorId, {
-              id: directorId,
-              label: d.properties.name || 'Unknown Director',
-              nodeType: 'Director',
-              properties: d.properties
-            });
-          }
-
-          // Create unique link identifier
-          const linkKey = `${directorId}-${companyId}-${r.type}-${r.properties.designation || 'default'}`;
-          if (!processedLinks.has(linkKey)) {
-            processedLinks.add(linkKey);
-            links.push({
-              source: directorId,
-              target: companyId,
-              type: r.type,
-              properties: r.properties
-            });
-          }
+        // Add relationship if not already processed
+        const directorsForCompany = companyDirectors.get(companyId);
+        if (!directorsForCompany.has(directorId)) {
+          directorsForCompany.add(directorId);
+          links.push({
+            source: directorId,
+            target: companyId,
+            type: relationship.type,
+            properties: relationship.properties
+          });
         }
       }
     });
 
-    // Build response with proper statistics
-    const companyNodes = Array.from(nodes.values()).filter(node => node.nodeType === 'Company');
-    const directorNodes = Array.from(nodes.values()).filter(node => node.nodeType === 'Director');
+    // Calculate statistics
+    const companyNodes = Array.from(nodes.values()).filter(n => n.nodeType === 'Company');
+    const directorNodes = Array.from(nodes.values()).filter(n => n.nodeType === 'Director');
 
-    let responseData = {
+    // Prepare response
+    const response = {
       query_type: type,
       description: queryDescription,
       nodes: Array.from(nodes.values()),
-      links,
-      total_records: result.records.length,
-      unique_nodes: nodes.size,
-      total_links: links.length,
-      summary: {
-        unique_companies: companyNodes.length,
-        total_directors: directorNodes.length,
-        total_relationships: links.length
+      links: links,
+      statistics: {
+        total_nodes: nodes.size,
+        total_links: links.length,
+        companies: companyNodes.length,
+        directors: directorNodes.length,
+        ...(type === 'most-connected-directors' && {
+          top_directors: directorNodes
+            .sort((a, b) => (b.properties.connection_count || 0) - (a.properties.connection_count || 0))
+            .slice(0, 5)
+            .map(d => ({
+              name: d.label,
+              connection_count: d.properties.connection_count
+            }))
+        })
       }
     };
 
-    // Add specific debug info for defence companies
+    // Add debug info for defence companies
     if (type === 'top-paid-defence') {
-      responseData.debug_info = {
-        companies_found: companyNodes.map(c => ({
-          name: c.properties.name,
-          paid_capital: c.properties.paid_capital,
-          formatted_capital: (parseFloat(c.properties.paid_capital || 0) / 10000000).toFixed(2) + ' Crores',
-          directors_count: links.filter(link => link.target === c.id).length
-        })).sort((a, b) => parseFloat(b.paid_capital) - parseFloat(a.paid_capital))
+      response.debug_info = {
+        companies: companyNodes
+          .sort((a, b) => parseFloat(b.properties.paid_capital || 0) - parseFloat(a.properties.paid_capital || 0))
+          .map(c => ({
+            name: c.label,
+            paid_capital: c.properties.paid_capital,
+            formatted_capital: (parseFloat(c.properties.paid_capital || 0) / 10000000).toFixed(2) + ' Crores',
+            directors_count: links.filter(l => l.target === c.id).length
+          }))
       };
     }
 
-    res.json(responseData);
+    // Add debug info for oldest trading companies
+    if (type === 'oldest-trading') {
+      response.debug_info = {
+        companies: companyNodes
+          .sort((a, b) => new Date(a.properties.inc_date) - new Date(b.properties.inc_date))
+          .map(c => ({
+            name: c.label,
+            incorporation_date: c.properties.inc_date,
+            directors_count: links.filter(l => l.target === c.id).length
+          }))
+      };
+    }
+
+    return res.json(response);
 
   } catch (err) {
     console.error("❌ Error in runCustomQuery:", err);
