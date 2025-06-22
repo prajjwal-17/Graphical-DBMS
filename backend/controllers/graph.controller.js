@@ -251,7 +251,18 @@ exports.runCustomQuery = async (req, res) => {
     if (!type) {
       return res.status(400).json({
         error: 'Query type is required',
-        available_types: ['top-paid-defence', 'oldest-trading', 'most-connected-directors']
+        available_types: [
+          'top-paid-defence', 
+          'oldest-trading', 
+          'most-connected-directors',
+          'business-companies',
+          'non-gov-defence',
+          'defence-by-directors',
+          'union-gov-defence',
+          'electronics-companies',
+          'recent-defence',
+          'directors-by-capital'
+        ]
       });
     }
 
@@ -262,7 +273,6 @@ exports.runCustomQuery = async (req, res) => {
       case 'top-paid-defence':
         queryDescription = 'Top 10 defence companies by paid capital';
         result = await session.run(`
-          // First, find the top 10 unique defence companies by name and paid capital
           MATCH (c:Company)
           WHERE toLower(c.activity) CONTAINS 'defence'
             AND c.paid_capital IS NOT NULL
@@ -273,7 +283,6 @@ exports.runCustomQuery = async (req, res) => {
           ORDER BY max_paid_capital DESC
           LIMIT 10
           
-          // For each unique company, pick one representative node and get all its relationships
           WITH company_name, max_paid_capital, company_nodes[0] as representative_company
           OPTIONAL MATCH (representative_company)<-[r:DIRECTED]-(d:Director)
           
@@ -285,7 +294,6 @@ exports.runCustomQuery = async (req, res) => {
       case 'oldest-trading':
         queryDescription = 'Top 10 oldest trading companies';
         result = await session.run(`
-          // First, find the top 10 unique oldest trading companies by name
           MATCH (c:Company)
           WHERE toLower(c.activity) CONTAINS 'trading'
             AND c.inc_date IS NOT NULL
@@ -295,7 +303,6 @@ exports.runCustomQuery = async (req, res) => {
           ORDER BY earliest_date ASC
           LIMIT 10
           
-          // For each unique company, pick one representative node and get all its relationships
           WITH company_name, earliest_date, company_nodes[0] as representative_company
           OPTIONAL MATCH (representative_company)<-[r:DIRECTED]-(d:Director)
           
@@ -305,21 +312,157 @@ exports.runCustomQuery = async (req, res) => {
         break;
 
       case 'most-connected-directors':
-        queryDescription = 'Top 5 most connected directors';
+  queryDescription = 'Top 5 most connected directors';
+  result = await session.run(`
+    MATCH (d:Director)-[:DIRECTED]->(c:Company)
+    WITH d, count(DISTINCT c.name) AS unique_company_count, collect(DISTINCT c)[0..10] as connected_companies
+    ORDER BY unique_company_count DESC
+    LIMIT 5
+
+    UNWIND connected_companies as company
+    OPTIONAL MATCH (d)-[rel:DIRECTED]->(company)
+
+    RETURN d, company as c, rel as r, toString(unique_company_count) as unique_company_count_str
+    ORDER BY unique_company_count DESC, d.name
+  `);
+  break;
+
+
+      case 'business-companies':
+        queryDescription = 'Top 10 business companies by paid capital';
         result = await session.run(`
-          // Find directors with most unique company connections
+          MATCH (c:Company)
+          WHERE toLower(c.activity) CONTAINS 'business'
+            AND c.paid_capital IS NOT NULL
+          WITH c.name as company_name, 
+               max(toFloat(c.paid_capital)) as max_paid_capital,
+               collect(c) as company_nodes
+          ORDER BY max_paid_capital DESC
+          LIMIT 10
+          
+          WITH company_name, max_paid_capital, company_nodes[0] as representative_company
+          OPTIONAL MATCH (representative_company)<-[r:DIRECTED]-(d:Director)
+          
+          RETURN representative_company as c, d, r, max_paid_capital
+          ORDER BY max_paid_capital DESC
+        `);
+        break;
+
+      case 'non-gov-defence':
+        queryDescription = 'Non-government defence companies';
+        result = await session.run(`
+          MATCH (c:Company)
+          WHERE toLower(c.sub_category) CONTAINS 'non' 
+            AND (
+              toLower(c.activity) CONTAINS 'defence' OR
+              ANY(info IN c.primary_info WHERE toLower(info) CONTAINS 'defence')
+            )
+          WITH c.name as company_name, 
+               collect(c) as company_nodes
+          LIMIT 10
+          
+          WITH company_name, company_nodes[0] as representative_company
+          OPTIONAL MATCH (representative_company)<-[r:DIRECTED]-(d:Director)
+          
+          RETURN representative_company as c, d, r
+        `);
+        break;
+
+      case 'defence-by-directors':
+        queryDescription = 'Defence companies by director count';
+        result = await session.run(`
+          MATCH (c:Company)<-[r:DIRECTED]-(d:Director)
+          WHERE (
+            toLower(c.activity) CONTAINS 'defence' OR
+            ANY(info IN c.primary_info WHERE toLower(info) CONTAINS 'defence')
+          )
+          WITH c, count(DISTINCT d) AS director_count
+          ORDER BY director_count DESC
+          LIMIT 10
+          
+          MATCH (c)<-[r:DIRECTED]-(d:Director)
+          RETURN c, d, r, director_count
+          ORDER BY director_count DESC
+        `);
+        break;
+
+      case 'union-gov-defence':
+        queryDescription = 'Union government defence companies by capital';
+        result = await session.run(`
+          MATCH (c:Company)
+          WHERE toLower(c.sub_category) CONTAINS 'union government company'
+            AND (
+              toLower(c.activity) CONTAINS 'defence' OR
+              ANY(info IN c.primary_info WHERE toLower(info) CONTAINS 'defence')
+            )
+            AND c.auth_capital IS NOT NULL
+          WITH c.name as company_name, 
+               max(toFloat(c.auth_capital)) as max_auth_capital,
+               collect(c) as company_nodes
+          ORDER BY max_auth_capital DESC
+          LIMIT 10
+          
+          WITH company_name, max_auth_capital, company_nodes[0] as representative_company
+          OPTIONAL MATCH (representative_company)<-[r:DIRECTED]-(d:Director)
+          
+          RETURN representative_company as c, d, r, max_auth_capital
+          ORDER BY max_auth_capital DESC
+        `);
+        break;
+
+      case 'electronics-companies':
+        queryDescription = 'Electronics companies';
+        result = await session.run(`
+          MATCH (c:Company)
+          WHERE toLower(c.activity) CONTAINS 'electronics'
+             OR ANY(info IN c.primary_info WHERE toLower(info) CONTAINS 'electronics')
+          WITH c.name as company_name, 
+               collect(c) as company_nodes
+          LIMIT 100
+          
+          WITH company_name, company_nodes[0] as representative_company
+          OPTIONAL MATCH (representative_company)<-[r:DIRECTED]-(d:Director)
+          
+          RETURN representative_company as c, d, r
+          ORDER BY company_name
+        `);
+        break;
+
+      case 'recent-defence':
+        queryDescription = 'Most recently incorporated defence companies';
+        result = await session.run(`
+          MATCH (c:Company)
+          WHERE (
+            toLower(c.activity) CONTAINS 'defence' OR
+            ANY(info IN c.primary_info WHERE toLower(info) CONTAINS 'defence')
+          )
+          AND c.inc_date IS NOT NULL
+          WITH c.name as company_name, 
+               max(c.inc_date) as latest_inc_date,
+               collect(c) as company_nodes
+          ORDER BY latest_inc_date DESC
+          LIMIT 10
+          
+          WITH company_name, latest_inc_date, company_nodes[0] as representative_company
+          OPTIONAL MATCH (representative_company)<-[r:DIRECTED]-(d:Director)
+          
+          RETURN representative_company as c, d, r, latest_inc_date
+          ORDER BY latest_inc_date DESC
+        `);
+        break;
+
+      case 'directors-by-capital':
+        queryDescription = 'Directors by total authorized capital';
+        result = await session.run(`
           MATCH (d:Director)-[r:DIRECTED]->(c:Company)
-          WITH d, count(DISTINCT c.name) AS unique_company_count, collect(DISTINCT c)[0..10] as connected_companies
-          ORDER BY unique_company_count DESC
-          LIMIT 5
+          WHERE c.auth_capital IS NOT NULL
+          WITH d, SUM(toFloat(c.auth_capital)) AS total_authorized_capital
+          ORDER BY total_authorized_capital DESC
+          LIMIT 10
           
-          // Get all relationships for these top directors
-          WITH d, unique_company_count, connected_companies
-          UNWIND connected_companies as company
-          MATCH (d)-[r:DIRECTED]->(company)
-          
-          RETURN d, company as c, r, unique_company_count
-          ORDER BY unique_company_count DESC, d.name
+          MATCH (d)-[r:DIRECTED]->(c:Company)
+          RETURN d, c, r, total_authorized_capital
+          ORDER BY total_authorized_capital DESC
         `);
         break;
 
@@ -327,7 +470,18 @@ exports.runCustomQuery = async (req, res) => {
         return res.status(400).json({
           error: 'Invalid query type',
           provided: type,
-          available_types: ['top-paid-defence', 'oldest-trading', 'most-connected-directors']
+          available_types: [
+            'top-paid-defence', 
+            'oldest-trading', 
+            'most-connected-directors',
+            'business-companies',
+            'non-gov-defence',
+            'defence-by-directors',
+            'union-gov-defence',
+            'electronics-companies',
+            'recent-defence',
+            'directors-by-capital'
+          ]
         });
     }
 
@@ -344,14 +498,15 @@ exports.runCustomQuery = async (req, res) => {
     // Process the results to include ALL relationships
     const nodes = new Map();
     const links = [];
-    const companyDirectors = new Map(); // Track directors per company
+    const companyDirectors = new Map();
+    const directorCompanies = new Map();
 
     result.records.forEach(record => {
       const company = record.get('c');
       const director = record.get('d');
       const relationship = record.get('r');
 
-      // Add company node
+      // Add company node if exists
       if (company && !nodes.has(company.identity.toString())) {
         nodes.set(company.identity.toString(), {
           id: company.identity.toString(),
@@ -360,44 +515,54 @@ exports.runCustomQuery = async (req, res) => {
           properties: {
             ...company.properties,
             ...(type === 'top-paid-defence' && { paid_capital: record.get('max_paid_capital') }),
-            ...(type === 'oldest-trading' && { inc_date: record.get('earliest_date') })
+            ...(type === 'oldest-trading' && { inc_date: record.get('earliest_date') }),
+            ...(type === 'business-companies' && { paid_capital: record.get('max_paid_capital') }),
+            ...(type === 'union-gov-defence' && { auth_capital: record.get('max_auth_capital') }),
+            ...(type === 'recent-defence' && { inc_date: record.get('latest_inc_date') })
           }
         });
-
-        // Initialize directors set for this company
         companyDirectors.set(company.identity.toString(), new Set());
       }
 
-      // Add director node and relationship if exists
-      if (director && relationship) {
-        const companyId = company.identity.toString();
-        const directorId = director.identity.toString();
+      // Add director node if exists
+      if (director && !nodes.has(director.identity.toString())) {
+        nodes.set(director.identity.toString(), {
+          id: director.identity.toString(),
+          label: director.properties.name || 'Unknown Director',
+          nodeType: 'Director',
+          properties: {
+            ...director.properties,
+            ...(type === 'most-connected-directors' && { connection_count: record.get('unique_company_count') }),
+            ...(type === 'directors-by-capital' && { total_authorized_capital: record.get('total_authorized_capital') }),
+            ...(type === 'defence-by-directors' && { director_count: record.get('director_count') })
+          }
+        });
+        directorCompanies.set(director.identity.toString(), new Set());
+      }
 
-        // Add director node if not already present
-        if (!nodes.has(directorId)) {
-          nodes.set(directorId, {
-            id: directorId,
-            label: director.properties.name || 'Unknown Director',
-            nodeType: 'Director',
-            properties: {
-              ...director.properties,
-              ...(type === 'most-connected-directors' && { 
-                connection_count: record.get('unique_company_count') 
-              })
-            }
-          });
-        }
+      // Add relationship if exists
+      if (relationship) {
+        if (company && director) {
+          const companyId = company.identity.toString();
+          const directorId = director.identity.toString();
 
-        // Add relationship if not already processed
-        const directorsForCompany = companyDirectors.get(companyId);
-        if (!directorsForCompany.has(directorId)) {
-          directorsForCompany.add(directorId);
-          links.push({
-            source: directorId,
-            target: companyId,
-            type: relationship.type,
-            properties: relationship.properties
-          });
+          // Add company->director relationship
+          const directorsForCompany = companyDirectors.get(companyId) || new Set();
+          if (!directorsForCompany.has(directorId)) {
+            directorsForCompany.add(directorId);
+            links.push({
+              source: directorId,
+              target: companyId,
+              type: relationship.type,
+              properties: relationship.properties
+            });
+          }
+
+          // Add director->company relationship
+          const companiesForDirector = directorCompanies.get(directorId) || new Set();
+          if (!companiesForDirector.has(companyId)) {
+            companiesForDirector.add(companyId);
+          }
         }
       }
     });
@@ -425,12 +590,21 @@ exports.runCustomQuery = async (req, res) => {
               name: d.label,
               connection_count: d.properties.connection_count
             }))
+        }),
+        ...(type === 'directors-by-capital' && {
+          top_directors: directorNodes
+            .sort((a, b) => (b.properties.total_authorized_capital || 0) - (a.properties.total_authorized_capital || 0))
+            .slice(0, 5)
+            .map(d => ({
+              name: d.label,
+              total_authorized_capital: d.properties.total_authorized_capital
+            }))
         })
       }
     };
 
-    // Add debug info for defence companies
-    if (type === 'top-paid-defence') {
+    // Add query-specific debug info
+    if (['top-paid-defence', 'business-companies'].includes(type)) {
       response.debug_info = {
         companies: companyNodes
           .sort((a, b) => parseFloat(b.properties.paid_capital || 0) - parseFloat(a.properties.paid_capital || 0))
@@ -443,8 +617,20 @@ exports.runCustomQuery = async (req, res) => {
       };
     }
 
-    // Add debug info for oldest trading companies
-    if (type === 'oldest-trading') {
+    if (type === 'union-gov-defence') {
+      response.debug_info = {
+        companies: companyNodes
+          .sort((a, b) => parseFloat(b.properties.auth_capital || 0) - parseFloat(a.properties.auth_capital || 0))
+          .map(c => ({
+            name: c.label,
+            authorized_capital: c.properties.auth_capital,
+            formatted_capital: (parseFloat(c.properties.auth_capital || 0) / 10000000).toFixed(2) + ' Crores',
+            directors_count: links.filter(l => l.target === c.id).length
+          }))
+      };
+    }
+
+    if (type === 'oldest-trading' || type === 'recent-defence') {
       response.debug_info = {
         companies: companyNodes
           .sort((a, b) => new Date(a.properties.inc_date) - new Date(b.properties.inc_date))
@@ -452,6 +638,20 @@ exports.runCustomQuery = async (req, res) => {
             name: c.label,
             incorporation_date: c.properties.inc_date,
             directors_count: links.filter(l => l.target === c.id).length
+          }))
+      };
+    }
+
+    if (type === 'defence-by-directors') {
+      response.debug_info = {
+        companies: companyNodes
+          .sort((a, b) => (b.properties.director_count || 0) - (a.properties.director_count || 0))
+          .map(c => ({
+            name: c.label,
+            director_count: c.properties.director_count,
+            directors: links
+              .filter(l => l.target === c.id)
+              .map(l => nodes.get(l.source).label)
           }))
       };
     }
@@ -470,6 +670,7 @@ exports.runCustomQuery = async (req, res) => {
     await session.close();
   }
 };
+
 
 // Alternative approach using a cleaner two-step process
 

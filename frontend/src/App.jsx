@@ -1,6 +1,6 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import ProtectedRoute from './components/ProtectedRoute'; // ✅ Import
 
 import Home from './pages/Home';
 import Queries from './pages/Queries';
@@ -12,13 +12,39 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className="p-6">
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/queries" element={<Queries />} />
           <Route path="/get-started" element={<GetStarted />} />
-          <Route path="/add-data" element={<AddData />} />
-          <Route path="/custom-queries" element={<CustomQueries />} />
+
+          {/* ✅ Protected Routes */}
+          <Route
+            path="/queries"
+            element={
+              <ProtectedRoute>
+                <Queries />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/custom-queries"
+            element={
+              <ProtectedRoute>
+                <CustomQueries />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* ✅ Admin Only */}
+          <Route
+            path="/add-data"
+            element={
+              <ProtectedRoute adminOnly={true}>
+                <AddData />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </div>
     </Router>

@@ -10,143 +10,8 @@ const Queries = () => {
 
   const queryOptions = [
     { label: "Full Graph (getFullGraph)", value: "full-graph" },
-    { label: "Company by CIN", value: "company-by-cin" },
-    { label: "Director by DIN", value: "director-by-din" },
     { label: "Secondary Companies", value: "secondary-companies" },
   ];
-
-  // Helper function to convert company data to graph format
-  const convertCompanyToGraph = (companyData) => {
-    const nodes = [];
-    const links = [];
-    let nodeId = 1;
-
-    // Add company node
-    const companyNode = {
-      id: nodeId++,
-      label: companyData.name || "Unknown Company",
-      properties: {
-        name: companyData.name,
-        cin: companyData.cin,
-        class: companyData.class,
-        category: companyData.category,
-        sub_category: companyData.sub_category,
-        authorized_cap: companyData.authorized_cap,
-        paidup_cap: companyData.paidup_cap,
-        registration_number: companyData.registration_number,
-        email: companyData.email,
-        date_of_incorporation: companyData.date_of_incorporation,
-        address: companyData.address,
-        state: companyData.state,
-        country: companyData.country,
-        pincode: companyData.pincode,
-        activity_description: companyData.activity_description,
-        company_status: companyData.company_status,
-        company_sub_category: companyData.company_sub_category,
-        roc: companyData.roc,
-        listing_status: companyData.listing_status,
-        principal_business_activity: companyData.principal_business_activity
-      },
-      nodeType: "Company",
-      type: "primary"
-    };
-    nodes.push(companyNode);
-
-    // Add director nodes and links
-    if (companyData.directors && Array.isArray(companyData.directors)) {
-      companyData.directors.forEach(director => {
-        if (director.name) {
-          const directorNode = {
-            id: nodeId++,
-            label: director.name,
-            properties: {
-              name: director.name,
-              din: director.din,
-              designation: director.designation,
-              director_id: director.director_id
-            },
-            nodeType: "Director",
-            type: "director"
-          };
-          nodes.push(directorNode);
-
-          // Create link from director to company
-          links.push({
-            source: directorNode.id,
-            target: companyNode.id,
-            relationship: director.designation || "DIRECTED",
-            type: "DIRECTED",
-            properties: {
-              designation: director.designation
-            }
-          });
-        }
-      });
-    }
-
-    return { nodes, links };
-  };
-
-  // Helper function to convert director data to graph format
-  const convertDirectorToGraph = (directorData) => {
-    const nodes = [];
-    const links = [];
-    let nodeId = 1;
-
-    // Add director node
-    const directorNode = {
-      id: nodeId++,
-      label: directorData.name || "Unknown Director",
-      properties: {
-        name: directorData.name,
-        din: directorData.din,
-        director_id: directorData.director_id,
-        address: directorData.address,
-        state: directorData.state,
-        country: directorData.country,
-        pincode: directorData.pincode,
-        phone: directorData.phone,
-        email: directorData.email
-      },
-      nodeType: "Director",
-      type: "director"
-    };
-    nodes.push(directorNode);
-
-    // Add company nodes and links
-    if (directorData.companies && Array.isArray(directorData.companies)) {
-      directorData.companies.forEach(company => {
-        if (company.name) {
-          const companyNode = {
-            id: nodeId++,
-            label: company.name,
-            properties: {
-              name: company.name,
-              cin: company.cin,
-              company_id: company.company_id,
-              designation: company.designation
-            },
-            nodeType: "Company",
-            type: "secondary"
-          };
-          nodes.push(companyNode);
-
-          // Create link from director to company
-          links.push({
-            source: directorNode.id,
-            target: companyNode.id,
-            relationship: company.designation || "DIRECTED",
-            type: "DIRECTED",
-            properties: {
-              designation: company.designation
-            }
-          });
-        }
-      });
-    }
-
-    return { nodes, links };
-  };
 
   // Helper function to convert secondary companies to graph format
   const convertSecondaryCompaniesToGraph = (secondaryData) => {
@@ -194,7 +59,8 @@ const Queries = () => {
               company_status: company.company_status,
               roc: company.roc,
               listing_status: company.listing_status,
-              principal_business_activity: company.principal_business_activity
+              principal_business_activity: company.principal_business_activity,
+              primary_info: company.primary_info || {}
             },
             nodeType: "Company",
             type: "secondary"
@@ -223,27 +89,10 @@ const Queries = () => {
 
     try {
       let url = "";
-      let inputValue = "";
 
       switch (selectedQuery) {
         case "full-graph":
           url = "/api/graph";
-          break;
-        case "company-by-cin":
-          inputValue = prompt("Enter CIN:");
-          if (!inputValue) {
-            setLoading(false);
-            return;
-          }
-          url = `/api/graph/company/${inputValue}`;
-          break;
-        case "director-by-din":
-          inputValue = prompt("Enter DIN:");
-          if (!inputValue) {
-            setLoading(false);
-            return;
-          }
-          url = `/api/graph/director/${inputValue}`;
           break;
         case "secondary-companies":
           url = "/api/graph/secondary-companies";
@@ -295,10 +144,6 @@ const Queries = () => {
     switch (selectedQuery) {
       case "full-graph":
         return result.nodes && result.links && result.nodes.length > 0;
-      case "company-by-cin":
-        return result.found && (result.directors || result.name);
-      case "director-by-din":
-        return result.found && (result.companies || result.name);
       case "secondary-companies":
         return result.secondary_companies && result.secondary_companies.length > 0;
       default:
@@ -313,10 +158,6 @@ const Queries = () => {
     switch (selectedQuery) {
       case "full-graph":
         return { nodes: result.nodes, links: result.links };
-      case "company-by-cin":
-        return convertCompanyToGraph(result);
-      case "director-by-din":
-        return convertDirectorToGraph(result);
       case "secondary-companies":
         return convertSecondaryCompaniesToGraph(result);
       default:
@@ -329,10 +170,6 @@ const Queries = () => {
     switch (selectedQuery) {
       case "full-graph":
         return "Full Network Graph";
-      case "company-by-cin":
-        return `Company: ${result?.name || 'Unknown'} and its Directors`;
-      case "director-by-din":
-        return `Director: ${result?.name || 'Unknown'} and their Companies`;
       case "secondary-companies":
         return `Secondary Companies (${result?.count || 0} total, showing first 50)`;
       default:
@@ -341,98 +178,229 @@ const Queries = () => {
   };
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-semibold mb-4">Run Predefined Queries</h2>
-
-      <div className="mb-4">
-        <select
-          value={selectedQuery}
-          onChange={(e) => setSelectedQuery(e.target.value)}
-          className="p-2 border rounded mr-4 min-w-[200px]"
-        >
-          <option value="">Select a query</option>
-          {queryOptions.map((q) => (
-            <option key={q.value} value={q.value}>
-              {q.label}
-            </option>
-          ))}
-        </select>
-
-        <button
-          onClick={runQuery}
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:bg-gray-400"
-          disabled={!selectedQuery || loading}
-        >
-          {loading ? "Running..." : "Run Query"}
-        </button>
-      </div>
-
-      {error && (
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-          <strong>Error:</strong> {error}
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-8 transform transition-all duration-500 ease-out animate-fade-in">
+          <h2 className="text-4xl font-bold text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            Run Predefined Queries
+          </h2>
+          <p className="text-slate-400 text-lg">Execute network analysis queries and visualize graph data</p>
         </div>
-      )}
 
-      {result && (
-        <div className="mt-6">
-          <h3 className="text-lg font-medium mb-2">Result:</h3>
-
-          {shouldShowGraph() ? (
-            <div>
-              <div className="mb-4 p-4 bg-blue-50 rounded-lg">
-                <h4 className="font-medium text-blue-800 mb-2">Graph Visualization Available</h4>
-                <p className="text-sm text-blue-600">
-                  {selectedQuery === "full-graph" && `Displaying ${result.nodes?.length || 0} nodes and ${result.links?.length || 0} relationships`}
-                  {selectedQuery === "company-by-cin" && `Showing company "${result.name}" with ${result.directors?.length || 0} directors`}
-                  {selectedQuery === "director-by-din" && `Showing director "${result.name}" with ${result.companies?.length || 0} companies`}
-                  {selectedQuery === "secondary-companies" && `Showing ${Math.min(result.secondary_companies?.length || 0, 50)} secondary companies`}
-                </p>
+        {/* Query Controls */}
+        <div className="mb-8 transform transition-all duration-500 ease-out delay-100 animate-fade-in">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 shadow-2xl">
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
+              <div className="flex-1 min-w-0">
+                <label className="block text-sm font-medium text-slate-300 mb-2">
+                  Select Query Type
+                </label>
+                <select
+                  value={selectedQuery}
+                  onChange={(e) => setSelectedQuery(e.target.value)}
+                  className="w-full p-3 bg-slate-700 border border-slate-600 rounded-lg text-white 
+                           focus:ring-2 focus:ring-blue-500 focus:border-transparent 
+                           transition-all duration-300 ease-in-out hover:bg-slate-600"
+                >
+                  <option value="" className="bg-slate-700">Select a query</option>
+                  {queryOptions.map((q) => (
+                    <option key={q.value} value={q.value} className="bg-slate-700">
+                      {q.label}
+                    </option>
+                  ))}
+                </select>
               </div>
 
-              {selectedQuery === "full-graph" ? (
-                <GraphView nodes={result.nodes} links={result.links} />
-              ) : (
-                <SimpleGraphView 
-                  nodes={getGraphData()?.nodes || []} 
-                  links={getGraphData()?.links || []} 
-                  title={getGraphTitle()}
-                />
-              )}
-
-              <details className="mt-4">
-                <summary className="cursor-pointer text-sm text-blue-600 hover:text-blue-800">
-                  Show Raw JSON Data
-                </summary>
-                <pre className="bg-gray-100 p-4 rounded overflow-x-auto max-h-[300px] text-sm mt-2">
-                  {JSON.stringify(result, null, 2)}
-                </pre>
-              </details>
+              <div className="flex-shrink-0">
+                <button
+                  onClick={runQuery}
+                  className={`px-8 py-3 rounded-lg font-semibold text-white transition-all duration-300 ease-in-out transform 
+                    ${!selectedQuery || loading 
+                      ? 'bg-slate-600 cursor-not-allowed' 
+                      : 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 hover:shadow-lg active:scale-95'
+                    }
+                    ${loading ? 'animate-pulse' : ''}
+                  `}
+                  disabled={!selectedQuery || loading}
+                >
+                  {loading ? (
+                    <div className="flex items-center space-x-2">
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      <span>Running...</span>
+                    </div>
+                  ) : "Run Query"}
+                </button>
+              </div>
             </div>
-          ) : (
-            <div>
-              <pre className="bg-gray-100 p-4 rounded overflow-x-auto max-h-[500px] text-sm">
-                {JSON.stringify(result, null, 2)}
-              </pre>
-              {(result?.nodes && result?.links) && (
-                <div className="mt-2 text-sm text-blue-600">
-                  Note: This appears to be graph data. Try selecting "Full Graph" query to visualize it.
-                </div>
-              )}
-            </div>
-          )}
+          </div>
         </div>
-      )}
 
-      {/* Query Information */}
-      <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-        <h4 className="font-medium text-gray-800 mb-2">Query Information</h4>
-        <div className="text-sm text-gray-600 space-y-1">
-          <p><strong>Full Graph:</strong> Displays the complete network with all relationships</p>
-          <p><strong>Company by CIN:</strong> Shows a specific company and its directors in a focused view</p>
-          <p><strong>Director by DIN:</strong> Shows a specific director and their associated companies</p>
-          <p><strong>Secondary Companies:</strong> Displays companies not in the original dataset (limited to 50 for performance)</p>
+        {/* Error Display */}
+        {error && (
+          <div className="mb-6 transform transition-all duration-500 ease-out animate-slide-down">
+            <div className="bg-red-900/20 border border-red-500/50 text-red-300 px-6 py-4 rounded-xl backdrop-blur-sm">
+              <div className="flex items-center space-x-2">
+                <svg className="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                </svg>
+                <strong>Error:</strong>
+                <span>{error}</span>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Results */}
+        {result && (
+          <div className="transform transition-all duration-500 ease-out animate-fade-in-up">
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-700 shadow-2xl overflow-hidden">
+              <div className="px-6 py-4 border-b border-slate-700">
+                <h3 className="text-xl font-semibold text-white flex items-center space-x-2">
+                  <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Query Results</span>
+                </h3>
+              </div>
+
+              <div className="p-6">
+                {shouldShowGraph() ? (
+                  <div className="space-y-6">
+                    {/* Graph Info Card */}
+                    <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg p-4 border border-blue-500/30">
+                      <div className="flex items-center space-x-3 mb-2">
+                        <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
+                        <h4 className="font-semibold text-blue-300">Graph Visualization</h4>
+                      </div>
+                      <p className="text-sm text-blue-200">
+                        {selectedQuery === "full-graph" && `Displaying ${result.nodes?.length || 0} nodes and ${result.links?.length || 0} relationships`}
+                        {selectedQuery === "secondary-companies" && `Showing ${Math.min(result.secondary_companies?.length || 0, 50)} secondary companies`}
+                      </p>
+                    </div>
+
+                    {/* Graph Visualization */}
+                    <div className="bg-slate-900/50 rounded-lg border border-slate-600 overflow-hidden">
+                      {selectedQuery === "full-graph" ? (
+                        <GraphView nodes={result.nodes} links={result.links} />
+                      ) : (
+                        <SimpleGraphView 
+                          nodes={getGraphData()?.nodes || []} 
+                          links={getGraphData()?.links || []} 
+                          title={getGraphTitle()}
+                        />
+                      )}
+                    </div>
+
+                    {/* Raw Data Toggle */}
+                    <details className="group">
+                      <summary className="cursor-pointer text-slate-300 hover:text-white transition-colors duration-200 flex items-center space-x-2 py-2">
+                        <svg className="w-4 h-4 transform group-open:rotate-90 transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="font-medium">Show Raw JSON Data</span>
+                      </summary>
+                      <div className="mt-3 bg-slate-900 rounded-lg border border-slate-600 overflow-hidden">
+                        <pre className="p-4 text-sm text-slate-300 overflow-x-auto max-h-[400px] scrollbar-thin scrollbar-thumb-slate-600 scrollbar-track-slate-800">
+                          {JSON.stringify(result, null, 2)}
+                        </pre>
+                      </div>
+                    </details>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    <div className="bg-slate-900 rounded-lg border border-slate-600 overflow-hidden">
+                      <pre className="p-4 text-sm text-slate-300 overflow-x-auto max-h-[500px] scrollbar-thin scrollbar-thumb-slate-600 scrollbar-track-slate-800">
+                        {JSON.stringify(result, null, 2)}
+                      </pre>
+                    </div>
+                    {(result?.nodes && result?.links) && (
+                      <div className="text-sm text-blue-400 bg-blue-900/20 rounded-lg p-3 border border-blue-500/30">
+                        💡 This appears to be graph data. Try selecting "Full Graph" query to visualize it.
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Query Information */}
+        <div className="mt-8 transform transition-all duration-500 ease-out delay-200 animate-fade-in">
+          <div className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-slate-700">
+            <h4 className="font-semibold text-white mb-4 flex items-center space-x-2">
+              <svg className="w-5 h-5 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+              </svg>
+              <span>Available Queries</span>
+            </h4>
+            <div className="grid md:grid-cols-2 gap-4 text-sm">
+              <div className="bg-slate-700/30 rounded-lg p-4 border border-slate-600 transition-all duration-300 hover:bg-slate-700/50">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  <strong className="text-slate-200">Full Graph</strong>
+                </div>
+                <p className="text-slate-400">Displays the complete network with all relationships and connections</p>
+              </div>
+              <div className="bg-slate-700/30 rounded-lg p-4 border border-slate-600 transition-all duration-300 hover:bg-slate-700/50">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  <strong className="text-slate-200">Secondary Companies</strong>
+                </div>
+                <p className="text-slate-400">Shows companies not in the original dataset (limited to 50 for optimal performance)</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fade-in-up {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slide-down {
+          from { opacity: 0; transform: translateY(-10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+          animation: fade-in 0.6s ease-out forwards;
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 0.6s ease-out forwards;
+        }
+        
+        .animate-slide-down {
+          animation: slide-down 0.4s ease-out forwards;
+        }
+        
+        .scrollbar-thin {
+          scrollbar-width: thin;
+        }
+        
+        .scrollbar-thumb-slate-600::-webkit-scrollbar-thumb {
+          background-color: #475569;
+          border-radius: 0.375rem;
+        }
+        
+        .scrollbar-track-slate-800::-webkit-scrollbar-track {
+          background-color: #1e293b;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+      `}</style>
     </div>
   );
 };

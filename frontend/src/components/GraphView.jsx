@@ -1,12 +1,42 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
-import { X, User, Building, Info, Hash, Calendar, MapPin, Phone, Mail } from 'lucide-react';
+import { X, User, Building, Info, Hash, Calendar, MapPin, Phone, Mail, Shield } from 'lucide-react';
 
 const GraphView = ({ nodes, links }) => {
   const svgRef = useRef();
   const [simulation, setSimulation] = useState(null);
   const [transform, setTransform] = useState({ x: 0, y: 0, k: 1 });
   const [selectedNode, setSelectedNode] = useState(null);
+
+  // Helper function to determine if a company is defense-related
+  const isDefenseCompany = (node) => {
+    if (!node) return false;
+    
+    const checkFields = [
+      node.label,
+      node.name,
+      node.properties?.name,
+      node.properties?.activity_description,
+      node.properties?.principal_business_activity,
+      node.properties?.primary_info?.activity_description,
+      node.properties?.primary_info?.principal_business_activity
+    ];
+    
+    const defenseKeywords = [
+      'defense', 'defence', 'military', 'aerospace', 'aviation', 'weapons', 
+      'ordinance', 'ordnance', 'armament', 'missile', 'radar', 'naval', 
+      'army', 'air force', 'navy', 'security', 'surveillance', 'combat'
+    ];
+    
+    return checkFields.some(field => {
+      if (typeof field === 'string') {
+        return defenseKeywords.some(keyword => 
+          field.toLowerCase().includes(keyword.toLowerCase())
+        );
+      }
+      return false;
+    });
+  };
 
   useEffect(() => {
     if (!nodes || !links || nodes.length === 0) {
@@ -74,10 +104,21 @@ const GraphView = ({ nodes, links }) => {
     const nodesCopy = uniqueNodes.map(d => ({ ...d }));
     const linksCopy = uniqueLinks.map(d => ({ ...d }));
 
-    // Enhanced color scale for different node types
-    const colorScale = d3.scaleOrdinal()
-      .domain(['director', 'primary', 'secondary', 'company', 'person'])
-      .range(['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7']);
+    // Enhanced color function for different node types
+    const getNodeColor = (node) => {
+      // Check if it's a defense company first
+      if (isDefenseCompany(node)) {
+        return '#1e40af'; // Blue for defense companies
+      }
+      
+      // Directors remain red
+      if (node.type === 'director' || node.nodeType === 'director') {
+        return '#ff6b6b';
+      }
+      
+      // All other companies (primary and secondary) are teal
+      return '#4ecdc4';
+    };
 
     // Create simulation with improved forces
     const sim = d3.forceSimulation(nodesCopy)
@@ -143,7 +184,7 @@ const GraphView = ({ nodes, links }) => {
         if (d.type === 'primary' || d.nodeType === 'primary') return 10;
         return 8;
       })
-      .attr('fill', d => colorScale(d.type || d.nodeType || 'secondary'))
+      .attr('fill', d => getNodeColor(d))
       .attr('stroke', '#fff')
       .attr('stroke-width', 2)
       .style('cursor', 'pointer')
@@ -189,6 +230,7 @@ const GraphView = ({ nodes, links }) => {
         ];
         if (d.cin) lines.push(`CIN: ${d.cin}`);
         if (d.din) lines.push(`DIN: ${d.din}`);
+        if (isDefenseCompany(d)) lines.push(`Defense Company`);
         return lines.join('\n');
       });
 
@@ -331,8 +373,8 @@ const GraphView = ({ nodes, links }) => {
 
   const nodeStats = {
     directors: Array.from(uniqueNodes.values()).filter(n => n.type === 'director' || n.nodeType === 'director').length,
-    primary: Array.from(uniqueNodes.values()).filter(n => n.type === 'primary' || n.nodeType === 'primary').length,
-    secondary: Array.from(uniqueNodes.values()).filter(n => n.type === 'secondary' || n.nodeType === 'secondary').length,
+    defense: Array.from(uniqueNodes.values()).filter(n => isDefenseCompany(n)).length,
+    companies: Array.from(uniqueNodes.values()).filter(n => (n.type === 'primary' || n.type === 'secondary' || n.nodeType === 'primary' || n.nodeType === 'secondary') && !isDefenseCompany(n)).length,
     total: uniqueNodes.size
   };
 
@@ -348,11 +390,11 @@ const GraphView = ({ nodes, links }) => {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 rounded-full bg-teal-400"></div>
-              <span>Primary Companies ({nodeStats.primary})</span>
+              <span>Companies ({nodeStats.companies})</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-4 h-4 rounded-full bg-blue-400"></div>
-              <span>Secondary Companies ({nodeStats.secondary})</span>
+              <div className="w-4 h-4 rounded-full bg-blue-600"></div>
+              <span>Defense Companies ({nodeStats.defense})</span>
             </div>
           </div>
           <div className="text-xs text-gray-600">
@@ -431,18 +473,21 @@ const GraphView = ({ nodes, links }) => {
             <div className="bg-white rounded-lg p-4 mb-4 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
                 <div 
-                  className="w-6 h-6 rounded-full flex-shrink-0"
+                  className="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center"
                   style={{ 
-                    backgroundColor: selectedNode.type === 'director' ? '#ff6b6b' : 
-                                   selectedNode.type === 'primary' ? '#4ecdc4' : '#45b7d1'
+                    backgroundColor: isDefenseCompany(selectedNode) ? '#1e40af' :
+                                   selectedNode.type === 'director' ? '#ff6b6b' : '#4ecdc4'
                   }}
-                ></div>
+                >
+                  {isDefenseCompany(selectedNode) && <Shield size={12} className="text-white" />}
+                </div>
                 <div>
                   <h4 className="font-medium text-gray-900">
                     {selectedNode.label || selectedNode.name || `Node ${selectedNode.id}`}
                   </h4>
                   <p className="text-sm text-gray-600 capitalize">
                     {selectedNode.type || selectedNode.nodeType || 'Unknown Type'}
+                    {isDefenseCompany(selectedNode) && <span className="ml-2 text-blue-600 font-medium">(Defense)</span>}
                   </p>
                 </div>
               </div>
@@ -467,12 +512,52 @@ const GraphView = ({ nodes, links }) => {
               </div>
             </div>
 
-            {/* All Properties */}
-            {selectedNode.properties && Object.keys(selectedNode.properties).length > 0 && (
-              <div className="bg-white rounded-lg p-4 shadow-sm">
-                <h5 className="font-medium text-gray-800 mb-3">All Properties</h5>
+            {/* Primary Info Section */}
+            {selectedNode.properties?.primary_info && Object.keys(selectedNode.properties.primary_info).length > 0 && (
+              <div className="bg-white rounded-lg p-4 mb-4 shadow-sm">
+                <h5 className="font-medium text-gray-800 mb-3 flex items-center gap-2">
+                  <Building size={16} className="text-blue-600" />
+                  Primary Information
+                </h5>
                 <div className="space-y-3">
-                  {Object.entries(selectedNode.properties).map(([key, value]) => {
+                  {Object.entries(selectedNode.properties.primary_info).map(([key, value]) => {
+                    const IconComponent = getPropertyIcon(key);
+                    return (
+                      <div key={key} className="border-b border-gray-100 pb-2 last:border-b-0">
+                        <div className="flex items-start gap-2">
+                          <IconComponent size={14} className="text-blue-400 mt-1 flex-shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <div className="flex justify-between items-start">
+                              <span className="text-sm font-medium text-blue-700 capitalize">
+                                {key.replace(/_/g, ' ')}:
+                              </span>
+                            </div>
+                            <div className="mt-1">
+                              {typeof value === 'object' ? (
+                                <pre className="text-xs bg-blue-50 p-2 rounded border overflow-x-auto">
+                                  {JSON.stringify(value, null, 2)}
+                                </pre>
+                              ) : (
+                                <span className="text-sm text-gray-900 break-words">
+                                  {formatValue(key, value)}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Other Properties */}
+            {selectedNode.properties && Object.keys(selectedNode.properties).filter(key => key !== 'primary_info').length > 0 && (
+              <div className="bg-white rounded-lg p-4 mb-4 shadow-sm">
+                <h5 className="font-medium text-gray-800 mb-3">Other Properties</h5>
+                <div className="space-y-3">
+                  {Object.entries(selectedNode.properties).filter(([key]) => key !== 'primary_info').map(([key, value]) => {
                     const IconComponent = getPropertyIcon(key);
                     return (
                       <div key={key} className="border-b border-gray-100 pb-2 last:border-b-0">
@@ -505,7 +590,7 @@ const GraphView = ({ nodes, links }) => {
             )}
 
             {/* Raw JSON (collapsible) */}
-            <details className="bg-white rounded-lg p-4 shadow-sm mt-4">
+            <details className="bg-white rounded-lg p-4 shadow-sm">
               <summary className="font-medium text-gray-800 cursor-pointer">
                 Raw JSON Data
               </summary>
@@ -522,7 +607,7 @@ const GraphView = ({ nodes, links }) => {
           <strong>Controls:</strong> Click nodes to view details • Drag nodes to move • Mouse wheel to zoom • Drag background to pan
         </div>
         <div>
-          <strong>Features:</strong> Relationship labels on edges • Directional arrows • Deduplication • Enhanced tooltips • Detailed node information panel
+          <strong>Features:</strong> Relationship labels on edges • Directional arrows • Defense company detection • Enhanced node information panel
         </div>
       </div>
     </div>

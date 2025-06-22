@@ -11,19 +11,75 @@ const CustomQueries = () => {
     { 
       label: "Top Paid Defence Companies", 
       value: "top-paid-defence",
-      description: "Top 10 defence companies by paid capital with their directors"
+      description: "Top 10 defence companies by paid capital with ALL their directors",
+      category: "Defence",
+      icon: "🛡️"
     },
     { 
       label: "Oldest Trading Companies", 
       value: "oldest-trading",
-      description: "Top 10 oldest trading companies with their directors"
+      description: "Top 10 oldest trading companies with ALL their directors",
+      category: "Trading",
+      icon: "📈"
     },
     { 
-      label: "Most Connected Directors", 
-      value: "most-connected-directors",
-      description: "Top 5 directors with the most company connections"
+      label: "Top Business Companies", 
+      value: "business-companies",
+      description: "Top 10 business companies by paid capital with ALL their directors",
+      category: "Business",
+      icon: "🏢"
+    },
+    { 
+      label: "Non-Government Defence", 
+      value: "non-gov-defence",
+      description: "10 non-government defence companies with ALL their directors",
+      category: "Defence",
+      icon: "🛡️"
+    },
+    { 
+      label: "Defence by Director Count", 
+      value: "defence-by-directors",
+      description: "Top 10 defence companies by number of directors",
+      category: "Defence",
+      icon: "👥"
+    },
+    { 
+      label: "Union Government Defence", 
+      value: "union-gov-defence",
+      description: "Top 10 union government defence companies by authorized capital",
+      category: "Defence",
+      icon: "🏛️"
+    },
+    { 
+      label: "Electronics Companies", 
+      value: "electronics-companies",
+      description: "Top Defence Electronics companies with ALL their directors",
+      category: "Electronics",
+      icon: "💻"
+    },
+    { 
+      label: "Recent Defence Companies", 
+      value: "recent-defence",
+      description: "10 most recently incorporated defence companies with ALL their directors",
+      category: "Defence",
+      icon: "🆕"
+    },
+    { 
+      label: "Directors by Capital", 
+      value: "directors-by-capital",
+      description: "Top 10 directors by total authorized capital of their companies",
+      category: "Directors",
+      icon: "💰"
     }
   ];
+
+  const queryCategories = customQueryOptions.reduce((acc, query) => {
+    if (!acc[query.category]) {
+      acc[query.category] = [];
+    }
+    acc[query.category].push(query);
+    return acc;
+  }, {});
 
   const runCustomQuery = async () => {
     if (!selectedQuery) return;
@@ -34,8 +90,6 @@ const CustomQueries = () => {
 
     try {
       const url = `/api/graph/query?type=${selectedQuery}`;
-      console.log("Fetching custom query from:", url);
-      
       const res = await fetch(url);
       
       if (!res.ok) {
@@ -43,24 +97,13 @@ const CustomQueries = () => {
       }
       
       const data = await res.json();
-      console.log("Received custom query data:", data);
       
-      // Validate the response structure
       if (data.error) {
         throw new Error(data.error);
-      }
-
-      if (!data.nodes || !Array.isArray(data.nodes)) {
-        console.warn("Invalid or missing nodes in response");
-      }
-
-      if (!data.links || !Array.isArray(data.links)) {
-        console.warn("Invalid or missing links in response");
       }
       
       setResult(data);
     } catch (err) {
-      console.error("Custom query failed:", err);
       setError(err.message);
       setResult({ error: err.message });
     } finally {
@@ -68,71 +111,126 @@ const CustomQueries = () => {
     }
   };
 
-  // Function to get query description
-  const getQueryDescription = () => {
-    const query = customQueryOptions.find(q => q.value === selectedQuery);
-    return query ? query.description : '';
+  const formatCurrency = (amount) => {
+    if (!amount) return 'N/A';
+    const num = parseFloat(amount);
+    if (num >= 10000000) {
+      return `₹${(num / 10000000).toFixed(2)} Cr`;
+    } else if (num >= 100000) {
+      return `₹${(num / 100000).toFixed(2)} L`;
+    } else {
+      return `₹${num.toLocaleString()}`;
+    }
   };
 
-  // Function to get formatted statistics
-  const getQueryStats = () => {
-    if (!result || result.error) return null;
+  const getCategoryColor = (category) => {
+    const colors = {
+      'Defence': 'from-red-500 to-red-600',
+      'Trading': 'from-blue-500 to-blue-600',
+      'Business': 'from-green-500 to-green-600',
+      'Directors': 'from-purple-500 to-purple-600',
+      'Electronics': 'from-orange-500 to-orange-600'
+    };
+    return colors[category] || 'from-gray-500 to-gray-600';
+  };
 
-    const stats = {
+  const getStats = () => {
+    if (!result || result.error) return null;
+    return {
       nodes: result.nodes?.length || 0,
       links: result.links?.length || 0,
       companies: result.nodes?.filter(n => n.nodeType === 'Company').length || 0,
       directors: result.nodes?.filter(n => n.nodeType === 'Director').length || 0,
-      totalRecords: result.total_records || 0,
-      uniqueNodes: result.unique_nodes || 0
     };
-
-    return stats;
   };
 
-  // Function to format debug info for display
-  const getDebugInfo = () => {
-    if (!result?.debug_info) return null;
-    return result.debug_info;
+  const getCompanyDirectorBreakdown = () => {
+    if (!result || result.error || !result.nodes || !result.links) return null;
+
+    const companies = result.nodes.filter(n => n.nodeType === 'Company');
+    const directors = result.nodes.filter(n => n.nodeType === 'Director');
+    
+    const companyDirectorMap = {};
+    
+    companies.forEach(company => {
+      const companyDirectors = result.links
+        .filter(link => link.target === company.id)
+        .map(link => {
+          const director = directors.find(d => d.id === link.source);
+          return {
+            director: director,
+            relationship: link.properties
+          };
+        })
+        .filter(item => item.director);
+      
+      companyDirectorMap[company.id] = {
+        company: company,
+        directors: companyDirectors,
+        directorCount: companyDirectors.length
+      };
+    });
+
+    return companyDirectorMap;
   };
 
   return (
-    <div className="p-6">
-      <div className="mb-6">
-        <h2 className="text-3xl font-bold text-gray-900 mb-2">Custom Network Queries</h2>
-        <p className="text-gray-600">
-          Run specialized queries to explore specific patterns in the corporate network
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white p-6">
+      {/* Header */}
+      <div className="mb-8 text-center">
+        <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
+          Custom Network Queries
+        </h2>
+        <p className="text-gray-300 text-lg">
+          Explore specialized patterns in the corporate network
         </p>
       </div>
 
-      {/* Query Selection Section */}
-      <div className="bg-white rounded-lg border p-6 mb-6">
-        <h3 className="text-lg font-semibold mb-4">Select Query Type</h3>
+      {/* Query Selection */}
+      <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700/50 p-6 mb-8 transition-all duration-300 hover:bg-gray-800/70">
+        <h3 className="text-xl font-semibold mb-6 text-blue-300">Select Query Type</h3>
         
-        <div className="grid md:grid-cols-3 gap-4 mb-6">
-          {customQueryOptions.map((option) => (
-            <div 
-              key={option.value}
-              className={`border rounded-lg p-4 cursor-pointer transition-all duration-200 ${
-                selectedQuery === option.value 
-                  ? 'border-blue-500 bg-blue-50 shadow-md' 
-                  : 'border-gray-200 hover:border-gray-300 hover:shadow-sm'
-              }`}
-              onClick={() => setSelectedQuery(option.value)}
-            >
-              <div className="flex items-start gap-3">
-                <input
-                  type="radio"
-                  name="customQuery"
-                  value={option.value}
-                  checked={selectedQuery === option.value}
-                  onChange={() => setSelectedQuery(option.value)}
-                  className="mt-1"
-                />
-                <div>
-                  <h4 className="font-medium text-gray-900 mb-1">{option.label}</h4>
-                  <p className="text-sm text-gray-600">{option.description}</p>
-                </div>
+        <div className="space-y-6 mb-6">
+          {Object.entries(queryCategories).map(([category, queries]) => (
+            <div key={category} className="space-y-4">
+              <div className={`inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r ${getCategoryColor(category)} text-white font-medium shadow-lg`}>
+                {category} ({queries.length})
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {queries.map((option) => (
+                  <div 
+                    key={option.value}
+                    className={`group relative overflow-hidden rounded-xl p-4 cursor-pointer transition-all duration-300 transform hover:scale-105 ${
+                      selectedQuery === option.value 
+                        ? 'bg-gradient-to-r from-blue-600/30 to-purple-600/30 border-2 border-blue-400 shadow-2xl shadow-blue-500/25' 
+                        : 'bg-gray-800/40 border border-gray-600/50 hover:bg-gray-700/50 hover:border-gray-500'
+                    }`}
+                    onClick={() => setSelectedQuery(option.value)}
+                  >
+                    <div className="flex items-start gap-3">
+                      <input
+                        type="radio"
+                        name="customQuery"
+                        value={option.value}
+                        checked={selectedQuery === option.value}
+                        onChange={() => setSelectedQuery(option.value)}
+                        className="mt-1 text-blue-500 focus:ring-blue-500"
+                      />
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-xl">{option.icon}</span>
+                          <h5 className="font-semibold text-white group-hover:text-blue-300 transition-colors">
+                            {option.label}
+                          </h5>
+                        </div>
+                        <p className="text-sm text-gray-300">{option.description}</p>
+                      </div>
+                    </div>
+                    {selectedQuery === option.value && (
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl animate-pulse"></div>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
           ))}
@@ -141,12 +239,12 @@ const CustomQueries = () => {
         <div className="flex items-center gap-4">
           <button
             onClick={runCustomQuery}
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors duration-200"
+            className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-xl font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 hover:from-blue-700 hover:to-purple-700 hover:shadow-lg hover:shadow-blue-500/25 transform hover:scale-105"
             disabled={!selectedQuery || loading}
           >
             {loading ? (
               <div className="flex items-center gap-2">
-                <div className="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent"></div>
+                <div className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent"></div>
                 Running Query...
               </div>
             ) : (
@@ -155,8 +253,8 @@ const CustomQueries = () => {
           </button>
           
           {selectedQuery && (
-            <div className="text-sm text-gray-600">
-              <strong>Query:</strong> {getQueryDescription()}
+            <div className="text-sm text-gray-300 bg-gray-800/50 px-4 py-2 rounded-lg">
+              <strong className="text-blue-300">Query:</strong> {customQueryOptions.find(q => q.value === selectedQuery)?.description}
             </div>
           )}
         </div>
@@ -164,152 +262,139 @@ const CustomQueries = () => {
 
       {/* Error Display */}
       {error && (
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
-          <div className="flex items-center gap-2">
-            <div className="w-5 h-5 rounded-full bg-red-500 flex items-center justify-center">
-              <span className="text-white text-xs font-bold">!</span>
+        <div className="bg-red-900/30 border border-red-500/50 rounded-xl p-4 mb-6 backdrop-blur-sm animate-in slide-in-from-top duration-300">
+          <div className="flex items-center gap-3">
+            <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center flex-shrink-0">
+              <span className="text-white text-sm font-bold">!</span>
             </div>
             <div>
-              <h4 className="font-medium text-red-800">Query Error</h4>
-              <p className="text-sm text-red-600 mt-1">{error}</p>
+              <h4 className="font-semibold text-red-300">Query Error</h4>
+              <p className="text-sm text-red-200 mt-1">{error}</p>
             </div>
           </div>
         </div>
       )}
 
-      {/* Results Section */}
+      {/* Results */}
       {result && !result.error && (
-        <div className="space-y-6">
-          {/* Query Statistics */}
-          <div className="bg-white rounded-lg border p-6">
-            <h3 className="text-lg font-semibold mb-4">Query Results</h3>
+        <div className="space-y-8 animate-in fade-in duration-500">
+          {/* Statistics */}
+          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700/50 p-6">
+            <h3 className="text-xl font-semibold mb-6 text-blue-300">Query Results</h3>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+            <div className="grid md:grid-cols-4 gap-4 mb-6">
               {(() => {
-                const stats = getQueryStats();
-                return stats ? (
-                  <>
-                    <div className="bg-blue-50 rounded-lg p-4">
-                      <div className="text-2xl font-bold text-blue-600">{stats.nodes}</div>
-                      <div className="text-sm text-blue-800">Total Nodes</div>
+                const stats = getStats();
+                const statItems = [
+                  { label: "Total Nodes", value: stats?.nodes || 0, color: "blue", icon: "🔗" },
+                  { label: "Relationships", value: stats?.links || 0, color: "green", icon: "📊" },
+                  { label: "Companies", value: stats?.companies || 0, color: "purple", icon: "🏢" },
+                  { label: "Directors", value: stats?.directors || 0, color: "orange", icon: "👥" }
+                ];
+                
+                return statItems.map((stat, index) => (
+                  <div key={stat.label} 
+                       className={`bg-gradient-to-br from-${stat.color}-500/20 to-${stat.color}-600/20 rounded-xl p-4 border border-${stat.color}-500/30 transform hover:scale-105 transition-all duration-300`}
+                       style={{ animationDelay: `${index * 100}ms` }}>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xl">{stat.icon}</span>
+                      <div className={`text-2xl font-bold text-${stat.color}-300`}>{stat.value}</div>
                     </div>
-                    <div className="bg-green-50 rounded-lg p-4">
-                      <div className="text-2xl font-bold text-green-600">{stats.links}</div>
-                      <div className="text-sm text-green-800">Relationships</div>
-                    </div>
-                    <div className="bg-purple-50 rounded-lg p-4">
-                      <div className="text-2xl font-bold text-purple-600">{stats.companies}</div>
-                      <div className="text-sm text-purple-800">Companies</div>
-                    </div>
-                    <div className="bg-orange-50 rounded-lg p-4">
-                      <div className="text-2xl font-bold text-orange-600">{stats.directors}</div>
-                      <div className="text-sm text-orange-800">Directors</div>
-                    </div>
-                  </>
-                ) : null;
+                    <div className={`text-sm text-${stat.color}-200`}>{stat.label}</div>
+                  </div>
+                ));
               })()}
             </div>
 
-            <div className="text-sm text-gray-600">
-              <p><strong>Query Type:</strong> {result.query_type}</p>
-              <p><strong>Description:</strong> {result.description}</p>
-              {result.total_records && <p><strong>Total Records:</strong> {result.total_records}</p>}
+            <div className="text-sm text-gray-300 bg-gray-900/50 rounded-lg p-4">
+              <p><strong className="text-blue-300">Query Type:</strong> {result.query_type}</p>
+              <p><strong className="text-blue-300">Description:</strong> {result.description}</p>
             </div>
           </div>
 
-          {/* Debug Information (for defence companies) */}
-          {getDebugInfo() && (
-            <div className="bg-gray-50 rounded-lg border p-6">
-              <h3 className="text-lg font-semibold mb-4">Query Details</h3>
-              <div className="space-y-3">
-                <p className="text-sm">
-                  <strong>Unique Companies Found:</strong> {getDebugInfo().unique_companies_found}
-                </p>
-                {getDebugInfo().companies_list && (
-                  <div>
-                    <h4 className="font-medium text-gray-800 mb-2">Top Companies by Paid Capital:</h4>
-                    <div className="grid gap-2">
-                      {getDebugInfo().companies_list.slice(0, 5).map((company, index) => (
-                        <div key={index} className="flex justify-between items-center bg-white rounded p-3 border">
-                          <span className="font-medium">{company.name}</span>
-                          <span className="text-sm text-gray-600">₹{company.formatted_capital}</span>
+          {/* Company-Director Breakdown */}
+          {(() => {
+            const breakdown = getCompanyDirectorBreakdown();
+            return breakdown ? (
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700/50 p-6">
+                <h3 className="text-xl font-semibold mb-6 text-blue-300">Company-Director Details</h3>
+                <div className="space-y-4 max-h-96 overflow-y-auto">
+                  {Object.values(breakdown).slice(0, 10).map((item, index) => (
+                    <div key={item.company.id} 
+                         className="bg-gray-900/50 rounded-xl p-4 border border-gray-600/30 hover:bg-gray-900/70 transition-all duration-300 transform hover:scale-[1.02]">
+                      <div className="flex justify-between items-start mb-3">
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-white text-lg mb-2">
+                            {index + 1}. {item.company.properties.name || 'Unknown Company'}
+                          </h4>
+                          <div className="flex flex-wrap gap-2">
+                            {item.company.properties.paid_capital && (
+                              <span className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm border border-green-500/30">
+                                💰 {formatCurrency(item.company.properties.paid_capital)}
+                              </span>
+                            )}
+                            <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm border border-purple-500/30">
+                              👥 {item.directorCount} Directors
+                            </span>
+                          </div>
                         </div>
-                      ))}
+                      </div>
+                      
+                      {item.directors.length > 0 && (
+                        <div className="mt-4">
+                          <h5 className="font-medium text-gray-300 mb-3">Directors:</h5>
+                          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {item.directors.slice(0, 6).map((directorInfo, dirIndex) => (
+                              <div key={`${directorInfo.director.id}-${dirIndex}`} 
+                                   className="bg-gray-800/50 rounded-lg p-3 border border-gray-600/20 hover:bg-gray-700/50 transition-all duration-200">
+                                <div className="font-medium text-white text-sm">
+                                  {directorInfo.director.properties.name || 'Unknown Director'}
+                                </div>
+                                {directorInfo.relationship.designation && (
+                                  <div className="text-gray-400 text-xs mt-1">
+                                    {directorInfo.relationship.designation}
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                            {item.directors.length > 6 && (
+                              <div className="bg-gray-700/30 rounded-lg p-3 border border-gray-600/20 flex items-center justify-center">
+                                <span className="text-gray-400 text-sm">+{item.directors.length - 6} more</span>
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                )}
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            ) : null;
+          })()}
 
           {/* Graph Visualization */}
           {result.nodes && result.links && result.nodes.length > 0 && (
-            <div className="bg-white rounded-lg border p-6">
-              <h3 className="text-lg font-semibold mb-4">Network Visualization</h3>
-              <CustomGraphView 
-                nodes={result.nodes} 
-                links={result.links}
-                queryType={selectedQuery}
-                title={result.description}
-              />
-            </div>
-          )}
-
-          {/* Raw Data (Collapsible) */}
-          <details className="bg-white rounded-lg border">
-            <summary className="cursor-pointer p-6 font-medium text-gray-800 hover:bg-gray-50 rounded-lg">
-              Show Raw Query Response
-            </summary>
-            <div className="px-6 pb-6">
-              <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto max-h-96 text-sm">
-                {JSON.stringify(result, null, 2)}
-              </pre>
-            </div>
-          </details>
-        </div>
-      )}
-
-      {/* No Results Message */}
-      {result && result.message && (
-        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-          <div className="flex items-center gap-2">
-            <div className="w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center">
-              <span className="text-white text-xs">i</span>
-            </div>
-            <div>
-              <h4 className="font-medium text-yellow-800">No Data Found</h4>
-              <p className="text-sm text-yellow-600 mt-1">{result.message}</p>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Query Information Panel */}
-      <div className="mt-8 bg-gray-50 rounded-lg border p-6">
-        <h4 className="font-semibold text-gray-800 mb-4">Available Custom Queries</h4>
-        <div className="grid md:grid-cols-3 gap-6">
-          {customQueryOptions.map((option) => (
-            <div key={option.value} className="bg-white rounded-lg p-4 border">
-              <h5 className="font-medium text-gray-900 mb-2">{option.label}</h5>
-              <p className="text-sm text-gray-600 mb-3">{option.description}</p>
-              <div className="text-xs text-gray-500">
-                <code>/api/graph/query?type={option.value}</code>
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700/50 p-6">
+              <h3 className="text-xl font-semibold mb-4 text-blue-300">Network Visualization</h3>
+              <div className="mb-4 p-4 bg-blue-900/30 rounded-xl border border-blue-500/30">
+                <p className="text-sm text-blue-200">
+                  <strong>Visualization:</strong> {result.nodes.filter(n => n.nodeType === 'Company').length} companies 
+                  connected to {result.nodes.filter(n => n.nodeType === 'Director').length} directors 
+                  through {result.links.length} relationships
+                </p>
+              </div>
+              <div className="bg-gray-900/50 rounded-xl p-4">
+                <CustomGraphView 
+                  nodes={result.nodes} 
+                  links={result.links}
+                  queryType={selectedQuery}
+                  title={result.description}
+                />
               </div>
             </div>
-          ))}
+          )}
         </div>
-        
-        <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-          <h5 className="font-medium text-blue-800 mb-2">How to Use</h5>
-          <ul className="text-sm text-blue-700 space-y-1">
-            <li>• Select a query type from the options above</li>
-            <li>• Click "Run Query" to execute the Neo4j query</li>
-            <li>• View results in both statistical summary and network graph format</li>
-            <li>• Click on nodes in the graph to view detailed information</li>
-            <li>• Use graph controls to zoom, pan, and manipulate the visualization</li>
-          </ul>
-        </div>
-      </div>
+      )}
     </div>
   );
 };

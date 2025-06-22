@@ -1,0 +1,70 @@
+MATCH (c:Company)
+WHERE toLower(c.activity) CONTAINS "business"
+RETURN c.name AS company_name, c.cin AS cin, c.activity AS activity
+ORDER BY c.paid_capital DESC
+LIMIT 10
+
+MATCH (c:Company)
+WHERE toLower(c.sub_category) CONTAINS "non" 
+  AND (
+    toLower(c.activity) CONTAINS "defence" OR
+    ANY(info IN c.primary_info WHERE toLower(info) CONTAINS "defence")
+  )
+RETURN c.name AS company_name, c.cin AS cin, c.primary_info AS defence_areas, c.activity AS activity
+LIMIT 10
+
+MATCH (c:Company)<-[:DIRECTED]-(d:Director)
+WHERE (
+  toLower(c.activity) CONTAINS "defence" OR
+  ANY(info IN c.primary_info WHERE toLower(info) CONTAINS "defence")
+)
+RETURN c.name AS company_name, c.cin AS cin, count(DISTINCT d) AS num_directors
+ORDER BY num_directors DESC
+LIMIT 10
+
+MATCH (c:Company)
+WHERE toLower(c.sub_category) CONTAINS "union government company"
+  AND (
+    toLower(c.activity) CONTAINS "defence" OR
+    ANY(info IN c.primary_info WHERE toLower(info) CONTAINS "defence")
+  )
+RETURN DISTINCT 
+  c.name AS company_name, 
+  c.auth_capital AS authorized_capital, 
+  c.sub_category AS sub_category, 
+  c.primary_info AS primary_info
+ORDER BY authorized_capital DESC
+LIMIT 10
+
+MATCH (c:Company)
+WHERE toLower(c.activity) CONTAINS "Electronics"
+   OR ANY(info IN c.primary_info WHERE toLower(info) CONTAINS "electronics")
+RETURN DISTINCT 
+  c.name AS company_name,
+  c.cin AS cin,
+  c.activity AS activity,
+  c.primary_info AS primary_info
+
+MATCH (c:Company)
+WHERE toLower(c.activity) CONTAINS "defence"
+   OR ANY(info IN c.primary_info WHERE toLower(info) CONTAINS "defence")
+RETURN DISTINCT 
+  c.name AS company_name,
+  c.cin AS cin,
+  c.inc_date AS incorporation_date,
+  c.activity AS activity,
+  c.primary_info AS primary_info
+ORDER BY c.inc_date DESC
+LIMIT 10
+
+MATCH (d:Director)-[:DIRECTED]->(c:Company)
+WHERE c.auth_capital IS NOT NULL
+WITH d.name AS director_name, d.din AS din, 
+     SUM(toFloat(c.auth_capital)) AS total_authorized_capital
+RETURN director_name, din, total_authorized_capital
+ORDER BY total_authorized_capital DESC
+LIMIT 10
+
+
+
+
