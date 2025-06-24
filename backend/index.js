@@ -4,6 +4,7 @@ const cors = require("cors");
 
 const graphRoutes = require("./routes/graph.routes");
 const authRoutes = require("./routes/auth.routes");
+const formRoutes = require("./routes/form.routes"); // New import
 
 const app = express();
 app.use(cors());
@@ -12,6 +13,7 @@ app.use(express.json());
 // Routes
 app.use("/api/graph", graphRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/form", formRoutes); // New route
 
 // Test route
 app.get("/", (req, res) => {
