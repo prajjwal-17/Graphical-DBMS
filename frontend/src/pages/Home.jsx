@@ -47,14 +47,13 @@ const HomePage = () => {
             </div>
             
             <h1 className="text-6xl font-black bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent mb-6 leading-tight">
-              Corporate Graph Analysis Portal <br />
+              GraphDB Explorer <br />
               <span className="text-cyan-400">using Neo4j and Crawlers</span>
             </h1>
             
             <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Unveil the hidden connections in India's corporate landscape. Our advanced graph database visualizes 
-              intricate relationships between companies, directors, subsidiaries, and board members using cutting-edge 
-              web scraping and Neo4j technology.
+              An advanced graph-based system that visualizes complex relationships among companies, directors, subsidiaries, and 
+              board members through Neo4j integration and automated data extraction techniques.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-8">
